@@ -1,0 +1,122 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXFileReference section */
+		17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
+		17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
+		17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		17FD02F126710AC06AF8CF6E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */,
+				17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */,
+			);
+			name = Configuration;
+			path = dependency/git/xenomorph/source/Configuration;
+			sourceTree = SOURCE_ROOT;
+		};
+		17FD04A551C007FDEBC06469 /* accessory */ = {
+			isa = PBXGroup;
+			children = (
+				17FD06BF8396C0163AD62C6C /* configuration */,
+			);
+			path = accessory;
+			sourceTree = "<group>";
+		};
+		17FD06BF8396C0163AD62C6C /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17FD02F126710AC06AF8CF6E /* Configuration */,
+				17FD0817309CD34D6DC7F6C7 /* Target */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		17FD07E56A7337D59B60FC69 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		17FD0817309CD34D6DC7F6C7 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				17FD07E56A7337D59B60FC69 /* macOS */,
+				17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */,
+			);
+			name = Target;
+			path = dependency/git/xenomorph/source/Target;
+			sourceTree = SOURCE_ROOT;
+		};
+		E635F48B1E72B9560050F449 = {
+			isa = PBXGroup;
+			children = (
+				17FD04A551C007FDEBC06469 /* accessory */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E635F48C1E72B9560050F449 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = E635F48F1E72B9560050F449 /* Build configuration list for PBXProject "ReactiveOauth" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E635F48B1E72B9560050F449;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E635F4901E72B9560050F449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E635F4911E72B9560050F449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E635F48F1E72B9560050F449 /* Build configuration list for PBXProject "ReactiveOauth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E635F4901E72B9560050F449 /* Debug */,
+				E635F4911E72B9560050F449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E635F48C1E72B9560050F449 /* Project object */;
+}
