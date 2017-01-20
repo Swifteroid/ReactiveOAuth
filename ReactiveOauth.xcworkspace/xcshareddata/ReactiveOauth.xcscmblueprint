@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5B56537D24FB2756995C2D2824A872D0DD6BA8B3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5B56537D24FB2756995C2D2824A872D0DD6BA8B3" : 9223372036854775807,
+    "FB92343999F4DECE54225E041E190E57FF949DB8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E1B919EE-8426-41B9-9A07-4E95C59CE734",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5B56537D24FB2756995C2D2824A872D0DD6BA8B3" : "reactiveoauth\/",
+    "FB92343999F4DECE54225E041E190E57FF949DB8" : "reactiveoauth\/dependency\/git\/xenomorph\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ReactiveOauth",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ReactiveOauth.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/swifteroid\/reactiveoauth.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5B56537D24FB2756995C2D2824A872D0DD6BA8B3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/swifteroid\/xenomorph",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB92343999F4DECE54225E041E190E57FF949DB8"
+    }
+  ]
+}
