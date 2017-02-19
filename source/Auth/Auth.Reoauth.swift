@@ -24,21 +24,24 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
     // MARK: -
 
     open func reauthorise() {
+        let token: String = self.configuration.token
+
         let parameters: Alamofire.Parameters = [
             "client_id": self.configuration.access.key,
             "client_secret": self.configuration.access.secret,
-            "refresh_token": self.configuration.token,
+            "refresh_token": token,
             "grant_type": "refresh_token"]
 
-
-        Alamofire.request(configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
+        // Todo: must have a proper error on failed map… 
+        
+        Alamofire.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
             .map({ JSON(data: $0) })
             .mapError({ Error.unknown(description: $0.description) })
             .attemptMap({
                 if let accessToken: String = $0["access_token"].string, let expiresIn: Double = $0["expires_in"].double {
-                    return .success(Credential(accessToken: accessToken, refreshToken: self.configuration.token, expireDate: Date(timeInterval: expiresIn, since: Date())))
+                    return .success(Credential(accessToken: accessToken, refreshToken: token, expireDate: Date(timeInterval: expiresIn, since: Date())))
                 } else {
-                    return .failure(Error.unknown(description: "foo"))
+                    return .failure(Error.unknown(description: "…"))
                 }
             })
             .observe(self.pipe.input)
