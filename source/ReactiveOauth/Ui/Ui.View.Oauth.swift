@@ -2,30 +2,6 @@ import AppKit
 import OAuthSwift
 import WebKit
 
-public func authorise<Detail>(hostViewController: NSViewController, oauthViewController: OauthViewController, oauth: DetailedOauth<Detail>) {
-
-    // Little hack to ensure the view and outlets are loaded.
-
-    _ = oauthViewController.view
-    oauthViewController.representedObject = oauth
-
-    // Todo: add during controller's lifetime? 
-
-    oauth.oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
-        oauthViewController?.progressIndicator.startAnimation(nil)
-    })
-
-    oauth.detalisator.reactive.detailed.observe({ [weak oauthViewController] (_) in
-        oauthViewController?.progressIndicator.stopAnimation(nil)
-    })
-
-    oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
-        oauthViewController?.dismissViewController(oauthViewController!)
-    })
-
-    hostViewController.presentViewControllerAsSheet(oauthViewController)
-}
-
 open class OauthViewController: NSViewController
 {
     @IBOutlet open weak var progressIndicator: NSProgressIndicator!
@@ -74,5 +50,32 @@ open class OauthViewController: NSViewController
 
     override open func viewDidAppear() {
         self.authorise()
+    }
+}
+
+extension NSViewController
+{
+    public func authorise<Detail>(oauthViewController: OauthViewController, oauth: DetailedOauth<Detail>) {
+
+        // Little hack to ensure the view and outlets are loaded.
+
+        _ = oauthViewController.view
+        oauthViewController.representedObject = oauth
+
+        // Todo: add during controller's lifetime? 
+
+        oauth.oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
+            oauthViewController?.progressIndicator.startAnimation(nil)
+        })
+
+        oauth.detalisator.reactive.detailed.observe({ [weak oauthViewController] (_) in
+            oauthViewController?.progressIndicator.stopAnimation(nil)
+        })
+
+        oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
+            oauthViewController?.dismissViewController(oauthViewController!)
+        })
+
+        self.presentViewControllerAsSheet(oauthViewController)
     }
 }
