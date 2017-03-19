@@ -6,7 +6,7 @@ import WebKit
 public protocol OauthProtocol
 {
     var configuration: Oauth.Configuration { get }
-    func authorise(webview: WKWebView)
+    func authorise(webView: WKWebView)
 }
 
 open class Oauth: OauthProtocol, ReactiveExtensionsProvider
@@ -26,14 +26,14 @@ open class Oauth: OauthProtocol, ReactiveExtensionsProvider
 
     // MARK: -
 
-    public func authorise(webview: WKWebView) {
+    public func authorise(webView: WKWebView) {
         let oauth: OAuth2Swift = OAuth2Swift(
             consumerKey: configuration.access.key,
             consumerSecret: configuration.access.secret,
             authorizeUrl: configuration.url.authorise,
             accessTokenUrl: configuration.url.token,
             responseType: configuration.type ?? "token",
-            urlHandler: UrlHandler(webview: webview)
+            urlHandler: UrlHandler(webView: webView)
         )
 
         oauth.authorize(
@@ -101,14 +101,14 @@ extension Oauth
 {
     open class UrlHandler: OAuthSwiftURLHandlerType
     {
-        open weak var webview: WKWebView?
+        open weak var webView: WKWebView?
 
-        public init(webview: WKWebView) {
-            self.webview = webview
+        public init(webView: WKWebView) {
+            self.webView = webView
         }
 
         open func handle(_ url: URL) {
-            _ = self.webview?.load(URLRequest(url: url))
+            _ = self.webView?.load(URLRequest(url: url))
         }
     }
 }

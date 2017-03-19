@@ -19,10 +19,10 @@ open class DetailedOauth<Detail>: DetailedAuth<Detail>, OauthProtocol
 
     // MARK: -
 
-    public func authorise(webview: WKWebView) {
+    public func authorise(webView: WKWebView) {
         self.oauth.reactive.authorised.zip(with: self.detalisator.reactive.detailed).observe(self.pipe.input)
         self.oauth.reactive.authorised.observe(Observer(value: { self.detalisator.detail(credential: $0) }))
-        self.oauth.authorise(webview: webview)
+        self.oauth.authorise(webView: webView)
     }
 }
 
