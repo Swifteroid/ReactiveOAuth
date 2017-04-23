@@ -8,24 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		17FD014CC235B5670C9C3BF9 /* Detalisator.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */; };
+		17FD01D372F015D578C505E5 /* Test.Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD06FEECC656D09B33CE61 /* Test.Auth.swift */; };
 		17FD02E787A8E701AAC3D124 /* ReactiveOauth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */; };
 		17FD035E37F0EF2E71AB5642 /* Auth.Reoauth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */; };
 		17FD03BDDCDE257112386A79 /* Application.Entrypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */; };
 		17FD03C8F836AD3A0D1C50FA /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FD0BF0C4EA9F980ED65DCD /* main.storyboard */; };
+		17FD0439340A066B3C56A17A /* Utility.Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */; };
 		17FD04C4920A8B62784BB226 /* Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */; };
 		17FD04F25EE85DD88C04318C /* Auth.Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BCB244F5CFFDDD9D70D /* Auth.Oauth.swift */; };
+		17FD058348DD4CE7F4E60978 /* Auth.Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */; };
 		17FD059BBFA7D93B498E7A29 /* Ui.View.Oauth.WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D38F2E4A84A97049D94 /* Ui.View.Oauth.WebView.swift */; };
 		17FD05A578C2FA77A9E56EAD /* Auth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */; };
 		17FD05FF591CA2389B1F7861 /* Auth.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00AAE3036885B768936C /* Auth.Error.swift */; };
 		17FD0605E4B1564EE3D1C85D /* Auth.Oauth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0B67BD3FCB9ED82841BA /* Auth.Oauth.Detailed.swift */; };
+		17FD06C36F9155A742C36EC3 /* Auth.Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01101080E25017FA2E3A /* Auth.Factory.swift */; };
+		17FD06E49F8A4F9A1F2BC74F /* Utility.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */; };
 		17FD06EE03CB72613A1DA869 /* Service.GoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD05BE9C5ED28D52F0BF29 /* Service.GoogleDrive.swift */; };
+		17FD081D81484F55B66EB14C /* oauth in Resources */ = {isa = PBXBuildFile; fileRef = 17FD0101A918730138089192 /* oauth */; };
 		17FD083B2578DC20F08578BE /* Extension.Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */; };
+		17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */; };
 		17FD0894DE12C29091865FFD /* Auth.Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00A1F452CFD1054E2A71 /* Auth.Access.swift */; };
 		17FD096A130E9190E608FD8D /* Ui.View.Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */; };
+		17FD0AC8126E701358728BC5 /* Test.Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD014C6BA2809051C0ED61 /* Test.Case.swift */; };
 		17FD0AFE79A607EB2D24C2EE /* Ui.View.Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0E4EA7DB99A1B3AB346C /* Ui.View.Oauth.swift */; };
 		17FD0B44FE059FB682B2D06A /* Service.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */; };
+		17FD0CA74383997671601481 /* Auth.Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ABC84AB5B618183F93F /* Auth.Type.swift */; };
 		17FD0CC5F57DAC8810453C72 /* Extension.OauthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD58C00C5ED557D4E0E /* Extension.OauthSwift.swift */; };
 		17FD0DDC3264E156D19C5E48 /* Detalisator.GoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F3C3EF0BE16C5A8224E /* Detalisator.GoogleDrive.swift */; };
+		17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.GoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A7AF699B08D4FD6CA3D /* Test.Auth.GoogleDrive.swift */; };
 		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
 		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
 		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
@@ -35,6 +45,13 @@
 		E65299461E731FF7003E765D /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0962CF353A214002C83A /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E65299471E73215A003E765D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */; };
 		E65299481E7324BF003E765D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0BC2C261089E48C99AE1 /* SwiftyJSON.framework */; };
+		E659E4551EC504300060C9FC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0560A5793175F9DE6A86 /* Nimble.framework */; };
+		E659E4571EC5044D0060C9FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E659E4581EC5044D0060C9FC /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0560A5793175F9DE6A86 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E659E4591EC5044D0060C9FC /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0962CF353A214002C83A /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E659E45A1EC5044D0060C9FC /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD06492F59E6524373ED16 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E659E45B1EC5044D0060C9FC /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0BAD206A792F587A5D0B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E659E45C1EC5044D0060C9FC /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0BC2C261089E48C99AE1 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6D7F6491EA1578F0007814A /* ReactiveOauth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */; };
 		E6D7F64B1EA157AA0007814A /* ReactiveOauth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6D7F64C1EA157D10007814A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -73,6 +90,22 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E659E4561EC5043B0060C9FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E659E4571EC5044D0060C9FC /* Alamofire.framework in Embed Frameworks */,
+				E659E4581EC5044D0060C9FC /* Nimble.framework in Embed Frameworks */,
+				E659E4591EC5044D0060C9FC /* OAuthSwift.framework in Embed Frameworks */,
+				E659E45A1EC5044D0060C9FC /* ReactiveSwift.framework in Embed Frameworks */,
+				E659E45B1EC5044D0060C9FC /* Result.framework in Embed Frameworks */,
+				E659E45C1EC5044D0060C9FC /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6D7F64A1EA157940007814A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,10 +128,14 @@
 		17FD00427332FD9AB4062446 /* Auth.Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Credential.swift; sourceTree = "<group>"; };
 		17FD00A1F452CFD1054E2A71 /* Auth.Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Access.swift; sourceTree = "<group>"; };
 		17FD00AAE3036885B768936C /* Auth.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Error.swift; sourceTree = "<group>"; };
+		17FD0101A918730138089192 /* oauth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = oauth; sourceTree = "<group>"; };
+		17FD01101080E25017FA2E3A /* Auth.Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Factory.swift; sourceTree = "<group>"; };
 		17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.Detailed.swift; sourceTree = "<group>"; };
 		17FD012DA0B91FDF9BD01829 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
+		17FD014C6BA2809051C0ED61 /* Test.Case.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Case.swift; sourceTree = "<group>"; };
 		17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveOauth.framework; path = "../../Library/Caches/AppCode2017.1/DerivedData/ReactiveOauth-emftwjofxdawmrbjxjnttrqtdcze/Build/Products/Debug/ReactiveOauth.framework"; sourceTree = "<group>"; };
 		17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Main.swift; sourceTree = "<group>"; };
+		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
 		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
 		17FD034571C02A3E54841334 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 		17FD03B6EAF6773260636E22 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
@@ -109,11 +146,16 @@
 		17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
 		17FD06492F59E6524373ED16 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
 		17FD0685B98931A5F745152D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Dropbox.swift; sourceTree = "<group>"; };
+		17FD06FEECC656D09B33CE61 /* Test.Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.swift; sourceTree = "<group>"; };
 		17FD075B8EF15C5909CAE74A /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Configuration.swift; sourceTree = "<group>"; };
 		17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
 		17FD0962CF353A214002C83A /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
+		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.GoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.GoogleDrive.swift; sourceTree = "<group>"; };
 		17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.Entrypoint.swift; sourceTree = "<group>"; };
+		17FD0ABC84AB5B618183F93F /* Auth.Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Type.swift; sourceTree = "<group>"; };
 		17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		17FD0B67BD3FCB9ED82841BA /* Auth.Oauth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Oauth.Detailed.swift; sourceTree = "<group>"; };
 		17FD0BAD206A792F587A5D0B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
@@ -129,10 +171,12 @@
 		17FD0D38F2E4A84A97049D94 /* Ui.View.Oauth.WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Oauth.WebView.swift; sourceTree = "<group>"; };
 		17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Dropbox.swift; sourceTree = "<group>"; };
 		17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.swift; sourceTree = "<group>"; };
+		17FD0E275F066DE11F91AB30 /* oauth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oauth.json; sourceTree = "<group>"; };
 		17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detailed.swift; sourceTree = "<group>"; };
 		17FD0E4EA7DB99A1B3AB346C /* Ui.View.Oauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Oauth.swift; sourceTree = "<group>"; };
 		17FD0E508462AC8AEFE3A3F6 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/Mac/Nimble.framework.dSYM; sourceTree = "<group>"; };
 		17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.swift; sourceTree = "<group>"; };
+		17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Path.swift; sourceTree = "<group>"; };
 		17FD0F3C3EF0BE16C5A8224E /* Detalisator.GoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.GoogleDrive.swift; sourceTree = "<group>"; };
 		17FD0F8B73E21CE56E6EAE7C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E659E4551EC504300060C9FC /* Nimble.framework in Frameworks */,
 				17FD02E787A8E701AAC3D124 /* ReactiveOauth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +226,15 @@
 				17FD05BE9C5ED28D52F0BF29 /* Service.GoogleDrive.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		17FD01983DD70317A5C6BE83 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				17FD014C6BA2809051C0ED61 /* Test.Case.swift */,
+				17FD0BE7F21891874DC6249D /* Auth */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		17FD01BEDE6B6B6C7E08B7EF /* Extension */ = {
@@ -218,6 +272,15 @@
 				17FD034571C02A3E54841334 /* test.plist */,
 			);
 			path = info;
+			sourceTree = "<group>";
+		};
+		17FD0442E1949F6D88640DBE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */,
+				17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		17FD04A551C007FDEBC06469 /* accessory */ = {
@@ -259,6 +322,8 @@
 				17FD07CE57489373E6685D53 /* Ui */,
 				17FD009C67D38131A945A84E /* Service */,
 				17FD0C299E3D113C14A27DF5 /* Detalisator */,
+				17FD01983DD70317A5C6BE83 /* Test */,
+				17FD0FC1BA1EE3B7FBF66920 /* Testing */,
 			);
 			path = ReactiveOauth;
 			sourceTree = "<group>";
@@ -336,6 +401,25 @@
 			path = storyboard;
 			sourceTree = "<group>";
 		};
+		17FD0A0E5D35C5069C337D87 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17FD01101080E25017FA2E3A /* Auth.Factory.swift */,
+				17FD0ABC84AB5B618183F93F /* Auth.Type.swift */,
+				17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		17FD0B4F7D568B910273DDAD /* test */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0101A918730138089192 /* oauth */,
+				17FD0E275F066DE11F91AB30 /* oauth.json */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		17FD0BA09D34778AEFCB0A11 /* dsym */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +431,16 @@
 				17FD0C6CDE4A27B0BA503C91 /* SwiftyJSON.framework.dSYM */,
 			);
 			name = dsym;
+			sourceTree = "<group>";
+		};
+		17FD0BE7F21891874DC6249D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0A7AF699B08D4FD6CA3D /* Test.Auth.GoogleDrive.swift */,
+				17FD06FEECC656D09B33CE61 /* Test.Auth.swift */,
+				17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		17FD0C299E3D113C14A27DF5 /* Detalisator */ = {
@@ -368,6 +462,15 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		17FD0FC1BA1EE3B7FBF66920 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0442E1949F6D88640DBE /* Utility */,
+				17FD0A0E5D35C5069C337D87 /* Auth */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 		E635F48B1E72B9560050F449 = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +478,7 @@
 				17FD04E454EDAB0C31F3BE5E /* dependency */,
 				17FD033E64E9EA7FFEBADB38 /* product */,
 				17FD0546BE45D13B08CFB1C9 /* source */,
+				17FD0B4F7D568B910273DDAD /* test */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,6 +518,7 @@
 			buildPhases = (
 				E61003071E73183A0065804C /* Sources */,
 				E61003081E73183A0065804C /* Frameworks */,
+				E659E4561EC5043B0060C9FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FD03C8F836AD3A0D1C50FA /* main.storyboard in Resources */,
+				17FD081D81484F55B66EB14C /* oauth in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +633,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FD0AC8126E701358728BC5 /* Test.Case.swift in Sources */,
+				17FD06C36F9155A742C36EC3 /* Auth.Factory.swift in Sources */,
+				17FD0CA74383997671601481 /* Auth.Type.swift in Sources */,
+				17FD058348DD4CE7F4E60978 /* Auth.Detalisator.swift in Sources */,
+				17FD0439340A066B3C56A17A /* Utility.Path.swift in Sources */,
+				17FD06E49F8A4F9A1F2BC74F /* Utility.Configuration.swift in Sources */,
+				17FD01D372F015D578C505E5 /* Test.Auth.swift in Sources */,
+				17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */,
+				17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.GoogleDrive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +708,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					dependency/Carthage/Build/Mac,
+					"$(PROJECT_DIR)/dependency/Carthage/Build/Mac",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
@@ -606,7 +721,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					dependency/Carthage/Build/Mac,
+					"$(PROJECT_DIR)/dependency/Carthage/Build/Mac",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;

@@ -33,7 +33,7 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
             "grant_type": "refresh_token"]
 
         // Todo: must have a proper error on failed map… 
-        
+
         Alamofire.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
             .map({ JSON(data: $0) })
             .mapError({ Error.unknown(description: $0.description) })

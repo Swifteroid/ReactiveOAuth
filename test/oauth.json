@@ -1,0 +1,10 @@
+{
+    "dropbox": {
+        "access": {"key": null, "secret": null, "url": null},
+        "credential": {"email": null, "password": null}
+    },
+    "google-drive": {
+        "access": {"key": null, "secret": null, "url": null},
+        "credential": {"email": null, "password": null}
+    }
+}
