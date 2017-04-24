@@ -2,7 +2,7 @@ import Alamofire
 import ReactiveSwift
 import SwiftyJSON
 
-open class GoogleDriveDetalisator<Detail>: JsonDetalisator<Detail>
+open class GoogleDetalisator<Detail>: JsonDetalisator<Detail>
 {
     open override func detail(credential: Credential) {
         let headers: HTTPHeaders = ["Authorization": "Bearer \(credential.accessToken)"]
@@ -10,7 +10,7 @@ open class GoogleDriveDetalisator<Detail>: JsonDetalisator<Detail>
 
         // Todo: check for json errors…
 
-        Alamofire.request(GoogleDrive.url.detail, method: HTTPMethod.post, parameters: parameters, headers: headers).reactive.responded
+        Alamofire.request(Google.url.detail, method: HTTPMethod.post, parameters: parameters, headers: headers).reactive.responded
             .map({ JSON(data: $0) })
             .observe({ [weak self] in
                 if case Event.value(let value) = $0 {

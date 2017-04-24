@@ -1,4 +1,4 @@
-open class GoogleDrive: Service
+open class Google: Service
 {
     override open class var url: Url {
         return Url(

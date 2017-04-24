@@ -22,11 +22,11 @@ internal class OauthFactory: AuthFactory
         if self.type == .dropbox {
             configuration = Dropbox.configure(access: self.configuration.access, url: self.configuration.url)
             detalisator = DropboxDetalisator()
-        } else if self.type == .googleDrive {
+        } else if self.type == .google {
             parameters = ["access_type": "offline", "approval_prompt": "force"]
             scope = "https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.metadata.readonly"
-            configuration = GoogleDrive.configure(access: self.configuration.access, url: self.configuration.url, scope: scope, parameters: parameters)
-            detalisator = GoogleDriveDetalisator()
+            configuration = Google.configure(access: self.configuration.access, url: self.configuration.url, scope: scope, parameters: parameters)
+            detalisator = GoogleDetalisator()
         } else if self.type == .imgur {
             configuration = Imgur.configure(access: self.configuration.access, url: self.configuration.url)
             detalisator = ImgurDetalisator()
@@ -54,9 +54,9 @@ internal class ReoauthFactory: AuthFactory
         if self.type == .dropbox {
             configuration = Dropbox.configure(access: self.configuration.access, token: self.token)
             detalisator = DropboxDetalisator()
-        } else if self.type == .googleDrive {
-            configuration = GoogleDrive.configure(access: self.configuration.access, token: self.token)
-            detalisator = GoogleDriveDetalisator()
+        } else if self.type == .google {
+            configuration = Google.configure(access: self.configuration.access, token: self.token)
+            detalisator = GoogleDetalisator()
         } else if self.type == .imgur {
             configuration = Imgur.configure(access: self.configuration.access, token: self.token)
             detalisator = ImgurDetalisator()

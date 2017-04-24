@@ -25,7 +25,7 @@
 		17FD0699B848B6D9F623422D /* Service.Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */; };
 		17FD06C36F9155A742C36EC3 /* Auth.Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01101080E25017FA2E3A /* Auth.Factory.swift */; };
 		17FD06E49F8A4F9A1F2BC74F /* Utility.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */; };
-		17FD06EE03CB72613A1DA869 /* Service.GoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD05BE9C5ED28D52F0BF29 /* Service.GoogleDrive.swift */; };
+		17FD06EE03CB72613A1DA869 /* Service.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */; };
 		17FD081D81484F55B66EB14C /* oauth in Resources */ = {isa = PBXBuildFile; fileRef = 17FD0101A918730138089192 /* oauth */; };
 		17FD083B2578DC20F08578BE /* Extension.Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */; };
 		17FD087BED0546AAC8907DEE /* Detalisator.Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */; };
@@ -37,8 +37,8 @@
 		17FD0B44FE059FB682B2D06A /* Service.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */; };
 		17FD0CA74383997671601481 /* Auth.Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ABC84AB5B618183F93F /* Auth.Type.swift */; };
 		17FD0CC5F57DAC8810453C72 /* Extension.OauthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD58C00C5ED557D4E0E /* Extension.OauthSwift.swift */; };
-		17FD0DDC3264E156D19C5E48 /* Detalisator.GoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F3C3EF0BE16C5A8224E /* Detalisator.GoogleDrive.swift */; };
-		17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.GoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A7AF699B08D4FD6CA3D /* Test.Auth.GoogleDrive.swift */; };
+		17FD0DDC3264E156D19C5E48 /* Detalisator.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */; };
+		17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */; };
 		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
 		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
 		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
@@ -145,7 +145,7 @@
 		17FD041E6AA9B7B72942E891 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 		17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
 		17FD0560A5793175F9DE6A86 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		17FD05BE9C5ED28D52F0BF29 /* Service.GoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.GoogleDrive.swift; sourceTree = "<group>"; };
+		17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Google.swift; sourceTree = "<group>"; };
 		17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
 		17FD06492F59E6524373ED16 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
 		17FD0685B98931A5F745152D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Configuration.swift; sourceTree = "<group>"; };
 		17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
 		17FD0962CF353A214002C83A /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
-		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.GoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.GoogleDrive.swift; sourceTree = "<group>"; };
+		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Google.swift; sourceTree = "<group>"; };
 		17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.Entrypoint.swift; sourceTree = "<group>"; };
 		17FD0ABC84AB5B618183F93F /* Auth.Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Type.swift; sourceTree = "<group>"; };
 		17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 		17FD0E508462AC8AEFE3A3F6 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/Mac/Nimble.framework.dSYM; sourceTree = "<group>"; };
 		17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.swift; sourceTree = "<group>"; };
 		17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Path.swift; sourceTree = "<group>"; };
-		17FD0F3C3EF0BE16C5A8224E /* Detalisator.GoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.GoogleDrive.swift; sourceTree = "<group>"; };
+		17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Google.swift; sourceTree = "<group>"; };
 		17FD0F8B73E21CE56E6EAE7C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
 		17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Dropbox.swift; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			children = (
 				17FD0685B98931A5F745152D /* Service.swift */,
 				17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */,
-				17FD05BE9C5ED28D52F0BF29 /* Service.GoogleDrive.swift */,
+				17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */,
 				17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */,
 			);
 			path = Service;
@@ -443,7 +443,7 @@
 		17FD0BE7F21891874DC6249D /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				17FD0A7AF699B08D4FD6CA3D /* Test.Auth.GoogleDrive.swift */,
+				17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */,
 				17FD06FEECC656D09B33CE61 /* Test.Auth.swift */,
 				17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */,
 				17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */,
@@ -456,7 +456,7 @@
 			children = (
 				17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */,
 				17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */,
-				17FD0F3C3EF0BE16C5A8224E /* Detalisator.GoogleDrive.swift */,
+				17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */,
 				17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */,
 			);
 			path = Detalisator;
@@ -631,11 +631,11 @@
 				17FD059BBFA7D93B498E7A29 /* Ui.View.Oauth.WebView.swift in Sources */,
 				17FD0E87962CC41A157281A7 /* Service.swift in Sources */,
 				17FD0B44FE059FB682B2D06A /* Service.Dropbox.swift in Sources */,
-				17FD06EE03CB72613A1DA869 /* Service.GoogleDrive.swift in Sources */,
+				17FD06EE03CB72613A1DA869 /* Service.Google.swift in Sources */,
 				17FD0699B848B6D9F623422D /* Service.Imgur.swift in Sources */,
 				17FD04C4920A8B62784BB226 /* Detalisator.swift in Sources */,
 				17FD014CC235B5670C9C3BF9 /* Detalisator.Dropbox.swift in Sources */,
-				17FD0DDC3264E156D19C5E48 /* Detalisator.GoogleDrive.swift in Sources */,
+				17FD0DDC3264E156D19C5E48 /* Detalisator.Google.swift in Sources */,
 				17FD087BED0546AAC8907DEE /* Detalisator.Imgur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,7 +652,7 @@
 				17FD06E49F8A4F9A1F2BC74F /* Utility.Configuration.swift in Sources */,
 				17FD01D372F015D578C505E5 /* Test.Auth.swift in Sources */,
 				17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */,
-				17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.GoogleDrive.swift in Sources */,
+				17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */,
 				17FD05FE2548EF8C4666D685 /* Test.Auth.Imgur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

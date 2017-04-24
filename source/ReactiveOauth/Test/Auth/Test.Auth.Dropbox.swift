@@ -2,7 +2,7 @@ import Foundation
 import ReactiveOauth
 import WebKit
 
-internal class AuthDropboxTestCase: AuthTestCase
+internal class DropboxAuthTestCase: AuthTestCase
 {
     internal func testOauth() {
         self.testOauth(type: .dropbox, delegate: OauthWebViewDelegate.self)

@@ -1,6 +1,6 @@
 internal enum AuthType: String
 {
     case dropbox = "dropbox"
-    case googleDrive = "google-drive"
+    case google = "google"
     case imgur = "imgur"
 }

@@ -2,14 +2,14 @@ import Foundation
 import ReactiveOauth
 import WebKit
 
-internal class AuthGoogleDriveTestCase: AuthTestCase
+internal class GoogleAuthTestCase: AuthTestCase
 {
     internal func testOauth() {
-        self.testOauth(type: .googleDrive, delegate: OauthWebViewDelegate.self)
+        self.testOauth(type: .google, delegate: OauthWebViewDelegate.self)
     }
 
     internal func testReoauth() {
-        self.testReoauth(type: .googleDrive)
+        self.testReoauth(type: .google)
     }
 }
 
@@ -22,9 +22,9 @@ private class OauthWebViewDelegate: AbstractOauthWebViewDelegate
         let file: String
 
         if path == "/ServiceLogin" || path == "/AccountLoginInfo" || path == "/signin/v1/lookup" {
-            file = "google-drive-signin.js"
+            file = "google-signin.js"
         } else if path == "/o/oauth2/auth" {
-            file = "google-drive-authorise.js"
+            file = "google-authorise.js"
         } else {
             return
         }
