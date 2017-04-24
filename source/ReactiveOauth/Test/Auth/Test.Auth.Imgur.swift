@@ -18,7 +18,7 @@ private class OauthWebViewDelegate: AbstractOauthWebViewDelegate
     override internal func webView(_ webView: WKWebView, didFinish navigation: WKNavigation) {
         super.webView(webView, didFinish: navigation)
         guard let path: String = webView.url?.path else { return }
-        
+
         let file: String
 
         if path == "/oauth2/authorize" {

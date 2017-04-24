@@ -3,7 +3,7 @@
 
     if ((form = document.querySelector("form[action^='https://accounts.google.com/o/oauth2/approval']")) != null) {
         setTimeout(function () {
-            document.querySelector("button#submit_approve_access").click()
+            form.querySelector("button#submit_approve_access").click()
         }, 1000);
     }
 
