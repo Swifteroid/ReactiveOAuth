@@ -157,6 +157,7 @@
 		17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
 		17FD0962CF353A214002C83A /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
 		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Google.swift; sourceTree = "<group>"; };
+		17FD0A879532D717634C832F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.Entrypoint.swift; sourceTree = "<group>"; };
 		17FD0ABC84AB5B618183F93F /* Auth.Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Type.swift; sourceTree = "<group>"; };
 		17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
@@ -488,6 +489,7 @@
 				17FD033E64E9EA7FFEBADB38 /* product */,
 				17FD0546BE45D13B08CFB1C9 /* source */,
 				17FD0B4F7D568B910273DDAD /* test */,
+				17FD0A879532D717634C832F /* .travis.yml */,
 			);
 			sourceTree = "<group>";
 		};

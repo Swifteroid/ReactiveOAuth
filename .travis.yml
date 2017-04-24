@@ -1,0 +1,15 @@
+language: objective-c
+osx_image: xcode8.3
+
+branches:
+  only: master
+
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+install:
+  - carthage bootstrap --platform osx
+  - git submodule update --init --recursive
+
+script:
+  - travis_retry xcodebuild -workspace "ReactiveOauth.xcworkspace" -scheme "ReactiveOauth" build-for-testing test | xcpretty
