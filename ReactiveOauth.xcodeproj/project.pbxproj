@@ -136,7 +136,7 @@
 		17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.Detailed.swift; sourceTree = "<group>"; };
 		17FD012DA0B91FDF9BD01829 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
 		17FD014C6BA2809051C0ED61 /* Test.Case.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Case.swift; sourceTree = "<group>"; };
-		17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveOauth.framework; path = "../../Library/Caches/AppCode2017.1/DerivedData/ReactiveOauth-emftwjofxdawmrbjxjnttrqtdcze/Build/Products/Debug/ReactiveOauth.framework"; sourceTree = "<group>"; };
+		17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveOauth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Main.swift; sourceTree = "<group>"; };
 		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
 		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		17FD0B67BD3FCB9ED82841BA /* Auth.Oauth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Oauth.Detailed.swift; sourceTree = "<group>"; };
 		17FD0BAD206A792F587A5D0B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
-		17FD0BBCF8608E589291BA99 /* ReactiveOauth - Test.xctest */ = {isa = PBXFileReference; lastKnownFileType = file.xctest; name = "ReactiveOauth - Test.xctest"; path = "../../Library/Caches/AppCode2017.1/DerivedData/ReactiveOauth-emftwjofxdawmrbjxjnttrqtdcze/Build/Products/Debug/ReactiveOauth - Test.xctest"; sourceTree = "<group>"; };
+		17FD0BBCF8608E589291BA99 /* ReactiveOauth - Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveOauth - Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FD0BC2C261089E48C99AE1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		17FD0BCB244F5CFFDDD9D70D /* Auth.Oauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Oauth.swift; sourceTree = "<group>"; };
 		17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Imgur.swift; sourceTree = "<group>"; };
@@ -519,6 +519,7 @@
 			);
 			name = ReactiveOauth;
 			productName = ReactiveOauth;
+			productReference = 17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E610030A1E73183A0065804C /* ReactiveOauth - Test */ = {
@@ -535,7 +536,8 @@
 				E610030E1E73183A0065804C /* PBXTargetDependency */,
 			);
 			name = "ReactiveOauth - Test";
-			productName = ReactiveOauthTests;
+			productName = "ReactiveOauth - Test";
+			productReference = 17FD0BBCF8608E589291BA99 /* ReactiveOauth - Test.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		E6C0470E1EA14B170089F914 /* Demo */ = {
@@ -744,10 +746,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Caches/AppCode2017.1/DerivedData/ReactiveOauth-emftwjofxdawmrbjxjnttrqtdcze/Build/Products/Debug",
-				);
 				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
 			};
@@ -757,10 +755,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Caches/AppCode2017.1/DerivedData/ReactiveOauth-emftwjofxdawmrbjxjnttrqtdcze/Build/Products/Debug",
-				);
 				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
 			};
