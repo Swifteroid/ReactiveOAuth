@@ -6,5 +6,9 @@
     "google-drive": {
         "access": {"key": null, "secret": null, "url": null},
         "credential": {"email": null, "password": null}
+    },
+    "imgur": {
+        "access": {"key": null, "secret": null, "url": null},
+        "credential": {"email": null, "password": null}
     }
 }

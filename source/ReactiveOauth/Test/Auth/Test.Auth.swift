@@ -65,7 +65,7 @@ internal class AuthTestCase: TestCase
     }
 
     internal func waitForExpectations() {
-        self.waitForExpectations(timeout: 30)
+        self.waitForExpectations(timeout: 15)
     }
 
     // MARK: -

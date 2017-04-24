@@ -16,3 +16,10 @@ internal class GoogleDriveDetalisator: ReactiveOauth.GoogleDriveDetalisator<Emai
         self.succeed(json["user"]["emailAddress"].stringValue)
     }
 }
+
+internal class ImgurDetalisator: ReactiveOauth.ImgurDetalisator<Email>
+{
+    override internal func detail(json: JSON) {
+        self.succeed(json["data"]["email"].stringValue)
+    }
+}

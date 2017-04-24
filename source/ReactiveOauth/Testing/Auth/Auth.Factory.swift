@@ -27,6 +27,9 @@ internal class OauthFactory: AuthFactory
             scope = "https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.metadata.readonly"
             configuration = GoogleDrive.configure(access: self.configuration.access, url: self.configuration.url, scope: scope, parameters: parameters)
             detalisator = GoogleDriveDetalisator()
+        } else if self.type == .imgur {
+            configuration = Imgur.configure(access: self.configuration.access, url: self.configuration.url)
+            detalisator = ImgurDetalisator()
         } else {
             return nil
         }
@@ -54,6 +57,9 @@ internal class ReoauthFactory: AuthFactory
         } else if self.type == .googleDrive {
             configuration = GoogleDrive.configure(access: self.configuration.access, token: self.token)
             detalisator = GoogleDriveDetalisator()
+        } else if self.type == .imgur {
+            configuration = Imgur.configure(access: self.configuration.access, token: self.token)
+            detalisator = ImgurDetalisator()
         } else {
             return nil
         }
