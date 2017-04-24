@@ -18,8 +18,8 @@ extension WKWebViewConfiguration
 
 open class OauthWebView: WKWebView
 {
-    public override init(frame: CGRect, configuration: WKWebViewConfiguration? = nil) {
-        super.init(frame: frame, configuration: configuration ?? WKWebViewConfiguration.default)
+    public override init(frame: CGRect, configuration: WKWebViewConfiguration) {
+        super.init(frame: frame, configuration: configuration)
 
         self.allowsMagnification = false
 
@@ -38,6 +38,10 @@ open class OauthWebView: WKWebView
         } else {
             self.setValue(true, forKey: "drawsTransparentBackground")
         }
+    }
+
+    public convenience init(frame: CGRect) {
+        self.init(frame: frame, configuration: WKWebViewConfiguration.default)
     }
 
     public required init?(coder: NSCoder) {
