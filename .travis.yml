@@ -4,6 +4,10 @@ osx_image: xcode8.3
 branches:
   only: master
 
+cache:
+  directories:
+  - Carthage
+
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
@@ -11,5 +15,7 @@ install:
   - carthage bootstrap --platform osx
   - git submodule update --init --recursive
 
+before_script:
+  - build/ci/build.sh
 script:
   - travis_retry xcodebuild -workspace "ReactiveOauth.xcworkspace" -scheme "ReactiveOauth" build-for-testing test | xcpretty

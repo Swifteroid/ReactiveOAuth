@@ -137,6 +137,7 @@
 		17FD012DA0B91FDF9BD01829 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
 		17FD014C6BA2809051C0ED61 /* Test.Case.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Case.swift; sourceTree = "<group>"; };
 		17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveOauth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FD02026B95DFC861B9D424 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Main.swift; sourceTree = "<group>"; };
 		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
 		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
@@ -358,6 +359,14 @@
 			name = configuration;
 			sourceTree = "<group>";
 		};
+		17FD07396279D397717518E5 /* ci */ = {
+			isa = PBXGroup;
+			children = (
+				17FD02026B95DFC861B9D424 /* build.sh */,
+			);
+			path = ci;
+			sourceTree = "<group>";
+		};
 		17FD07CE57489373E6685D53 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +416,14 @@
 				17FD0BF0C4EA9F980ED65DCD /* main.storyboard */,
 			);
 			path = storyboard;
+			sourceTree = "<group>";
+		};
+		17FD09EAD2C0B096F2B1D55C /* build */ = {
+			isa = PBXGroup;
+			children = (
+				17FD07396279D397717518E5 /* ci */,
+			);
+			path = build;
 			sourceTree = "<group>";
 		};
 		17FD0A0E5D35C5069C337D87 /* Auth */ = {
@@ -490,6 +507,7 @@
 				17FD0546BE45D13B08CFB1C9 /* source */,
 				17FD0B4F7D568B910273DDAD /* test */,
 				17FD0A879532D717634C832F /* .travis.yml */,
+				17FD09EAD2C0B096F2B1D55C /* build */,
 			);
 			sourceTree = "<group>";
 		};
