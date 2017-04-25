@@ -22,8 +22,16 @@ internal class AuthTestCase: TestCase
 
         oauth.reactive.authorised.observe(Observer(
             value: { (credential: Credential, email: Email) in
-                Swift.print("Successfully authorised \(type):", credential)
+
+                // Swift.print("Successfully authorised \(type):", credential)
+
                 type(of: self).token = credential.refreshToken
+
+                if self.responds(to: Selector(("testReoauth"))) {
+                    expect(credential.refreshToken).toNot(beNil())
+                    expect(credential.expireDate).toNot(beNil())
+                }
+
                 expectation.fulfill()
             },
             failed: { (error: ReactiveOauth.Error) in
@@ -65,7 +73,7 @@ internal class AuthTestCase: TestCase
     }
 
     internal func waitForExpectations() {
-        self.waitForExpectations(timeout: 15)
+        self.waitForExpectations(timeout: 30)
     }
 
     // MARK: -
