@@ -174,6 +174,7 @@
 		17FD0C01D64DA1B2ADA6D8BD /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
 		17FD0C6CDE4A27B0BA503C91 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/Mac/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		17FD0C9A99524DC3F0FCA22A /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/Mac/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		17FD0CCE8AD5E4EB7DA5820B /* gifox-oauth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gifox-oauth.png"; sourceTree = "<group>"; };
 		17FD0D38F2E4A84A97049D94 /* Ui.View.Oauth.WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Oauth.WebView.swift; sourceTree = "<group>"; };
 		17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Imgur.swift; sourceTree = "<group>"; };
 		17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Imgur.swift; sourceTree = "<group>"; };
@@ -264,6 +265,14 @@
 			name = Configuration;
 			path = dependency/git/xenomorph/source/Configuration;
 			sourceTree = SOURCE_ROOT;
+		};
+		17FD0329543B94DE438EAFE7 /* documentation */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0AA0C2CEC577DE61CDCD /* asset */,
+			);
+			path = documentation;
+			sourceTree = "<group>";
 		};
 		17FD033E64E9EA7FFEBADB38 /* product */ = {
 			isa = PBXGroup;
@@ -436,6 +445,14 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		17FD0AA0C2CEC577DE61CDCD /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0CCE8AD5E4EB7DA5820B /* gifox-oauth.png */,
+			);
+			path = asset;
+			sourceTree = "<group>";
+		};
 		17FD0B4F7D568B910273DDAD /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,12 +519,13 @@
 			isa = PBXGroup;
 			children = (
 				17FD04A551C007FDEBC06469 /* accessory */,
+				17FD09EAD2C0B096F2B1D55C /* build */,
 				17FD04E454EDAB0C31F3BE5E /* dependency */,
+				17FD0329543B94DE438EAFE7 /* documentation */,
 				17FD033E64E9EA7FFEBADB38 /* product */,
 				17FD0546BE45D13B08CFB1C9 /* source */,
 				17FD0B4F7D568B910273DDAD /* test */,
 				17FD0A879532D717634C832F /* .travis.yml */,
-				17FD09EAD2C0B096F2B1D55C /* build */,
 			);
 			sourceTree = "<group>";
 		};
