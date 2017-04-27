@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -696,7 +696,7 @@
                                 <color key="fillColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </box>
                             <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="ekB-Ww-QEe">
-                                <rect key="frame" x="254" y="296" width="32" height="32"/>
+                                <rect key="frame" x="254" y="295" width="32" height="32"/>
                             </progressIndicator>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D3O-Jl-Ai1">
                                 <rect key="frame" x="14" y="13" width="82" height="32"/>
@@ -737,11 +737,83 @@ Gw
             <objects>
                 <viewController id="uDg-xj-e4D" customClass="MainViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="moL-04-5cF">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="167"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-Sg-ygx">
+                                <rect key="frame" x="148" y="125" width="232" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ZY0-jQ-kWU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="bDz-Sa-26u" name="value" keyPath="values.access.key" id="kcM-jy-6xb">
+                                        <dictionary key="options">
+                                            <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpE-bB-IZK">
+                                <rect key="frame" x="18" y="64" width="124" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="right" title="Redirect url:" id="0iX-9b-e4l">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pi-YP-ri8">
+                                <rect key="frame" x="18" y="96" width="124" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="right" title="Access secret:" id="ldl-QA-wU6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55D-MX-Tg6">
+                                <rect key="frame" x="148" y="61" width="232" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="hwz-q1-0Ey">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="bDz-Sa-26u" name="value" keyPath="values.redirectUrl" id="IYf-e9-nz8">
+                                        <dictionary key="options">
+                                            <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPH-x2-vv2">
+                                <rect key="frame" x="18" y="128" width="124" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9mc-a8-dbl"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="right" title="Access key:" id="kWe-4E-Lgx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk5-uH-cpo">
+                                <rect key="frame" x="148" y="93" width="232" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="JLu-MB-yND">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="bDz-Sa-26u" name="value" keyPath="values.access.secret" id="FYN-BA-MMR">
+                                        <dictionary key="options">
+                                            <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s9F-Y6-kIx">
-                                <rect key="frame" x="151" y="82" width="98" height="32"/>
+                                <rect key="frame" x="142" y="13" width="98" height="32"/>
                                 <buttonCell key="cell" type="push" title="Authorise" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vcz-Vb-L7L">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -752,14 +824,38 @@ Gw
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="s9F-Y6-kIx" firstAttribute="centerY" secondItem="moL-04-5cF" secondAttribute="centerY" id="J7j-ip-cQe"/>
-                            <constraint firstItem="s9F-Y6-kIx" firstAttribute="centerX" secondItem="moL-04-5cF" secondAttribute="centerX" id="WCJ-T7-Z50"/>
+                            <constraint firstAttribute="bottom" secondItem="s9F-Y6-kIx" secondAttribute="bottom" constant="20" symbolic="YES" id="2yT-Ch-U1N"/>
+                            <constraint firstItem="bUj-Sg-ygx" firstAttribute="leading" secondItem="EPH-x2-vv2" secondAttribute="trailing" constant="8" id="7us-gh-FMX"/>
+                            <constraint firstItem="6Pi-YP-ri8" firstAttribute="trailing" secondItem="EPH-x2-vv2" secondAttribute="trailing" id="Kj8-Xn-FPF"/>
+                            <constraint firstItem="55D-MX-Tg6" firstAttribute="top" secondItem="kk5-uH-cpo" secondAttribute="bottom" constant="10" symbolic="YES" id="Qem-YW-zYt"/>
+                            <constraint firstItem="6Pi-YP-ri8" firstAttribute="width" secondItem="EPH-x2-vv2" secondAttribute="width" id="T1m-WO-ptC"/>
+                            <constraint firstItem="EPH-x2-vv2" firstAttribute="baseline" secondItem="bUj-Sg-ygx" secondAttribute="baseline" id="Tkg-bc-NrI"/>
+                            <constraint firstItem="kk5-uH-cpo" firstAttribute="trailing" secondItem="bUj-Sg-ygx" secondAttribute="trailing" id="XGB-2Y-qk6"/>
+                            <constraint firstItem="6Pi-YP-ri8" firstAttribute="baseline" secondItem="kk5-uH-cpo" secondAttribute="baseline" id="bZ3-88-OFB"/>
+                            <constraint firstItem="kk5-uH-cpo" firstAttribute="leading" secondItem="bUj-Sg-ygx" secondAttribute="leading" id="c81-Cp-hXn"/>
+                            <constraint firstItem="qpE-bB-IZK" firstAttribute="width" secondItem="6Pi-YP-ri8" secondAttribute="width" id="fda-U4-okH"/>
+                            <constraint firstItem="55D-MX-Tg6" firstAttribute="leading" secondItem="kk5-uH-cpo" secondAttribute="leading" id="iNS-kh-Mfa"/>
+                            <constraint firstItem="EPH-x2-vv2" firstAttribute="leading" secondItem="moL-04-5cF" secondAttribute="leading" constant="20" id="iVR-4t-l8t"/>
+                            <constraint firstItem="bUj-Sg-ygx" firstAttribute="top" secondItem="moL-04-5cF" secondAttribute="top" constant="20" id="jZf-wi-i4H"/>
+                            <constraint firstItem="s9F-Y6-kIx" firstAttribute="leading" secondItem="55D-MX-Tg6" secondAttribute="leading" id="nXS-kl-Kb3"/>
+                            <constraint firstItem="qpE-bB-IZK" firstAttribute="baseline" secondItem="55D-MX-Tg6" secondAttribute="baseline" id="ogO-97-g7H"/>
+                            <constraint firstItem="qpE-bB-IZK" firstAttribute="trailing" secondItem="6Pi-YP-ri8" secondAttribute="trailing" id="sLe-iH-tcc"/>
+                            <constraint firstItem="55D-MX-Tg6" firstAttribute="trailing" secondItem="kk5-uH-cpo" secondAttribute="trailing" id="sUa-mm-aSb"/>
+                            <constraint firstAttribute="trailing" secondItem="bUj-Sg-ygx" secondAttribute="trailing" constant="20" id="vG2-KW-oeb"/>
+                            <constraint firstItem="s9F-Y6-kIx" firstAttribute="top" secondItem="55D-MX-Tg6" secondAttribute="bottom" constant="20" id="wml-of-PcC"/>
+                            <constraint firstItem="kk5-uH-cpo" firstAttribute="top" secondItem="bUj-Sg-ygx" secondAttribute="bottom" constant="10" symbolic="YES" id="yQm-d6-rey"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accessKey" destination="bUj-Sg-ygx" id="IOQ-Sn-Ppv"/>
+                        <outlet property="accessSecret" destination="kk5-uH-cpo" id="tCp-km-dyD"/>
+                        <outlet property="redirectUrl" destination="55D-MX-Tg6" id="Rld-Vt-H4m"/>
+                    </connections>
                 </viewController>
                 <customObject id="Dt5-34-v3m" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="bDz-Sa-26u"/>
             </objects>
-            <point key="canvasLocation" x="75" y="523"/>
+            <point key="canvasLocation" x="75" y="506.5"/>
         </scene>
     </scenes>
 </document>
