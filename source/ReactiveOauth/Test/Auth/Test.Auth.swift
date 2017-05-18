@@ -22,6 +22,7 @@ internal class AuthTestCase: TestCase
 
         oauth.reactive.authorised.observe(Observer(
             value: { (credential: Credential, email: Email) in
+                expect(email).toNot(beEmpty())
 
                 // Swift.print("Successfully authorised \(type):", credential)
 
@@ -53,6 +54,7 @@ internal class AuthTestCase: TestCase
 
         reoauth.reactive.reauthorised.observe(Observer(
             value: { (credential: Credential, email: Email) in
+                expect(email).toNot(beEmpty())
                 expect(credential.refreshToken).notTo(beNil())
                 expect(credential.expireDate).notTo(beNil())
                 expectation.fulfill()

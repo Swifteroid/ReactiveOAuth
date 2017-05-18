@@ -24,7 +24,7 @@ internal class OauthFactory: AuthFactory
             detalisator = DropboxDetalisator()
         } else if self.type == .google {
             parameters = ["access_type": "offline", "approval_prompt": "force"]
-            scope = "https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.metadata.readonly"
+            scope = "https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/userinfo.email"
             configuration = Google.configure(access: self.configuration.access, url: self.configuration.url, scope: scope, parameters: parameters)
             detalisator = GoogleDetalisator()
         } else if self.type == .imgur {

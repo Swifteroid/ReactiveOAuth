@@ -13,7 +13,7 @@ internal class DropboxDetalisator: ReactiveOauth.DropboxDetalisator<Email>
 internal class GoogleDetalisator: ReactiveOauth.GoogleDetalisator<Email>
 {
     override internal func detail(json: JSON) {
-        self.succeed(json["user"]["emailAddress"].stringValue)
+        self.succeed(json["email"].stringValue)
     }
 }
 

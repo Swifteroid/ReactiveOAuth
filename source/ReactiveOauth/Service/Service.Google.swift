@@ -1,10 +1,14 @@
 open class Google: Service
 {
+    
+    /*
+    Todo: this is wrong, this should not have anything to do with drive api. If this gets changed to standard about
+    */
     override open class var url: Url {
         return Url(
             authorise: "https://accounts.google.com/o/oauth2/auth",
             token: "https://accounts.google.com/o/oauth2/token",
-            detail: "https://www.googleapis.com/drive/v3/about"
+            detail: "https://www.googleapis.com/oauth2/v1/tokeninfo"
         )
     }
 
