@@ -39,6 +39,7 @@
 		17FD0CC5F57DAC8810453C72 /* Extension.OauthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD58C00C5ED557D4E0E /* Extension.OauthSwift.swift */; };
 		17FD0DDC3264E156D19C5E48 /* Detalisator.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */; };
 		17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */; };
+		17FD0E1563FB8F765AE005C1 /* Test.Auth.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */; };
 		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
 		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
 		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
@@ -160,6 +161,7 @@
 		17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Dropbox.swift; sourceTree = "<group>"; };
 		17FD06FEECC656D09B33CE61 /* Test.Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.swift; sourceTree = "<group>"; };
 		17FD070F1A6C9BABBD88DC9F /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = Carthage/Build/Mac/Fakery.framework; sourceTree = SOURCE_ROOT; };
+		17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Error.swift; sourceTree = "<group>"; };
 		17FD075B8EF15C5909CAE74A /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Configuration.swift; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 				17FD06FEECC656D09B33CE61 /* Test.Auth.swift */,
 				17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */,
 				17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */,
+				17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */,
 				17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */,
 				17FD05FE2548EF8C4666D685 /* Test.Auth.Imgur.swift in Sources */,
+				17FD0E1563FB8F765AE005C1 /* Test.Auth.Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
