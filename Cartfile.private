@@ -1,2 +1,3 @@
-github "quick/nimble" ~> 5.0
 github "alisoftware/ohhttpstubs" ~> 6.0
+github "quick/nimble" ~> 5.0
+github "vadymmarkov/fakery" ~> 2.0
