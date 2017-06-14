@@ -42,6 +42,8 @@
 		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
 		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
 		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
+		E60BFB921F078DA700AFF01E /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0F4CE0236E78F9D8AA87 /* OHHTTPStubs.framework */; };
+		E60BFB931F078DAF00AFF01E /* OHHTTPStubs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0F4CE0236E78F9D8AA87 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E65299431E731FE5003E765D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD06492F59E6524373ED16 /* ReactiveSwift.framework */; };
 		E65299441E731FEB003E765D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0BAD206A792F587A5D0B /* Result.framework */; };
 		E65299451E731FF1003E765D /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0962CF353A214002C83A /* OAuthSwift.framework */; };
@@ -102,6 +104,7 @@
 				E659E4571EC5044D0060C9FC /* Alamofire.framework in Embed Frameworks */,
 				E659E4581EC5044D0060C9FC /* Nimble.framework in Embed Frameworks */,
 				E659E4591EC5044D0060C9FC /* OAuthSwift.framework in Embed Frameworks */,
+				E60BFB931F078DAF00AFF01E /* OHHTTPStubs.framework in Embed Frameworks */,
 				E659E45A1EC5044D0060C9FC /* ReactiveSwift.framework in Embed Frameworks */,
 				E659E45B1EC5044D0060C9FC /* Result.framework in Embed Frameworks */,
 				E659E45C1EC5044D0060C9FC /* SwiftyJSON.framework in Embed Frameworks */,
@@ -142,6 +145,7 @@
 		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
 		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
 		17FD034571C02A3E54841334 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
+		17FD03790F52DF233F3CCB89 /* OHHTTPStubs.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = OHHTTPStubs.framework.dSYM; path = Carthage/Build/Mac/OHHTTPStubs.framework.dSYM; sourceTree = SOURCE_ROOT; };
 		17FD03B6EAF6773260636E22 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 		17FD041E6AA9B7B72942E891 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 		17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 		17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.swift; sourceTree = "<group>"; };
 		17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Path.swift; sourceTree = "<group>"; };
 		17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Google.swift; sourceTree = "<group>"; };
+		17FD0F4CE0236E78F9D8AA87 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		17FD0F8B73E21CE56E6EAE7C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
 		17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Dropbox.swift; sourceTree = "<group>"; };
@@ -212,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E659E4551EC504300060C9FC /* Nimble.framework in Frameworks */,
+				E60BFB921F078DA700AFF01E /* OHHTTPStubs.framework in Frameworks */,
 				17FD02E787A8E701AAC3D124 /* ReactiveOauth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +358,7 @@
 				17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */,
 				17FD0560A5793175F9DE6A86 /* Nimble.framework */,
 				17FD0962CF353A214002C83A /* OAuthSwift.framework */,
+				17FD0F4CE0236E78F9D8AA87 /* OHHTTPStubs.framework */,
 				17FD06492F59E6524373ED16 /* ReactiveSwift.framework */,
 				17FD0BAD206A792F587A5D0B /* Result.framework */,
 				17FD0BC2C261089E48C99AE1 /* SwiftyJSON.framework */,
@@ -468,6 +475,7 @@
 				17FD075B8EF15C5909CAE74A /* Alamofire.framework.dSYM */,
 				17FD0E508462AC8AEFE3A3F6 /* Nimble.framework.dSYM */,
 				17FD0BF58014D4F20C866C2A /* OAuthSwift.framework.dSYM */,
+				17FD03790F52DF233F3CCB89 /* OHHTTPStubs.framework.dSYM */,
 				17FD0C9A99524DC3F0FCA22A /* ReactiveSwift.framework.dSYM */,
 				17FD0F8B73E21CE56E6EAE7C /* Result.framework.dSYM */,
 				17FD0C6CDE4A27B0BA503C91 /* SwiftyJSON.framework.dSYM */,
@@ -744,6 +752,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 			};
 			name = Debug;
 		};
@@ -751,6 +763,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 			};
 			name = Release;
 		};
