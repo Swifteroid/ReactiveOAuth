@@ -32,16 +32,14 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
             "refresh_token": token,
             "grant_type": "refresh_token"]
 
-        // Todo: must have a proper error on failed map… 
-
         Alamofire.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
             .map({ JSON(data: $0) })
-            .mapError({ Error.unknown(description: $0.description) })
+            .mapError({ Error.request(description: $0.error.localizedDescription) })
             .attemptMap({
                 if let accessToken: String = $0["access_token"].string, let expiresIn: Double = $0["expires_in"].double {
                     return .success(Credential(accessToken: accessToken, refreshToken: token, expireDate: Date(timeInterval: expiresIn, since: Date())))
                 } else {
-                    return .failure(Error.unknown(description: "…"))
+                    return .failure(Error.response(description: "Could not retrieve access token and / or expire details from response."))
                 }
             })
             .observe(self.pipe.input)

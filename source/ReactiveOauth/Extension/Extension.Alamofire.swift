@@ -13,10 +13,10 @@ extension Reactive where Base: DataRequest
         let pipe: Pipe = Signal<Data, AnyError>.pipe()
 
         self.base.response(completionHandler: {
-            if let data: Data = $0.data {
-                pipe.input.send(value: data)
-            } else if let error: Swift.Error = $0.error {
+            if let error: Swift.Error = $0.error {
                 pipe.input.send(error: AnyError(error))
+            } else if let data: Data = $0.data {
+                pipe.input.send(value: data)
             }
             pipe.input.sendCompleted()
         })
