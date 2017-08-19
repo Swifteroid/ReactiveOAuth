@@ -36,6 +36,9 @@ open class Oauth: OauthProtocol, ReactiveExtensionsProvider
             urlHandler: UrlHandler(webView: webView)
         )
 
+        oauth.encodeCallbackURL = true
+        oauth.encodeCallbackURLQuery = false
+
         oauth.authorize(
             withCallbackURL: URL(string: configuration.url.callback)!,
             scope: configuration.scope ?? "",
