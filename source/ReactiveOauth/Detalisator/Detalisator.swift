@@ -17,8 +17,7 @@ open class Detalisator<Detail>: DetalisatorProtocol
 
     // MARK: -
 
-    fileprivate typealias Pipe = (output: Signal<Detail, Error>, input: Observer<Detail, Error>)
-    fileprivate let pipe: Pipe = Signal<Detail, Error>.pipe()
+    fileprivate let pipe = Signal<Detail, Error>.pipe()
 
     open func detail(credential: Credential) {
         abort()

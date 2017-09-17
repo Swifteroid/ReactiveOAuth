@@ -19,8 +19,7 @@ open class DetailedAuth<Detail>: DetailedAuthReactiveExtensionsProvider
 
     // MARK: -
 
-    internal typealias Pipe = (output: Signal<(Credential, Detail), Error>, input: Observer<(Credential, Detail), Error>)
-    internal let pipe: Pipe = Signal<(Credential, Detail), Error>.pipe()
+    internal let pipe = Signal<(Credential, Detail), Error>.pipe()
 }
 
 // MARK: -

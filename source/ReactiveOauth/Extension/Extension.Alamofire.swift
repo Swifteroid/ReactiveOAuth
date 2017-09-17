@@ -9,8 +9,7 @@ extension DataRequest: ReactiveExtensionsProvider
 extension Reactive where Base: DataRequest
 {
     public var responded: Signal<Data, AnyError> {
-        typealias Pipe = (output: Signal<Data, AnyError>, input: Observer<Data, AnyError>)
-        let pipe: Pipe = Signal<Data, AnyError>.pipe()
+        let pipe = Signal<Data, AnyError>.pipe()
 
         self.base.response(completionHandler: {
             if let error: Swift.Error = $0.error {

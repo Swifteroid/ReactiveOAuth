@@ -19,8 +19,7 @@ open class Oauth: OauthProtocol, ReactiveExtensionsProvider
 
     // MARK: -
 
-    fileprivate typealias Pipe = (output: Signal<Credential, Error>, input: Observer<Credential, Error>)
-    fileprivate let pipe: Pipe = Signal<Credential, Error>.pipe()
+    fileprivate let pipe = Signal<Credential, Error>.pipe()
 
     private var oauth: OAuth2Swift?
 

@@ -23,7 +23,7 @@ internal class AuthErrorTestCase: TestCase
 
         stub(condition: { _ in true }, response: { _ in OHHTTPStubsResponse(error: error) })
 
-        reoauth.reactive.reauthorised.observe(Observer(failed: {
+        reoauth.reactive.reauthorised.observe(Signal.Observer(failed: {
             expect($0.description).to(equal(error.localizedDescription))
             expectation.fulfill()
         }))

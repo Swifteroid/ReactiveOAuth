@@ -18,7 +18,7 @@ internal class MainViewController: NSViewController
         let detalisator: Detalisator<String> = ImgurDetalisator()
         let oauth: DetailedOauth<String> = DetailedOauth(oauth: Oauth(configuration: configuration), detalisator: detalisator)
 
-        oauth.reactive.authorised.observe(Observer(
+        oauth.reactive.authorised.observe(Signal.Observer(
             value: { (credential: Credential, string: String) in
                 Swift.print(credential, string)
             },

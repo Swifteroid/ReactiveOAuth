@@ -15,7 +15,7 @@ open class DetailedReoauth<Detail>: DetailedAuth<Detail>, ReoauthProtocol
 
     public func reauthorise() {
         self.reoauth.reactive.reauthorised.zip(with: self.detalisator.reactive.detailed).observe(self.pipe.input)
-        self.reoauth.reactive.reauthorised.observe(Observer(value: { self.detalisator.detail(credential: $0) }))
+        self.reoauth.reactive.reauthorised.observe(Signal.Observer(value: { self.detalisator.detail(credential: $0) }))
         self.reoauth.reauthorise()
     }
 }

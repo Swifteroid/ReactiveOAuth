@@ -18,8 +18,7 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
 
     // MARK: -
 
-    fileprivate typealias Pipe = (output: Signal<Credential, Error>, input: Observer<Credential, Error>)
-    fileprivate let pipe: Pipe = Signal<Credential, Error>.pipe()
+    fileprivate let pipe = Signal<Credential, Error>.pipe()
 
     // MARK: -
 

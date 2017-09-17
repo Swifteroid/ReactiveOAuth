@@ -20,7 +20,7 @@ internal class AuthTestCase: TestCase
         let window: AuthWindow = AuthWindow(view: view)
         let expectation: XCTestExpectation = self.expectation
 
-        oauth.reactive.authorised.observe(Observer(
+        oauth.reactive.authorised.observe(Signal.Observer(
             value: { (credential: Credential, email: Email) in
                 expect(email).toNot(beEmpty())
 
@@ -52,7 +52,7 @@ internal class AuthTestCase: TestCase
         let reoauth: DetailedReoauth = ReoauthFactory(type: type, configuration: configuration, token: token).construct()!
         let expectation: XCTestExpectation = self.expectation
 
-        reoauth.reactive.reauthorised.observe(Observer(
+        reoauth.reactive.reauthorised.observe(Signal.Observer(
             value: { (credential: Credential, email: Email) in
                 expect(email).toNot(beEmpty())
                 expect(credential.refreshToken).notTo(beNil())
