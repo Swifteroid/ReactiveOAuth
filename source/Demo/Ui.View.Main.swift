@@ -4,7 +4,7 @@ import ReactiveOauth
 import ReactiveSwift
 import SwiftyJSON
 
-internal class MainViewController: NSViewController
+internal class MainViewController: NSViewController, Oauthorisable
 {
     @IBOutlet private weak var service: NSPopUpButton!
     @IBOutlet private weak var accessKey: NSTextField!

@@ -1,5 +1,8 @@
 import AppKit
 import OAuthSwift
+import ReactiveCocoa
+import ReactiveSwift
+import Result
 import WebKit
 
 open class OauthViewController: NSViewController
@@ -53,7 +56,14 @@ open class OauthViewController: NSViewController
     }
 }
 
-extension NSViewController
+// MARK: -
+
+public protocol Oauthorisable: class
+{
+    func authorise<Detail>(oauthViewController: OauthViewController, oauth: DetailedOauth<Detail>)
+}
+
+extension Oauthorisable where Self: NSViewController
 {
     public func authorise<Detail>(oauthViewController: OauthViewController, oauth: DetailedOauth<Detail>) {
 
@@ -62,19 +72,9 @@ extension NSViewController
         _ = oauthViewController.view
         oauthViewController.representedObject = oauth
 
-        // Todo: add during controller's lifetime?
-
-        oauth.oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
-            oauthViewController?.progressIndicator.startAnimation(nil)
-        })
-
-        oauth.detalisator.reactive.detailed.observe({ [weak oauthViewController] (_) in
-            oauthViewController?.progressIndicator.stopAnimation(nil)
-        })
-
-        oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
-            oauthViewController?.dismissViewController(oauthViewController!)
-        })
+        oauthViewController.reactive.makeBindingTarget({ $0.0.progressIndicator.startAnimation(nil) }) <~ oauth.oauth.reactive.authorised.map({ _ in () }).flatMapError({ _ in .never })
+        oauthViewController.reactive.makeBindingTarget({ $0.0.progressIndicator.stopAnimation(nil) }) <~ oauth.detalisator.reactive.detailed.map({ _ in () }).flatMapError({ _ in .never })
+        oauthViewController.reactive.makeBindingTarget({ $0.0.dismissViewController($0.0) }) <~ oauth.reactive.authorised.map({ _ in () }).flatMapError({ _ in .never })
 
         self.presentViewControllerAsSheet(oauthViewController)
     }
