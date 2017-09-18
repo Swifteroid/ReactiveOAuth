@@ -62,7 +62,7 @@ extension NSViewController
         _ = oauthViewController.view
         oauthViewController.representedObject = oauth
 
-        // Todo: add during controller's lifetime? 
+        // Todo: add during controller's lifetime?
 
         oauth.oauth.reactive.authorised.observe({ [weak oauthViewController] (_) in
             oauthViewController?.progressIndicator.startAnimation(nil)

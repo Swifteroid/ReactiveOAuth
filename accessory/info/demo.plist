@@ -26,5 +26,10 @@
 	<string>main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>Path</key>
+	<dict>
+		<key>Root</key>
+		<string>$(SRCROOT)</string>
+	</dict>
 </dict>
 </plist>

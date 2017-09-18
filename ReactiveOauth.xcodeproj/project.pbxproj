@@ -16,6 +16,7 @@
 		17FD0439340A066B3C56A17A /* Utility.Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */; };
 		17FD04C4920A8B62784BB226 /* Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */; };
 		17FD04F25EE85DD88C04318C /* Auth.Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BCB244F5CFFDDD9D70D /* Auth.Oauth.swift */; };
+		17FD054767BEDA3913BFC47A /* Utility.Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */; };
 		17FD058348DD4CE7F4E60978 /* Auth.Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */; };
 		17FD059BBFA7D93B498E7A29 /* Ui.View.Oauth.WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D38F2E4A84A97049D94 /* Ui.View.Oauth.WebView.swift */; };
 		17FD05A578C2FA77A9E56EAD /* Auth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */; };
@@ -31,12 +32,16 @@
 		17FD087BED0546AAC8907DEE /* Detalisator.Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */; };
 		17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */; };
 		17FD0894DE12C29091865FFD /* Auth.Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00A1F452CFD1054E2A71 /* Auth.Access.swift */; };
+		17FD0962A16C8A7B78613719 /* Auth.Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01101080E25017FA2E3A /* Auth.Factory.swift */; };
 		17FD096A130E9190E608FD8D /* Ui.View.Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */; };
+		17FD0A704CD90B69C8D5A0A8 /* Utility.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */; };
 		17FD0AC8126E701358728BC5 /* Test.Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD014C6BA2809051C0ED61 /* Test.Case.swift */; };
 		17FD0AFE79A607EB2D24C2EE /* Ui.View.Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0E4EA7DB99A1B3AB346C /* Ui.View.Oauth.swift */; };
 		17FD0B44FE059FB682B2D06A /* Service.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */; };
 		17FD0CA74383997671601481 /* Auth.Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ABC84AB5B618183F93F /* Auth.Type.swift */; };
 		17FD0CC5F57DAC8810453C72 /* Extension.OauthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD58C00C5ED557D4E0E /* Extension.OauthSwift.swift */; };
+		17FD0CC7A05B0EAA6AF3E438 /* Auth.Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */; };
+		17FD0D08DB860DF2F18C4C63 /* Auth.Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ABC84AB5B618183F93F /* Auth.Type.swift */; };
 		17FD0DDC3264E156D19C5E48 /* Detalisator.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */; };
 		17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */; };
 		17FD0E1563FB8F765AE005C1 /* Test.Auth.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */; };
@@ -723,6 +728,11 @@
 			files = (
 				17FD03BDDCDE257112386A79 /* Application.Entrypoint.swift in Sources */,
 				17FD096A130E9190E608FD8D /* Ui.View.Main.swift in Sources */,
+				17FD0962A16C8A7B78613719 /* Auth.Factory.swift in Sources */,
+				17FD0CC7A05B0EAA6AF3E438 /* Auth.Detalisator.swift in Sources */,
+				17FD0D08DB860DF2F18C4C63 /* Auth.Type.swift in Sources */,
+				17FD054767BEDA3913BFC47A /* Utility.Path.swift in Sources */,
+				17FD0A704CD90B69C8D5A0A8 /* Utility.Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
