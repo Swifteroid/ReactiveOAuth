@@ -1,23 +1,31 @@
 import Foundation
 import OAuthSwift
+import ReactiveCocoa
 import ReactiveSwift
 import WebKit
 
 public protocol OauthProtocol
 {
     var configuration: Oauth.Configuration { get }
+
+    /// Starts authorisation with the specified webview.
+
     func authorise(webView: WKWebView)
+
+    /// Cancels started authorisation.
+
+    func cancel()
 }
 
-open class Oauth: OauthProtocol, ReactiveExtensionsProvider
+open class Oauth: NSObject, OauthProtocol
 {
-    open let configuration: Configuration
-
     public init(configuration: Configuration) {
         self.configuration = configuration
     }
 
-    // MARK: -
+    open let configuration: Configuration
+
+    // Signals authorisation success and error events.
 
     fileprivate let pipe = Signal<Credential, Error>.pipe()
 
@@ -26,6 +34,8 @@ open class Oauth: OauthProtocol, ReactiveExtensionsProvider
     // MARK: -
 
     public func authorise(webView: WKWebView) {
+        guard self.oauth == nil else { return }
+
         let oauth: OAuth2Swift = OAuth2Swift(
             consumerKey: configuration.access.key,
             consumerSecret: configuration.access.secret,
@@ -41,15 +51,24 @@ open class Oauth: OauthProtocol, ReactiveExtensionsProvider
         oauth.authorize(
             withCallbackURL: URL(string: configuration.url.callback)!,
             scope: configuration.scope ?? "",
-            state: configuration.state ?? "default",
+            state: configuration.state ?? NSUUID().uuidString,
             parameters: configuration.parameters ?? [:],
-            success: { [weak self] (credential: OAuthSwiftCredential, _, _) in self?.pipe.input.send(value: Credential(credential: credential)) },
-            failure: { [weak self] (error: OAuthSwiftError) in self?.pipe.input.send(error: Error.unknown(description: error.description)) }
+            success: { [weak self] (credential: OAuthSwiftCredential, _, _) in
+                self?.pipe.input.send(value: Credential(credential: credential))
+                self?.oauth = nil
+            },
+            failure: { [weak self] (error: OAuthSwiftError) in
+                self?.pipe.input.send(error: Error.unknown(description: error.description))
+                self?.oauth = nil
+            }
         )
 
-        // Todo: shouldn't we unreference it once finished or use some smarter capturing withing the closure?
-
         self.oauth = oauth
+    }
+
+    public func cancel() {
+        self.oauth?.cancel()
+        self.oauth = nil
     }
 }
 

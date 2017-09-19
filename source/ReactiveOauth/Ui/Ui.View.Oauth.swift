@@ -43,6 +43,12 @@ open class OauthViewController: NSViewController
         }
     }
 
+    open func cancel() {
+        if let oauth: OauthProtocol = self.representedObject as! OauthProtocol? {
+            oauth.cancel()
+        }
+    }
+
     // MARK: –
 
     override open func loadView() {
@@ -53,6 +59,10 @@ open class OauthViewController: NSViewController
 
     override open func viewDidAppear() {
         self.authorise()
+    }
+
+    open override func viewDidDisappear() {
+        self.cancel()
     }
 }
 
@@ -67,7 +77,8 @@ extension Oauthorisable where Self: NSViewController
 {
     public func authorise<Detail>(oauthViewController: OauthViewController, oauth: DetailedOauth<Detail>) {
 
-        // Little hack to ensure the view and outlets are loaded.
+        // Little hack to ensure the view and outlets are loaded. Todo: this whole approach is shitty, we must
+        // todo: do this inside `OauthViewController`, not here…
 
         _ = oauthViewController.view
         oauthViewController.representedObject = oauth

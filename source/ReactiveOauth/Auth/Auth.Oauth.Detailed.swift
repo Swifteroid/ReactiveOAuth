@@ -1,4 +1,5 @@
 import Foundation
+import ReactiveCocoa
 import ReactiveSwift
 import WebKit
 
@@ -23,6 +24,10 @@ open class DetailedOauth<Detail>: DetailedAuth<Detail>, OauthProtocol
         self.oauth.reactive.authorised.zip(with: self.detalisator.reactive.detailed).observe(self.pipe.input)
         self.oauth.reactive.authorised.observe(Signal.Observer(value: { self.detalisator.detail(credential: $0) }))
         self.oauth.authorise(webView: webView)
+    }
+
+    public func cancel() {
+        self.oauth.cancel()
     }
 }
 
