@@ -7,6 +7,8 @@ public protocol DetailedAuthReactiveExtensionsProvider
     associatedtype DetailType
 }
 
+/// - todo: Review in Swift 4 to inherit from NSObject to enable ReactiveCocoa extensions…
+
 open class DetailedAuth<Detail>: DetailedAuthReactiveExtensionsProvider
 {
     public typealias DetailType = Detail
