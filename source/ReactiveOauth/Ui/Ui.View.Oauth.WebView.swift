@@ -33,7 +33,7 @@ open class OauthWebView: WKWebView
 
         // Use transparent background to make webview look more decent in the oauth view box.
 
-        if NSAppKitVersionNumber >= Double(NSAppKitVersionNumber10_12) {
+        if NSAppKitVersion.current.rawValue >= NSAppKitVersion.macOS10_12.rawValue {
             self.setValue(false, forKey: "drawsBackground")
         } else {
             self.setValue(true, forKey: "drawsTransparentBackground")
