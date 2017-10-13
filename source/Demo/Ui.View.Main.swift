@@ -45,8 +45,8 @@ internal class MainViewController: NSViewController, Oauthorisable
         let access: Access = Access(key: self.accessKey.stringValue, secret: self.accessSecret.stringValue)
         let oauth: DetailedOauth<Email> = OauthFactory(type: self.type, access: access, url: self.url.stringValue).construct()!
 
-        let storyboard: NSStoryboard = NSStoryboard(name: "main", bundle: Bundle.main)
-        let controller: OauthViewController = storyboard.instantiateController(withIdentifier: "OauthViewController") as! OauthViewController
+        let storyboard: NSStoryboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "main"), bundle: Bundle.main)
+        let controller: OauthViewController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "OauthViewController")) as! OauthViewController
 
         oauth.reactive.authorised.observe(Signal.Observer(
             value: { (credential: Credential, string: String) in

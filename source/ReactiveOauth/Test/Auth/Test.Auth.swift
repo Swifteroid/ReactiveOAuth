@@ -26,7 +26,7 @@ internal class AuthTestCase: TestCase
 
                 // Swift.print("Successfully authorised \(type):", credential)
 
-                type(of: self).token = credential.refreshToken
+                Swift.type(of: self).token = credential.refreshToken
 
                 if self.responds(to: Selector(("testReoauth"))) {
                     expect(credential.refreshToken).toNot(beNil())
@@ -47,7 +47,7 @@ internal class AuthTestCase: TestCase
 
     internal func testReoauth(type: AuthType) {
         guard let configuration: ConfigurationUtility.Configuration = ConfigurationUtility.configuration(for: type) else { return self.skip(with: "Missing configuration for \(type) auth type.") }
-        guard let token: String = type(of: self).token else { return self.skip(with: "Missing token for \(type) auth type, make sure oauth test is run first.") }
+        guard let token: String = Swift.type(of: self).token else { return self.skip(with: "Missing token for \(type) auth type, make sure oauth test is run first.") }
 
         let reoauth: DetailedReoauth = ReoauthFactory(type: type, configuration: configuration, token: token).construct()!
         let expectation: XCTestExpectation = self.expectation
@@ -101,7 +101,7 @@ internal class AuthWindow: NSWindow
 {
     internal convenience init(view: NSView) {
         self.init(contentRect: NSRect(x: 0, y: 0, width: 400, height: 600), styleMask: .titled, backing: .buffered, defer: true)
-        self.level = Int(CGWindowLevelForKey(.modalPanelWindow))
+        self.level = .modalPanel
         self.contentView = view
     }
 

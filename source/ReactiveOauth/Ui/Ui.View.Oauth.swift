@@ -83,9 +83,9 @@ extension Oauthorisable where Self: NSViewController
         _ = oauthViewController.view
         oauthViewController.representedObject = oauth
 
-        oauthViewController.reactive.makeBindingTarget({ $0.0.progressIndicator.startAnimation(nil) }) <~ oauth.oauth.reactive.authorised.map({ _ in () }).flatMapError({ _ in .never })
-        oauthViewController.reactive.makeBindingTarget({ $0.0.progressIndicator.stopAnimation(nil) }) <~ oauth.detalisator.reactive.detailed.map({ _ in () }).flatMapError({ _ in .never })
-        oauthViewController.reactive.makeBindingTarget({ $0.0.dismissViewController($0.0) }) <~ oauth.reactive.authorised.map({ _ in () }).flatMapError({ _ in .never })
+        oauthViewController.reactive.makeBindingTarget({ (base, _) in base.progressIndicator.startAnimation(nil) }) <~ oauth.oauth.reactive.authorised.map({ _ in }).flatMapError({ _ in .never })
+        oauthViewController.reactive.makeBindingTarget({ (base, _) in base.progressIndicator.stopAnimation(nil) }) <~ oauth.detalisator.reactive.detailed.map({ _ in }).flatMapError({ _ in .never })
+        oauthViewController.reactive.makeBindingTarget({ (base, _) in base.dismissViewController(base) }) <~ oauth.reactive.authorised.map({ _ in }).flatMapError({ _ in .never })
 
         self.presentViewControllerAsSheet(oauthViewController)
     }

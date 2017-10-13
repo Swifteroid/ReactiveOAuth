@@ -820,6 +820,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -833,6 +834,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
