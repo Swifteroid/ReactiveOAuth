@@ -10,7 +10,7 @@ open class ImgurDetalisator<Detail>: JsonDetalisator<Detail>
         // Todo: check for json errors…
 
         Alamofire.request(Imgur.url.detail, method: HTTPMethod.get, headers: headers).reactive.responded
-            .map({ JSON(data: $0) })
+            .attemptMap({ try JSON(data: $0) })
             .observe({ [weak self] in
                 if case .value(let value) = $0 {
                     self?.detail(json: value)

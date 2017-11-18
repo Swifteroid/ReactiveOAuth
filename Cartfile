@@ -1,4 +1,4 @@
 github "alamofire/alamofire" ~> 4.0
 github "oauthswift/oauthswift" "swift3"
-github "reactivecocoa/reactiveswift" ~> 2.0
-github "swiftyjson/swiftyjson" ~> 3.0
+github "reactivecocoa/reactiveswift" ~> 3.0.0
+github "swiftyjson/swiftyjson" ~> 4.0

@@ -32,7 +32,7 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
             "grant_type": "refresh_token"]
 
         Alamofire.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
-            .map({ JSON(data: $0) })
+            .attemptMap({ try JSON(data: $0) })
             .mapError({ Error.request(description: $0.error.localizedDescription) })
             .attemptMap({
                 if let accessToken: String = $0["access_token"].string, let expiresIn: Double = $0["expires_in"].double {

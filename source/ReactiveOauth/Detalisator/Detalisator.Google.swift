@@ -11,7 +11,7 @@ open class GoogleDetalisator<Detail>: JsonDetalisator<Detail>
         // Todo: check for json errors…
 
         Alamofire.request(Google.url.detail, method: HTTPMethod.get, parameters: parameters, headers: headers).reactive.responded
-            .map({ JSON(data: $0) })
+            .attemptMap({ try JSON(data: $0) })
             .observe({ [weak self] in
                 if case .value(let value) = $0 {
                     self?.detail(json: value)
