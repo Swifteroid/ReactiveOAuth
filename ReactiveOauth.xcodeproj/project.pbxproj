@@ -165,6 +165,7 @@
 		17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
 		17FD0560A5793175F9DE6A86 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Google.swift; sourceTree = "<group>"; };
+		17FD05C1F0F04A13061E2D4C /* ReactiveOauth.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = ReactiveOauth.podspec; sourceTree = "<group>"; };
 		17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
 		17FD06492F59E6524373ED16 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
 		17FD0685B98931A5F745152D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -560,6 +561,7 @@
 				17FD0546BE45D13B08CFB1C9 /* source */,
 				17FD0B4F7D568B910273DDAD /* test */,
 				17FD0A879532D717634C832F /* .travis.yml */,
+				17FD05C1F0F04A13061E2D4C /* ReactiveOauth.podspec */,
 			);
 			sourceTree = "<group>";
 		};
