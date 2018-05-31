@@ -1,4 +1,4 @@
 github "alisoftware/ohhttpstubs" ~> 6.0
 github "quick/nimble" ~> 7.0
-github "reactivecocoa/reactivecocoa" ~> 6.0
-github "vadymmarkov/fakery" ~> 2.0
+github "reactivecocoa/reactivecocoa" ~> 7.0
+github "vadymmarkov/fakery" ~> 3.0

@@ -302,14 +302,6 @@
 			path = documentation;
 			sourceTree = "<group>";
 		};
-		17FD033E64E9EA7FFEBADB38 /* product */ = {
-			isa = PBXGroup;
-			children = (
-				E6C047101EA14B170089F914 /* xcode */,
-			);
-			path = product;
-			sourceTree = "<group>";
-		};
 		17FD03679A023E6EF18B4CD6 /* info */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,7 +549,7 @@
 				17FD09EAD2C0B096F2B1D55C /* build */,
 				17FD04E454EDAB0C31F3BE5E /* dependency */,
 				17FD0329543B94DE438EAFE7 /* documentation */,
-				17FD033E64E9EA7FFEBADB38 /* product */,
+				E6C047101EA14B170089F914 /* product */,
 				17FD0546BE45D13B08CFB1C9 /* source */,
 				17FD0B4F7D568B910273DDAD /* test */,
 				17FD0A879532D717634C832F /* .travis.yml */,
@@ -565,14 +557,14 @@
 			);
 			sourceTree = "<group>";
 		};
-		E6C047101EA14B170089F914 /* xcode */ = {
+		E6C047101EA14B170089F914 /* product */ = {
 			isa = PBXGroup;
 			children = (
 				17FD0195020FC68CF3799E20 /* ReactiveOauth.framework */,
 				17FD0BBCF8608E589291BA99 /* ReactiveOauth - Test.xctest */,
 				E6C0470F1EA14B170089F914 /* Demo.app */,
 			);
-			name = xcode;
+			name = product;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -665,7 +657,7 @@
 				Base,
 			);
 			mainGroup = E635F48B1E72B9560050F449;
-			productRefGroup = E6C047101EA14B170089F914 /* xcode */;
+			productRefGroup = E6C047101EA14B170089F914 /* product */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
