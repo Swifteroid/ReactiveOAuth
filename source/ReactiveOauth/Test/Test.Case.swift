@@ -1,3 +1,4 @@
+import CoreLocation // Fakery needs this, but it doesn't get autolinked…
 import OHHTTPStubs
 import XCTest
 
