@@ -11,7 +11,7 @@ open class DetailedOauth<Detail>: DetailedAuth<Detail>, OauthProtocol
 
     // MARK: -
 
-    open let oauth: Oauth
+    public let oauth: Oauth
 
     public init(oauth: Oauth, detalisator: Detalisator<Detail>) {
         self.oauth = oauth

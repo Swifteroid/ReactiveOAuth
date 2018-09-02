@@ -10,7 +10,7 @@ public protocol ReoauthProtocol
 
 open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
 {
-    open let configuration: Configuration
+    public let configuration: Configuration
 
     public init(configuration: Configuration) {
         self.configuration = configuration

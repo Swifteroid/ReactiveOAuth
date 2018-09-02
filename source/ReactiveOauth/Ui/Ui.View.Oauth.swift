@@ -12,10 +12,13 @@ open class OauthViewController: NSViewController
 
     // MARK: -
 
-    open weak var webView: WKWebView! {
-        didSet {
-            self.webView?.navigationDelegate = self.webViewDelegate
-            self.webViewBox.contentView = self.webView ?? nil
+    open var webView: WKWebView! {
+        get {
+           return self.webViewBox.contentView as? WKWebView 
+        }
+        set {
+            newValue?.navigationDelegate = self.webViewDelegate
+            self.webViewBox.contentView = newValue
         }
     }
 

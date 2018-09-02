@@ -23,7 +23,7 @@ open class Oauth: NSObject, OauthProtocol
         self.configuration = configuration
     }
 
-    open let configuration: Configuration
+    public let configuration: Configuration
 
     // Signals authorisation success and error events.
 

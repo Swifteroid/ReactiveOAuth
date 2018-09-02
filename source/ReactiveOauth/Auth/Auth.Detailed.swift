@@ -13,7 +13,7 @@ open class DetailedAuth<Detail>: DetailedAuthReactiveExtensionsProvider
 {
     public typealias DetailType = Detail
 
-    open let detalisator: Detalisator<Detail>
+    public let detalisator: Detalisator<Detail>
 
     public init(detalisator: Detalisator<Detail>) {
         self.detalisator = detalisator

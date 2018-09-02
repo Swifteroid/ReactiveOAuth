@@ -4,7 +4,7 @@ import WebKit
 
 open class DetailedReoauth<Detail>: DetailedAuth<Detail>, ReoauthProtocol
 {
-    open let reoauth: Reoauth
+    public let reoauth: Reoauth
 
     public init(reoauth: Reoauth, detalisator: Detalisator<Detail>) {
         self.reoauth = reoauth
