@@ -513,10 +513,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1000;
 				TargetAttributes = {
 					E61003011E7318390065804C = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					E610030A1E73183A0065804C = {
@@ -525,6 +526,7 @@
 					};
 					E6C0470E1EA14B170089F914 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -676,7 +678,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -687,7 +689,8 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
