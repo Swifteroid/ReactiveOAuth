@@ -1,10 +1,10 @@
 import AppKit
 import Foundation
-import ReactiveOauth
+import ReactiveOAuth
 import ReactiveSwift
 import SwiftyJSON
 
-internal class MainViewController: NSViewController, Oauthorisable
+internal class MainViewController: NSViewController, OAuthorisable
 {
     @IBOutlet private weak var service: NSPopUpButton!
     @IBOutlet private weak var accessKey: NSTextField!
@@ -41,18 +41,18 @@ internal class MainViewController: NSViewController, Oauthorisable
         self.update()
     }
 
-    @IBAction private func handleOauthButtonAction(_ button: NSButton) {
+    @IBAction private func handleOAuthButtonAction(_ button: NSButton) {
         let access: Access = Access(key: self.accessKey.stringValue, secret: self.accessSecret.stringValue)
-        let oauth: DetailedOauth<Email> = OauthFactory(type: self.type, access: access, url: self.url.stringValue).construct()!
+        let oauth: DetailedOAuth<Email> = OAuthFactory(type: self.type, access: access, url: self.url.stringValue).construct()!
 
         let storyboard: NSStoryboard = NSStoryboard(name: "main", bundle: Bundle.main)
-        let controller: OauthViewController = storyboard.instantiateController(withIdentifier: "OauthViewController") as! OauthViewController
+        let controller: OAuthViewController = storyboard.instantiateController(withIdentifier: "OAuthViewController") as! OAuthViewController
 
         oauth.reactive.authorised.observe(Signal.Observer(
             value: { (credential: Credential, string: String) in
                 Swift.print(credential, string)
             },
-            failed: { (error: ReactiveOauth.Error) in
+            failed: { (error: ReactiveOAuth.Error) in
                 Swift.print(error.description)
             }
         ))

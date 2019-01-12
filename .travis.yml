@@ -18,4 +18,4 @@ install:
 before_script:
   - build/ci/build.sh
 script:
-  - travis_retry xcodebuild -workspace "ReactiveOauth.xcworkspace" -scheme "ReactiveOauth" build-for-testing test | xcpretty
+  - travis_retry xcodebuild -workspace "ReactiveOAuth.xcworkspace" -scheme "ReactiveOAuth" build-for-testing test | xcpretty

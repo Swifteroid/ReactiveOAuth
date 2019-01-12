@@ -3,7 +3,7 @@
         "access": {"key": null, "secret": null, "url": null},
         "credential": {"email": null, "password": null}
     },
-    "google-drive": {
+    "google": {
         "access": {"key": null, "secret": null, "url": null},
         "credential": {"email": null, "password": null}
     },

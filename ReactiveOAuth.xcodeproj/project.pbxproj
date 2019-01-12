@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17FD014CC235B5670C9C3BF9 /* Detalisator.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */; };
+		17FD01D372F015D578C505E5 /* Test.Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD06FEECC656D09B33CE61 /* Test.Auth.swift */; };
+		17FD035E37F0EF2E71AB5642 /* Auth.Reoauth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */; };
+		17FD03BDDCDE257112386A79 /* Application.Entrypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */; };
+		17FD03C8F836AD3A0D1C50FA /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FD0BF0C4EA9F980ED65DCD /* main.storyboard */; };
+		17FD0439340A066B3C56A17A /* Utility.Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */; };
+		17FD04C4920A8B62784BB226 /* Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */; };
+		17FD04F25EE85DD88C04318C /* Auth.OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BCB244F5CFFDDD9D70D /* Auth.OAuth.swift */; };
+		17FD054767BEDA3913BFC47A /* Utility.Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */; };
+		17FD058348DD4CE7F4E60978 /* Auth.Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */; };
+		17FD059BBFA7D93B498E7A29 /* Ui.View.OAuth.WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D38F2E4A84A97049D94 /* Ui.View.OAuth.WebView.swift */; };
+		17FD05A578C2FA77A9E56EAD /* Auth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */; };
+		17FD05FE2548EF8C4666D685 /* Test.Auth.Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */; };
+		17FD05FF591CA2389B1F7861 /* Auth.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00AAE3036885B768936C /* Auth.Error.swift */; };
+		17FD0605E4B1564EE3D1C85D /* Auth.OAuth.Detailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0B67BD3FCB9ED82841BA /* Auth.OAuth.Detailed.swift */; };
+		17FD0699B848B6D9F623422D /* Service.Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */; };
+		17FD06C36F9155A742C36EC3 /* Auth.Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01101080E25017FA2E3A /* Auth.Factory.swift */; };
+		17FD06E49F8A4F9A1F2BC74F /* Utility.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */; };
+		17FD06EE03CB72613A1DA869 /* Service.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */; };
+		17FD081D81484F55B66EB14C /* oauth in Resources */ = {isa = PBXBuildFile; fileRef = 17FD0101A918730138089192 /* oauth */; };
+		17FD083B2578DC20F08578BE /* Extension.Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */; };
+		17FD087BED0546AAC8907DEE /* Detalisator.Imgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */; };
+		17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */; };
+		17FD0894DE12C29091865FFD /* Auth.Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00A1F452CFD1054E2A71 /* Auth.Access.swift */; };
+		17FD0962A16C8A7B78613719 /* Auth.Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD01101080E25017FA2E3A /* Auth.Factory.swift */; };
+		17FD096A130E9190E608FD8D /* Ui.View.Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */; };
+		17FD0A704CD90B69C8D5A0A8 /* Utility.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */; };
+		17FD0AC8126E701358728BC5 /* Test.Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD014C6BA2809051C0ED61 /* Test.Case.swift */; };
+		17FD0AFE79A607EB2D24C2EE /* Ui.View.OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0E4EA7DB99A1B3AB346C /* Ui.View.OAuth.swift */; };
+		17FD0B44FE059FB682B2D06A /* Service.Dropbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */; };
+		17FD0CA74383997671601481 /* Auth.Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ABC84AB5B618183F93F /* Auth.Type.swift */; };
+		17FD0CC5F57DAC8810453C72 /* Extension.OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0BD58C00C5ED557D4E0E /* Extension.OAuthSwift.swift */; };
+		17FD0CC7A05B0EAA6AF3E438 /* Auth.Detalisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */; };
+		17FD0D08DB860DF2F18C4C63 /* Auth.Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ABC84AB5B618183F93F /* Auth.Type.swift */; };
+		17FD0DDC3264E156D19C5E48 /* Detalisator.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */; };
+		17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */; };
+		17FD0E1563FB8F765AE005C1 /* Test.Auth.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */; };
+		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
+		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
+		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E610030D1E73183A0065804C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E635F48C1E72B9560050F449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E61003011E7318390065804C;
+			remoteInfo = ReactiveOAuth;
+		};
+		E6D7F6471EA14F690007814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E635F48C1E72B9560050F449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E61003011E7318390065804C;
+			remoteInfo = ReactiveOAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17FD00427332FD9AB4062446 /* Auth.Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Credential.swift; sourceTree = "<group>"; };
+		17FD00A1F452CFD1054E2A71 /* Auth.Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Access.swift; sourceTree = "<group>"; };
+		17FD00AAE3036885B768936C /* Auth.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Error.swift; sourceTree = "<group>"; };
+		17FD0101A918730138089192 /* oauth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = oauth; sourceTree = "<group>"; };
+		17FD01101080E25017FA2E3A /* Auth.Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Factory.swift; sourceTree = "<group>"; };
+		17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.Detailed.swift; sourceTree = "<group>"; };
+		17FD012DA0B91FDF9BD01829 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile.resolved; path = ../Cartfile.resolved; sourceTree = "<group>"; };
+		17FD014C6BA2809051C0ED61 /* Test.Case.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Case.swift; sourceTree = "<group>"; };
+		17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FD02026B95DFC861B9D424 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.Main.swift; sourceTree = "<group>"; };
+		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
+		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
+		17FD034571C02A3E54841334 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
+		17FD03790F52DF233F3CCB89 /* OHHTTPStubs.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = OHHTTPStubs.framework.dSYM; path = Carthage/Build/Mac/OHHTTPStubs.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		17FD03B6EAF6773260636E22 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		17FD041E6AA9B7B72942E891 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
+		17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
+		17FD0560A5793175F9DE6A86 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Google.swift; sourceTree = "<group>"; };
+		17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReactiveOAuth.podspec; sourceTree = "<group>"; };
+		17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
+		17FD06492F59E6524373ED16 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
+		17FD0685B98931A5F745152D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Dropbox.swift; sourceTree = "<group>"; };
+		17FD06FEECC656D09B33CE61 /* Test.Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.swift; sourceTree = "<group>"; };
+		17FD070F1A6C9BABBD88DC9F /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = Carthage/Build/Mac/Fakery.framework; sourceTree = SOURCE_ROOT; };
+		17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Error.swift; sourceTree = "<group>"; };
+		17FD075B8EF15C5909CAE74A /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Configuration.swift; sourceTree = "<group>"; };
+		17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
+		17FD09618A9A90EA948619A2 /* Fakery.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Fakery.framework.dSYM; path = Carthage/Build/Mac/Fakery.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		17FD0962CF353A214002C83A /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
+		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Google.swift; sourceTree = "<group>"; };
+		17FD0A879532D717634C832F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
+		17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.Entrypoint.swift; sourceTree = "<group>"; };
+		17FD0ABC84AB5B618183F93F /* Auth.Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Type.swift; sourceTree = "<group>"; };
+		17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		17FD0B67BD3FCB9ED82841BA /* Auth.OAuth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.OAuth.Detailed.swift; sourceTree = "<group>"; };
+		17FD0BAD206A792F587A5D0B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		17FD0BBCF8608E589291BA99 /* ReactiveOAuth - Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveOAuth - Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FD0BC2C261089E48C99AE1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		17FD0BCB244F5CFFDDD9D70D /* Auth.OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.OAuth.swift; sourceTree = "<group>"; };
+		17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Imgur.swift; sourceTree = "<group>"; };
+		17FD0BD58C00C5ED557D4E0E /* Extension.OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.OAuthSwift.swift; sourceTree = "<group>"; };
+		17FD0BF0C4EA9F980ED65DCD /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		17FD0BF58014D4F20C866C2A /* OAuthSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = OAuthSwift.framework.dSYM; path = Carthage/Build/Mac/OAuthSwift.framework.dSYM; sourceTree = "<group>"; };
+		17FD0C01D64DA1B2ADA6D8BD /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
+		17FD0C6CDE4A27B0BA503C91 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/Mac/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		17FD0C9A99524DC3F0FCA22A /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/Mac/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		17FD0CCE8AD5E4EB7DA5820B /* gifox-oauth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gifox-oauth.png"; sourceTree = "<group>"; };
+		17FD0D38F2E4A84A97049D94 /* Ui.View.OAuth.WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.OAuth.WebView.swift; sourceTree = "<group>"; };
+		17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Imgur.swift; sourceTree = "<group>"; };
+		17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Imgur.swift; sourceTree = "<group>"; };
+		17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Dropbox.swift; sourceTree = "<group>"; };
+		17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.swift; sourceTree = "<group>"; };
+		17FD0E275F066DE11F91AB30 /* oauth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oauth.json; sourceTree = "<group>"; };
+		17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detailed.swift; sourceTree = "<group>"; };
+		17FD0E4EA7DB99A1B3AB346C /* Ui.View.OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.OAuth.swift; sourceTree = "<group>"; };
+		17FD0E508462AC8AEFE3A3F6 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/Mac/Nimble.framework.dSYM; sourceTree = "<group>"; };
+		17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.swift; sourceTree = "<group>"; };
+		17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Path.swift; sourceTree = "<group>"; };
+		17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Google.swift; sourceTree = "<group>"; };
+		17FD0F4CE0236E78F9D8AA87 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		17FD0F8B73E21CE56E6EAE7C /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
+		17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
+		17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Dropbox.swift; sourceTree = "<group>"; };
+		E6073BF41F7316B3004D8A0C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = SOURCE_ROOT; };
+		E6073BF51F7316D6004D8A0C /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/Mac/ReactiveCocoa.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C0471B1EA14B170089F914 /* demo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = demo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		17FD009C67D38131A945A84E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0685B98931A5F745152D /* Service.swift */,
+				17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */,
+				17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */,
+				17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17FD01983DD70317A5C6BE83 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				17FD014C6BA2809051C0ED61 /* Test.Case.swift */,
+				17FD0BE7F21891874DC6249D /* Auth */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		17FD01BEDE6B6B6C7E08B7EF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */,
+				17FD0BD58C00C5ED557D4E0E /* Extension.OAuthSwift.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		17FD02F126710AC06AF8CF6E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */,
+				17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */,
+			);
+			name = Configuration;
+			path = dependency/git/xenomorph/source/Configuration;
+			sourceTree = SOURCE_ROOT;
+		};
+		17FD0329543B94DE438EAFE7 /* documentation */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0AA0C2CEC577DE61CDCD /* asset */,
+			);
+			path = documentation;
+			sourceTree = "<group>";
+		};
+		17FD03679A023E6EF18B4CD6 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				E6C0471B1EA14B170089F914 /* demo.plist */,
+				17FD0C01D64DA1B2ADA6D8BD /* framework.plist */,
+				17FD034571C02A3E54841334 /* test.plist */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		17FD0442E1949F6D88640DBE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */,
+				17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		17FD04A551C007FDEBC06469 /* accessory */ = {
+			isa = PBXGroup;
+			children = (
+				17FD06BF8396C0163AD62C6C /* configuration */,
+				17FD03679A023E6EF18B4CD6 /* info */,
+				17FD08C18A4E0C9C78AC7821 /* storyboard */,
+			);
+			path = accessory;
+			sourceTree = "<group>";
+		};
+		17FD04E454EDAB0C31F3BE5E /* dependency */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0BA09D34778AEFCB0A11 /* dsym */,
+				17FD05B5D82BC3627F9636E6 /* framework */,
+				17FD03B6EAF6773260636E22 /* Cartfile */,
+				17FD041E6AA9B7B72942E891 /* Cartfile.private */,
+				17FD012DA0B91FDF9BD01829 /* Cartfile.resolved */,
+			);
+			path = dependency;
+			sourceTree = "<group>";
+		};
+		17FD0546BE45D13B08CFB1C9 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0563EF937C8FC3C87B96 /* ReactiveOAuth */,
+				17FD0F942CB13AA6514F26E6 /* Demo */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		17FD0563EF937C8FC3C87B96 /* ReactiveOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				17FD01BEDE6B6B6C7E08B7EF /* Extension */,
+				17FD080E193AAF5AD6256768 /* Auth */,
+				17FD07CE57489373E6685D53 /* Ui */,
+				17FD009C67D38131A945A84E /* Service */,
+				17FD0C299E3D113C14A27DF5 /* Detalisator */,
+				17FD01983DD70317A5C6BE83 /* Test */,
+				17FD0FC1BA1EE3B7FBF66920 /* Testing */,
+			);
+			path = ReactiveOAuth;
+			sourceTree = "<group>";
+		};
+		17FD05B5D82BC3627F9636E6 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0AE7016E17DC54EEAB3D /* Alamofire.framework */,
+				17FD070F1A6C9BABBD88DC9F /* Fakery.framework */,
+				17FD0560A5793175F9DE6A86 /* Nimble.framework */,
+				17FD0962CF353A214002C83A /* OAuthSwift.framework */,
+				17FD0F4CE0236E78F9D8AA87 /* OHHTTPStubs.framework */,
+				E6073BF41F7316B3004D8A0C /* ReactiveCocoa.framework */,
+				17FD06492F59E6524373ED16 /* ReactiveSwift.framework */,
+				17FD0BAD206A792F587A5D0B /* Result.framework */,
+				17FD0BC2C261089E48C99AE1 /* SwiftyJSON.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		17FD06BF8396C0163AD62C6C /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17FD02F126710AC06AF8CF6E /* Configuration */,
+				17FD0817309CD34D6DC7F6C7 /* Target */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		17FD07396279D397717518E5 /* ci */ = {
+			isa = PBXGroup;
+			children = (
+				17FD02026B95DFC861B9D424 /* build.sh */,
+			);
+			path = ci;
+			sourceTree = "<group>";
+		};
+		17FD07CE57489373E6685D53 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0E4EA7DB99A1B3AB346C /* Ui.View.OAuth.swift */,
+				17FD0D38F2E4A84A97049D94 /* Ui.View.OAuth.WebView.swift */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		17FD07E56A7337D59B60FC69 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */,
+				17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		17FD080E193AAF5AD6256768 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17FD00AAE3036885B768936C /* Auth.Error.swift */,
+				17FD0BCB244F5CFFDDD9D70D /* Auth.OAuth.swift */,
+				17FD00A1F452CFD1054E2A71 /* Auth.Access.swift */,
+				17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */,
+				17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */,
+				17FD00427332FD9AB4062446 /* Auth.Credential.swift */,
+				17FD0B67BD3FCB9ED82841BA /* Auth.OAuth.Detailed.swift */,
+				17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		17FD0817309CD34D6DC7F6C7 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				17FD07E56A7337D59B60FC69 /* macOS */,
+				17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */,
+			);
+			name = Target;
+			path = dependency/git/xenomorph/source/Target;
+			sourceTree = SOURCE_ROOT;
+		};
+		17FD08C18A4E0C9C78AC7821 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0BF0C4EA9F980ED65DCD /* main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		17FD09EAD2C0B096F2B1D55C /* build */ = {
+			isa = PBXGroup;
+			children = (
+				17FD07396279D397717518E5 /* ci */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		17FD0A0E5D35C5069C337D87 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17FD01101080E25017FA2E3A /* Auth.Factory.swift */,
+				17FD0ABC84AB5B618183F93F /* Auth.Type.swift */,
+				17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		17FD0AA0C2CEC577DE61CDCD /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0CCE8AD5E4EB7DA5820B /* gifox-oauth.png */,
+			);
+			path = asset;
+			sourceTree = "<group>";
+		};
+		17FD0B4F7D568B910273DDAD /* test */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0101A918730138089192 /* oauth */,
+				17FD0E275F066DE11F91AB30 /* oauth.json */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		17FD0BA09D34778AEFCB0A11 /* dsym */ = {
+			isa = PBXGroup;
+			children = (
+				17FD075B8EF15C5909CAE74A /* Alamofire.framework.dSYM */,
+				17FD09618A9A90EA948619A2 /* Fakery.framework.dSYM */,
+				17FD0E508462AC8AEFE3A3F6 /* Nimble.framework.dSYM */,
+				17FD0BF58014D4F20C866C2A /* OAuthSwift.framework.dSYM */,
+				17FD03790F52DF233F3CCB89 /* OHHTTPStubs.framework.dSYM */,
+				E6073BF51F7316D6004D8A0C /* ReactiveCocoa.framework.dSYM */,
+				17FD0C9A99524DC3F0FCA22A /* ReactiveSwift.framework.dSYM */,
+				17FD0F8B73E21CE56E6EAE7C /* Result.framework.dSYM */,
+				17FD0C6CDE4A27B0BA503C91 /* SwiftyJSON.framework.dSYM */,
+			);
+			name = dsym;
+			sourceTree = "<group>";
+		};
+		17FD0BE7F21891874DC6249D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */,
+				17FD06FEECC656D09B33CE61 /* Test.Auth.swift */,
+				17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */,
+				17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */,
+				17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		17FD0C299E3D113C14A27DF5 /* Detalisator */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */,
+				17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */,
+				17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */,
+				17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */,
+			);
+			path = Detalisator;
+			sourceTree = "<group>";
+		};
+		17FD0F942CB13AA6514F26E6 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */,
+				17FD0214E9DF466D625DB8B0 /* Ui.View.Main.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		17FD0FC1BA1EE3B7FBF66920 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0442E1949F6D88640DBE /* Utility */,
+				17FD0A0E5D35C5069C337D87 /* Auth */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		E635F48B1E72B9560050F449 = {
+			isa = PBXGroup;
+			children = (
+				17FD04A551C007FDEBC06469 /* accessory */,
+				17FD09EAD2C0B096F2B1D55C /* build */,
+				17FD04E454EDAB0C31F3BE5E /* dependency */,
+				17FD0329543B94DE438EAFE7 /* documentation */,
+				E6C047101EA14B170089F914 /* product */,
+				17FD0546BE45D13B08CFB1C9 /* source */,
+				17FD0B4F7D568B910273DDAD /* test */,
+				17FD0A879532D717634C832F /* .travis.yml */,
+				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
+			);
+			sourceTree = "<group>";
+		};
+		E6C047101EA14B170089F914 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */,
+				17FD0BBCF8608E589291BA99 /* ReactiveOAuth - Test.xctest */,
+				E6C0470F1EA14B170089F914 /* Demo.app */,
+			);
+			name = product;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E61003011E7318390065804C /* ReactiveOAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61003181E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth" */;
+			buildPhases = (
+				E61002FD1E7318390065804C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveOAuth;
+			productName = ReactiveOAuth;
+			productReference = 17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E610030A1E73183A0065804C /* ReactiveOAuth - Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth - Test" */;
+			buildPhases = (
+				E61003071E73183A0065804C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E610030E1E73183A0065804C /* PBXTargetDependency */,
+			);
+			name = "ReactiveOAuth - Test";
+			productName = "ReactiveOAuth - Test";
+			productReference = 17FD0BBCF8608E589291BA99 /* ReactiveOAuth - Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6C0470E1EA14B170089F914 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C0471E1EA14B170089F914 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				E6C0470B1EA14B170089F914 /* Sources */,
+				E6C0470D1EA14B170089F914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6D7F6481EA14F690007814A /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = E6C0470F1EA14B170089F914 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E635F48C1E72B9560050F449 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					E61003011E7318390065804C = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					E610030A1E73183A0065804C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E6C0470E1EA14B170089F914 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E635F48F1E72B9560050F449 /* Build configuration list for PBXProject "ReactiveOAuth" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E635F48B1E72B9560050F449;
+			productRefGroup = E6C047101EA14B170089F914 /* product */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E61003011E7318390065804C /* ReactiveOAuth */,
+				E610030A1E73183A0065804C /* ReactiveOAuth - Test */,
+				E6C0470E1EA14B170089F914 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6C0470D1EA14B170089F914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FD03C8F836AD3A0D1C50FA /* main.storyboard in Resources */,
+				17FD081D81484F55B66EB14C /* oauth in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E61002FD1E7318390065804C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FD083B2578DC20F08578BE /* Extension.Alamofire.swift in Sources */,
+				17FD0CC5F57DAC8810453C72 /* Extension.OAuthSwift.swift in Sources */,
+				17FD05FF591CA2389B1F7861 /* Auth.Error.swift in Sources */,
+				17FD04F25EE85DD88C04318C /* Auth.OAuth.swift in Sources */,
+				17FD0894DE12C29091865FFD /* Auth.Access.swift in Sources */,
+				17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */,
+				17FD05A578C2FA77A9E56EAD /* Auth.Detailed.swift in Sources */,
+				17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */,
+				17FD0605E4B1564EE3D1C85D /* Auth.OAuth.Detailed.swift in Sources */,
+				17FD035E37F0EF2E71AB5642 /* Auth.Reoauth.Detailed.swift in Sources */,
+				17FD0AFE79A607EB2D24C2EE /* Ui.View.OAuth.swift in Sources */,
+				17FD059BBFA7D93B498E7A29 /* Ui.View.OAuth.WebView.swift in Sources */,
+				17FD0E87962CC41A157281A7 /* Service.swift in Sources */,
+				17FD0B44FE059FB682B2D06A /* Service.Dropbox.swift in Sources */,
+				17FD06EE03CB72613A1DA869 /* Service.Google.swift in Sources */,
+				17FD0699B848B6D9F623422D /* Service.Imgur.swift in Sources */,
+				17FD04C4920A8B62784BB226 /* Detalisator.swift in Sources */,
+				17FD014CC235B5670C9C3BF9 /* Detalisator.Dropbox.swift in Sources */,
+				17FD0DDC3264E156D19C5E48 /* Detalisator.Google.swift in Sources */,
+				17FD087BED0546AAC8907DEE /* Detalisator.Imgur.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61003071E73183A0065804C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FD0AC8126E701358728BC5 /* Test.Case.swift in Sources */,
+				17FD06C36F9155A742C36EC3 /* Auth.Factory.swift in Sources */,
+				17FD0CA74383997671601481 /* Auth.Type.swift in Sources */,
+				17FD058348DD4CE7F4E60978 /* Auth.Detalisator.swift in Sources */,
+				17FD0439340A066B3C56A17A /* Utility.Path.swift in Sources */,
+				17FD06E49F8A4F9A1F2BC74F /* Utility.Configuration.swift in Sources */,
+				17FD01D372F015D578C505E5 /* Test.Auth.swift in Sources */,
+				17FD087EBFF31732B6A824EC /* Test.Auth.Dropbox.swift in Sources */,
+				17FD0DE2A3CEA6FEFE53CDAE /* Test.Auth.Google.swift in Sources */,
+				17FD05FE2548EF8C4666D685 /* Test.Auth.Imgur.swift in Sources */,
+				17FD0E1563FB8F765AE005C1 /* Test.Auth.Error.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C0470B1EA14B170089F914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FD03BDDCDE257112386A79 /* Application.Entrypoint.swift in Sources */,
+				17FD096A130E9190E608FD8D /* Ui.View.Main.swift in Sources */,
+				17FD0962A16C8A7B78613719 /* Auth.Factory.swift in Sources */,
+				17FD0CC7A05B0EAA6AF3E438 /* Auth.Detalisator.swift in Sources */,
+				17FD0D08DB860DF2F18C4C63 /* Auth.Type.swift in Sources */,
+				17FD054767BEDA3913BFC47A /* Utility.Path.swift in Sources */,
+				17FD0A704CD90B69C8D5A0A8 /* Utility.Configuration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E610030E1E73183A0065804C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E61003011E7318390065804C /* ReactiveOAuth */;
+			targetProxy = E610030D1E73183A0065804C /* PBXContainerItemProxy */;
+		};
+		E6D7F6481EA14F690007814A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E61003011E7318390065804C /* ReactiveOAuth */;
+			targetProxy = E6D7F6471EA14F690007814A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E61003141E73183A0065804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				PRODUCT_NAME = ReactiveOAuth;
+			};
+			name = Debug;
+		};
+		E61003151E73183A0065804C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				PRODUCT_NAME = ReactiveOAuth;
+			};
+			name = Release;
+		};
+		E61003161E73183A0065804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_NAME = "ReactiveOAuth - Test";
+			};
+			name = Debug;
+		};
+		E61003171E73183A0065804C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_NAME = "ReactiveOAuth - Test";
+			};
+			name = Release;
+		};
+		E635F4901E72B9560050F449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		E635F4911E72B9560050F449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		E6C0471C1EA14B170089F914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
+			};
+			name = Debug;
+		};
+		E6C0471D1EA14B170089F914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E61003181E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61003141E73183A0065804C /* Debug */,
+				E61003151E73183A0065804C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth - Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61003161E73183A0065804C /* Debug */,
+				E61003171E73183A0065804C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E635F48F1E72B9560050F449 /* Build configuration list for PBXProject "ReactiveOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E635F4901E72B9560050F449 /* Debug */,
+				E635F4911E72B9560050F449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C0471E1EA14B170089F914 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C0471C1EA14B170089F914 /* Debug */,
+				E6C0471D1EA14B170089F914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E635F48C1E72B9560050F449 /* Project object */;
+}

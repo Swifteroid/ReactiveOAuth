@@ -678,10 +678,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="242"/>
         </scene>
-        <!--Oauth View Controller-->
+        <!--OAuth View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController storyboardIdentifier="OauthViewController" id="XfG-lQ-9wD" customClass="OauthViewController" customModule="ReactiveOauth" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OAuthViewController" id="XfG-lQ-9wD" customClass="OAuthViewController" customModule="ReactiveOAuth" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="540" height="581"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -747,7 +747,7 @@ Gw
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="handleOauthButtonAction:" target="uDg-xj-e4D" id="KxB-8u-SJh"/>
+                                    <action selector="handleOAuthButtonAction" target="uDg-xj-e4D" id="KxB-8u-SJh"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpE-bB-IZK">
