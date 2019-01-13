@@ -27,7 +27,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E610030A1E73183A0065804C"
+               BuildableName = "ReactiveOAuth - Test.xctest"
+               BlueprintName = "ReactiveOAuth - Test"
+               ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E61003011E7318390065804C"
+            BuildableName = "ReactiveOAuth.framework"
+            BlueprintName = "ReactiveOAuth"
+            ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -63,6 +82,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E61003011E7318390065804C"
+            BuildableName = "ReactiveOAuth.framework"
+            BlueprintName = "ReactiveOAuth"
+            ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

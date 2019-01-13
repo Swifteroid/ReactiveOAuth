@@ -1,21 +1,21 @@
-language: objective-c
-osx_image: xcode8.3
+# http://blog.tgrrtt.com/exploring-the-travisci-configuration-file
+# https://docs.travis-ci.com/user/build-stages
+# https://github.com/mxcl/PromiseKit/blob/master/.travis.yml
 
-branches:
-  only: master
+os: osx
+osx_image: xcode10.1
+language: objective-c
 
 cache:
   directories:
   - Carthage
 
 before_install:
-  - brew update
-  - brew outdated carthage || brew upgrade carthage
-install:
-  - carthage bootstrap --platform osx
+  - carthage bootstrap --platform macOS --cache-builds
   - git submodule update --init --recursive
 
 before_script:
   - build/ci/build.sh
+
 script:
   - travis_retry xcodebuild -workspace "ReactiveOAuth.xcworkspace" -scheme "ReactiveOAuth" build-for-testing test | xcpretty

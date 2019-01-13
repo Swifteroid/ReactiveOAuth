@@ -1,10 +1,11 @@
 # ReactiveOAuth
 
-[![Build Status](https://travis-ci.org/swifteroid/reactiveoauth.svg?branch=master)](https://travis-ci.org/swifteroid/reactiveoauth)
-[![Carthage Compatible](https://img.shields.io/badge/carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
-![Platform](https://img.shields.io/badge/platform-macos-lightgray.svg?style=flat)
+[![Build Status](https://travis-ci.com/Swifteroid/ReactiveOAuth.svg?branch=master)](https://travis-ci.com/Swifteroid/ReactiveOAuth)
+[![GitHub Release](https://img.shields.io/github/release/Swifteroid/ReactiveOAuth.svg)](https://github.com/Swifteroid/ReactiveOAuth/releases)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Platform](https://img.shields.io/badge/platform-macOS-lightgray.svg?style=flat)
 
-[ReactiveOAuth](https://github.com/swifteroid/reactiveoauth) is a wrapper for [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) with [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift) support and some [pre-configured services](source/Service), mostly useful in macOS projects.
+[ReactiveOAuth](https://github.com/Swifteroid/ReactiveOAuth) is a wrapper for [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) with [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift) support and some [pre-configured services](source/Service), mostly useful in macOS projects.
 
 - [x] Elegant api with reactive extensions support.
 - [x] OAuth and re-OAuth (refresh token) commands with or without account details.
