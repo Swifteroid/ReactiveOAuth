@@ -1,6 +1,5 @@
 import Alamofire
 import ReactiveSwift
-import Result
 import SwiftyJSON
 
 public protocol ReoauthProtocol
@@ -33,7 +32,7 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
 
         Alamofire.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
             .attemptMap({ try JSON(data: $0) })
-            .mapError({ Error.request(description: $0.error.localizedDescription) })
+            .mapError({ Error.request(description: $0.localizedDescription) })
             .attemptMap({
                 if let accessToken: String = $0["access_token"].string, let expiresIn: Double = $0["expires_in"].double {
                     return .success(Credential(accessToken: accessToken, refreshToken: token, expireDate: Date(timeInterval: expiresIn, since: Date())))

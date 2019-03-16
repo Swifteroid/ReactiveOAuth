@@ -1,6 +1,5 @@
 import Alamofire
 import ReactiveSwift
-import Result
 
 extension DataRequest: ReactiveExtensionsProvider
 {
@@ -8,12 +7,12 @@ extension DataRequest: ReactiveExtensionsProvider
 
 extension Reactive where Base: DataRequest
 {
-    public var responded: Signal<Data, AnyError> {
-        let pipe = Signal<Data, AnyError>.pipe()
+    public var responded: Signal<Data, Swift.Error> {
+        let pipe = Signal<Data, Swift.Error>.pipe()
 
         self.base.response(completionHandler: {
             if let error: Swift.Error = $0.error {
-                pipe.input.send(error: AnyError(error))
+                pipe.input.send(error: error)
             } else if let data: Data = $0.data {
                 pipe.input.send(value: data)
             }

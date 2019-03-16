@@ -4,7 +4,6 @@ import Nimble
 import OHHTTPStubs
 import ReactiveOAuth
 import ReactiveSwift
-import Result
 import XCTest
 
 internal class AuthErrorTestCase: TestCase

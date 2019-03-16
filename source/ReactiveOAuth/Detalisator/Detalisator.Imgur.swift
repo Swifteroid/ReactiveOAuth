@@ -15,7 +15,7 @@ open class ImgurDetalisator<Detail>: JsonDetalisator<Detail>
                 if case .value(let value) = $0 {
                     self?.detail(json: value)
                 } else if case .failed(let error) = $0 {
-                    self?.fail(Error.unknown(description: error.description))
+                    self?.fail(Error.unknown(description: error.localizedDescription))
                 }
             })
     }

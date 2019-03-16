@@ -2,7 +2,6 @@ import AppKit
 import OAuthSwift
 import ReactiveCocoa
 import ReactiveSwift
-import Result
 import WebKit
 
 open class OAuthViewController: NSViewController
