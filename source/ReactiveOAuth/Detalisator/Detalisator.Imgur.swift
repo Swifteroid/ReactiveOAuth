@@ -9,7 +9,7 @@ open class ImgurDetalisator<Detail>: JsonDetalisator<Detail>
 
         // Todo: check for json errors…
 
-        Alamofire.request(Imgur.url.detail, method: HTTPMethod.get, headers: headers).reactive.responded
+        AF.request(Imgur.url.detail, method: HTTPMethod.get, headers: headers).reactive.responded
             .attemptMap({ try JSON(data: $0) })
             .observe({ [weak self] in
                 if case .value(let value) = $0 {

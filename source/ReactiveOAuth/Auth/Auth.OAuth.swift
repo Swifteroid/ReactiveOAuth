@@ -53,13 +53,15 @@ open class OAuth: NSObject, OAuthProtocol
             scope: configuration.scope ?? "",
             state: configuration.state ?? NSUUID().uuidString,
             parameters: configuration.parameters ?? [:],
-            success: { [weak self] (credential: OAuthSwiftCredential, _, _) in
-                self?.pipe.input.send(value: Credential(credential: credential))
-                self?.oauth = nil
-            },
-            failure: { [weak self] (error: OAuthSwiftError) in
-                self?.pipe.input.send(error: Error.unknown(description: error.description))
-                self?.oauth = nil
+            completionHandler: { [weak self] result in
+                switch result {
+                    case .success(let credential, _, _):
+                        self?.pipe.input.send(value: Credential(credential: credential))
+                        self?.oauth = nil
+                    case .failure(let error):
+                        self?.pipe.input.send(error: Error.unknown(description: error.description))
+                        self?.oauth = nil
+                }
             }
         )
 

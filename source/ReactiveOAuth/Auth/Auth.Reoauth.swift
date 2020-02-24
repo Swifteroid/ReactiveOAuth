@@ -29,8 +29,8 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
             "client_secret": self.configuration.access.secret,
             "refresh_token": token,
             "grant_type": "refresh_token"]
-
-        Alamofire.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
+        
+        AF.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
             .attemptMap({ try JSON(data: $0) })
             .mapError({ Error.request(description: $0.localizedDescription) })
             .attemptMap({

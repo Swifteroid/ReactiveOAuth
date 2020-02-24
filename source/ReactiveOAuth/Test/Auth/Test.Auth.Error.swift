@@ -20,10 +20,10 @@ internal class AuthErrorTestCase: TestCase
         let expectation: XCTestExpectation = self.expectation(description: "Reoauth error")
         let error: NSError = NSError(domain: NSURLErrorDomain, code: Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo: [NSLocalizedDescriptionKey: "No internet…"])
 
-        stub(condition: { _ in true }, response: { _ in OHHTTPStubsResponse(error: error) })
+        stub(condition: { _ in true }, response: { _ in HTTPStubsResponse(error: error) })
 
         reoauth.reactive.reauthorised.observe(Signal.Observer(failed: {
-            expect($0.description).to(equal(error.localizedDescription))
+            expect($0.description).to(endWith(error.localizedDescription))
             expectation.fulfill()
         }))
 

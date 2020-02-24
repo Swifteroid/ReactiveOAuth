@@ -9,7 +9,7 @@ open class DropboxDetalisator<Detail>: JsonDetalisator<Detail>
 
         // Todo: check for json errors…
 
-        Alamofire.request(Dropbox.url.detail, method: HTTPMethod.post, headers: headers).reactive.responded
+        AF.request(Dropbox.url.detail, method: HTTPMethod.post, headers: headers).reactive.responded
             .attemptMap({ try JSON(data: $0) })
             .observe({ [weak self] in
                 if case .value(let value) = $0 {
