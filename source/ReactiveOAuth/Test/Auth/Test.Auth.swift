@@ -6,8 +6,7 @@ import ReactiveSwift
 import WebKit
 import XCTest
 
-internal class AuthTestCase: TestCase
-{
+internal class AuthTestCase: TestCase {
     internal static var token: String?
 
     // MARK: -
@@ -85,9 +84,8 @@ internal class AuthTestCase: TestCase
     }
 }
 
-internal class OAuthWebView: ReactiveOAuth.OAuthWebView
-{
-    private var delegate: WKNavigationDelegate?
+internal class OAuthWebView: ReactiveOAuth.OAuthWebView {
+    private weak var delegate: WKNavigationDelegate?
 
     internal convenience init(delegate: WKNavigationDelegate) {
         self.init(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
@@ -97,8 +95,7 @@ internal class OAuthWebView: ReactiveOAuth.OAuthWebView
     }
 }
 
-internal class AuthWindow: NSWindow
-{
+internal class AuthWindow: NSWindow {
     internal convenience init(view: NSView) {
         self.init(contentRect: NSRect(x: 0, y: 0, width: 400, height: 600), styleMask: .titled, backing: .buffered, defer: true)
         self.level = .modalPanel
@@ -113,8 +110,7 @@ internal class AuthWindow: NSWindow
 
 // MARK: -
 
-internal class AbstractOAuthWebViewDelegate: ReactiveOAuth.OAuthWebViewDelegate
-{
+internal class AbstractOAuthWebViewDelegate: ReactiveOAuth.OAuthWebViewDelegate {
     private let email: String
     private let password: String
 

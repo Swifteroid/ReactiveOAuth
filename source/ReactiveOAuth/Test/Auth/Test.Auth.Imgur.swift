@@ -2,8 +2,7 @@ import Foundation
 import ReactiveOAuth
 import WebKit
 
-internal class ImgurAuthTestCase: AuthTestCase
-{
+internal class ImgurAuthTestCase: AuthTestCase {
     internal func testOAuth() {
         self.testOAuth(type: .imgur, delegate: OAuthWebViewDelegate.self)
     }
@@ -13,8 +12,7 @@ internal class ImgurAuthTestCase: AuthTestCase
     }
 }
 
-private class OAuthWebViewDelegate: AbstractOAuthWebViewDelegate
-{
+private class OAuthWebViewDelegate: AbstractOAuthWebViewDelegate {
     override internal func webView(_ webView: WKWebView, didFinish navigation: WKNavigation) {
         super.webView(webView, didFinish: navigation)
         guard let path: String = webView.url?.path else { return }

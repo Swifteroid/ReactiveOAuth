@@ -4,8 +4,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import WebKit
 
-public protocol OAuthProtocol
-{
+public protocol OAuthProtocol {
     var configuration: OAuth.Configuration { get }
 
     /// Starts authorisation with the specified webview.
@@ -17,8 +16,7 @@ public protocol OAuthProtocol
     func cancel()
 }
 
-open class OAuth: NSObject, OAuthProtocol
-{
+open class OAuth: NSObject, OAuthProtocol {
     public init(configuration: Configuration) {
         self.configuration = configuration
     }
@@ -74,8 +72,7 @@ open class OAuth: NSObject, OAuthProtocol
     }
 }
 
-extension Reactive where Base: OAuth
-{
+extension Reactive where Base: OAuth {
     public var authorised: Signal<Credential, Error> {
         return self.base.pipe.output
     }
@@ -83,10 +80,8 @@ extension Reactive where Base: OAuth
 
 // MARK: -
 
-extension OAuth
-{
-    open class Configuration
-    {
+extension OAuth {
+    open class Configuration {
         public let access: Access
         public let url: Url
         public let type: String?
@@ -104,8 +99,7 @@ extension OAuth
         }
     }
 
-    public struct Url
-    {
+    public struct Url {
         public let authorise: String
         public let token: String
         public let callback: String
@@ -120,10 +114,8 @@ extension OAuth
 
 // MARK: -
 
-extension OAuth
-{
-    open class UrlHandler: OAuthSwiftURLHandlerType
-    {
+extension OAuth {
+    open class UrlHandler: OAuthSwiftURLHandlerType {
         open weak var webView: WKWebView?
 
         public init(webView: WKWebView) {

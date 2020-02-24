@@ -4,8 +4,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import WebKit
 
-open class OAuthViewController: NSViewController
-{
+open class OAuthViewController: NSViewController {
     @IBOutlet open weak var progressIndicator: NSProgressIndicator!
     @IBOutlet open weak var webViewBox: NSBox!
 
@@ -13,7 +12,7 @@ open class OAuthViewController: NSViewController
 
     open var webView: WKWebView! {
         get {
-           return self.webViewBox.contentView as? WKWebView 
+            return self.webViewBox.contentView as? WKWebView
         }
         set {
             newValue?.navigationDelegate = self.webViewDelegate
@@ -70,13 +69,11 @@ open class OAuthViewController: NSViewController
 
 // MARK: -
 
-public protocol OAuthorisable: class
-{
+public protocol OAuthorisable: class {
     func authorise<Detail>(oauthViewController: OAuthViewController, oauth: DetailedOAuth<Detail>)
 }
 
-extension OAuthorisable where Self: NSViewController
-{
+extension OAuthorisable where Self: NSViewController {
     public func authorise<Detail>(oauthViewController: OAuthViewController, oauth: DetailedOAuth<Detail>) {
 
         // Little hack to ensure the view and outlets are loaded. Todo: this whole approach is shitty, we must

@@ -1,12 +1,10 @@
 import Alamofire
 import ReactiveSwift
 
-extension DataRequest: ReactiveExtensionsProvider
-{
+extension DataRequest: ReactiveExtensionsProvider {
 }
 
-extension Reactive where Base: DataRequest
-{
+extension Reactive where Base: DataRequest {
     public var responded: Signal<Data, Swift.Error> {
         let pipe = Signal<Data, Swift.Error>.pipe()
 

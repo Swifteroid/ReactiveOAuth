@@ -1,7 +1,6 @@
 import Foundation
 
-internal class PathUtility
-{
+internal class PathUtility {
     private static let path: [String: String] = Bundle(for: PathUtility.self).object(forInfoDictionaryKey: "Path") as! [String: String]
 
     // MARK: -

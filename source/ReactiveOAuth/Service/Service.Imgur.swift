@@ -1,5 +1,4 @@
-open class Imgur: Service
-{
+open class Imgur: Service {
     override open class var url: Url {
         return Url(
             authorise: "https://api.imgur.com/oauth2/authorize",

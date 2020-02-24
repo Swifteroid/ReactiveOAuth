@@ -1,7 +1,6 @@
 import Foundation
 
-open class Service
-{
+open class Service {
     open class var url: Url {
         abort()
     }
@@ -17,10 +16,8 @@ open class Service
 
 // MARK: -
 
-extension Service
-{
-    public struct Url
-    {
+extension Service {
+    public struct Url {
         public let authorise: String
         public let token: String
         public let detail: String
@@ -35,15 +32,13 @@ extension Service
 
 // MARK: -
 
-extension OAuth.Url
-{
+extension OAuth.Url {
     public init(url: Service.Url, callback: String) {
         self.init(authorise: url.authorise, token: url.token, callback: callback)
     }
 }
 
-extension Reoauth.Url
-{
+extension Reoauth.Url {
     public init(url: Service.Url) {
         self.init(token: url.token)
     }

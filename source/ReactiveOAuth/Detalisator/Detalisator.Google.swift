@@ -2,8 +2,7 @@ import Alamofire
 import ReactiveSwift
 import SwiftyJSON
 
-open class GoogleDetalisator<Detail>: JsonDetalisator<Detail>
-{
+open class GoogleDetalisator<Detail>: JsonDetalisator<Detail> {
     open override func detail(credential: Credential) {
         let headers: HTTPHeaders = ["Authorization": "Bearer \(credential.accessToken)"]
         let parameters: Parameters = ["access_token": credential.accessToken]

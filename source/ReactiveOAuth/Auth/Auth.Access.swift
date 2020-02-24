@@ -1,8 +1,7 @@
 /*
 Access key and secret pair.
 */
-public struct Access
-{
+public struct Access {
     public var key: String
     public var secret: String
 

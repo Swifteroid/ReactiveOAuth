@@ -3,8 +3,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import WebKit
 
-open class DetailedOAuth<Detail>: DetailedAuth<Detail>, OAuthProtocol
-{
+open class DetailedOAuth<Detail>: DetailedAuth<Detail>, OAuthProtocol {
     open var configuration: OAuth.Configuration {
         return self.oauth.configuration
     }
@@ -31,8 +30,7 @@ open class DetailedOAuth<Detail>: DetailedAuth<Detail>, OAuthProtocol
     }
 }
 
-extension DetailedAuthReactive where Base: DetailedOAuth<Detail>
-{
+extension DetailedAuthReactive where Base: DetailedOAuth<Detail> {
     public var authorised: Signal<(Credential, Detail), Error> {
         return self.base.pipe.output
     }

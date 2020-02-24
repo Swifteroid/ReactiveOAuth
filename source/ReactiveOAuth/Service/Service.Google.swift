@@ -1,5 +1,4 @@
-open class Google: Service
-{
+open class Google: Service {
 
     /*
     Todo: this is wrong, this should not have anything to do with drive api. If this gets changed to standard about

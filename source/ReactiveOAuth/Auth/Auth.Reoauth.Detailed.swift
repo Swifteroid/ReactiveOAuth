@@ -2,8 +2,7 @@ import Foundation
 import ReactiveSwift
 import WebKit
 
-open class DetailedReoauth<Detail>: DetailedAuth<Detail>, ReoauthProtocol
-{
+open class DetailedReoauth<Detail>: DetailedAuth<Detail>, ReoauthProtocol {
     public let reoauth: Reoauth
 
     public init(reoauth: Reoauth, detalisator: Detalisator<Detail>) {
@@ -20,8 +19,7 @@ open class DetailedReoauth<Detail>: DetailedAuth<Detail>, ReoauthProtocol
     }
 }
 
-extension DetailedAuthReactive where Base: DetailedReoauth<Detail>
-{
+extension DetailedAuthReactive where Base: DetailedReoauth<Detail> {
     public var reauthorised: Signal<(Credential, Detail), Error> {
         return self.base.pipe.output
     }

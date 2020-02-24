@@ -1,7 +1,6 @@
 import ReactiveOAuth
 
-internal class AuthFactory
-{
+internal class AuthFactory {
     internal var type: AuthType
     internal var access: Access
     internal var url: String
@@ -17,8 +16,7 @@ internal class AuthFactory
     }
 }
 
-internal class OAuthFactory: AuthFactory
-{
+internal class OAuthFactory: AuthFactory {
     internal func construct() -> DetailedOAuth<Email>? {
         let configuration: OAuth.Configuration
         let parameters: [String: Any]
@@ -44,8 +42,7 @@ internal class OAuthFactory: AuthFactory
     }
 }
 
-internal class ReoauthFactory: AuthFactory
-{
+internal class ReoauthFactory: AuthFactory {
     internal var token: String
 
     internal init(type: AuthType, access: Access, url: String, token: String) {

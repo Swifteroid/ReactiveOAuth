@@ -6,8 +6,7 @@ import ReactiveOAuth
 import ReactiveSwift
 import XCTest
 
-internal class AuthErrorTestCase: TestCase
-{
+internal class AuthErrorTestCase: TestCase {
 
     /// Verify that errors are parsed and received as expected.
 

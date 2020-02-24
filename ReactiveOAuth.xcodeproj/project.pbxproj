@@ -110,6 +110,7 @@
 		17FD0D38F2E4A84A97049D94 /* Ui.View.OAuth.WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.OAuth.WebView.swift; sourceTree = "<group>"; };
 		17FD0D68A1ABEC34751E87CA /* Test.Auth.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Imgur.swift; sourceTree = "<group>"; };
 		17FD0D6FBAF3FA926BBA0D8C /* Service.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Imgur.swift; sourceTree = "<group>"; };
+		17FD0D8B0C664303A26DB723 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Dropbox.swift; sourceTree = "<group>"; };
 		17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.swift; sourceTree = "<group>"; };
 		17FD0E09B65E7CA87DC9A956 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -387,6 +388,7 @@
 				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
 				17FD0EB3E12191D66DEA8D5C /* README.md */,
 				17FD0E09B65E7CA87DC9A956 /* LICENSE */,
+				17FD0D8B0C664303A26DB723 /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};

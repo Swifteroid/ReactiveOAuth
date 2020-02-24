@@ -2,8 +2,7 @@ import Alamofire
 import ReactiveSwift
 import SwiftyJSON
 
-open class DropboxDetalisator<Detail>: JsonDetalisator<Detail>
-{
+open class DropboxDetalisator<Detail>: JsonDetalisator<Detail> {
     open override func detail(credential: Credential) {
         let headers: HTTPHeaders = ["Authorization": "Bearer \(credential.accessToken)"]
 

@@ -1,5 +1,4 @@
-open class Dropbox: Service
-{
+open class Dropbox: Service {
     override open class var url: Url {
         return Url(
             authorise: "https://www.dropbox.com/oauth2/authorize",

@@ -1,15 +1,13 @@
 import ReactiveSwift
 import SwiftyJSON
 
-public protocol DetalisatorProtocol
-{
+public protocol DetalisatorProtocol {
     associatedtype DetailType = Any
 
     func detail(credential: Credential)
 }
 
-open class Detalisator<Detail>: DetalisatorProtocol
-{
+open class Detalisator<Detail>: DetalisatorProtocol {
     public typealias DetailType = Detail
 
     public init() {
@@ -32,8 +30,7 @@ open class Detalisator<Detail>: DetalisatorProtocol
     }
 }
 
-open class JsonDetalisator<Detail>: Detalisator<Detail>
-{
+open class JsonDetalisator<Detail>: Detalisator<Detail> {
     open func detail(json: JSON) {
         abort()
     }
@@ -41,15 +38,13 @@ open class JsonDetalisator<Detail>: Detalisator<Detail>
 
 // MARK: -
 
-extension DetalisatorProtocol
-{
+extension DetalisatorProtocol {
     public var reactive: DetalisatorReactive<Self, DetailType> {
         return DetalisatorReactive(self)
     }
 }
 
-public struct DetalisatorReactive<Base, Detail>
-{
+public struct DetalisatorReactive<Base, Detail> {
     public let base: Base
 
     fileprivate init(_ base: Base) {
@@ -57,8 +52,7 @@ public struct DetalisatorReactive<Base, Detail>
     }
 }
 
-extension DetalisatorReactive where Base: Detalisator<Detail>
-{
+extension DetalisatorReactive where Base: Detalisator<Detail> {
     public var detailed: Signal<Detail, Error> {
         return self.base.pipe.output
     }

@@ -1,8 +1,7 @@
 import Foundation
 import OAuthSwift
 
-public struct Credential
-{
+public struct Credential {
     public var accessToken: String
     public var refreshToken: String?
     public var expireDate: Date?

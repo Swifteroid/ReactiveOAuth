@@ -3,8 +3,7 @@ import Foundation
 import OAuthSwift
 import WebKit
 
-extension WKWebViewConfiguration
-{
+extension WKWebViewConfiguration {
     public static var `default`: WKWebViewConfiguration {
         let configuration: WKWebViewConfiguration = WKWebViewConfiguration()
 
@@ -16,14 +15,13 @@ extension WKWebViewConfiguration
     }
 }
 
-open class OAuthWebView: WKWebView
-{
+open class OAuthWebView: WKWebView {
     public override init(frame: CGRect, configuration: WKWebViewConfiguration) {
         super.init(frame: frame, configuration: configuration)
 
         self.allowsMagnification = false
 
-        // Dropbox send a weird email saying the app has been authenticated from AppleMail, setting custom 
+        // Dropbox send a weird email saying the app has been authenticated from AppleMail, setting custom
         // user agent helps to avoid this. Not gonna care about pre-10.11.
 
         if #available(OSX 10.11, *) {
@@ -49,8 +47,7 @@ open class OAuthWebView: WKWebView
     }
 }
 
-open class OAuthWebViewDelegate: NSObject, WKNavigationDelegate
-{
+open class OAuthWebViewDelegate: NSObject, WKNavigationDelegate {
     public weak var progressIndicator: NSProgressIndicator?
 
     public var callbackUrl: URL?
@@ -82,8 +79,7 @@ open class OAuthWebViewDelegate: NSObject, WKNavigationDelegate
     }
 }
 
-extension URL
-{
+extension URL {
     fileprivate func calledback(url: URL) -> Bool {
         return url.scheme == self.scheme && url.host == self.host && url.path == self.path
     }

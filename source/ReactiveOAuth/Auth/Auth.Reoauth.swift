@@ -2,13 +2,11 @@ import Alamofire
 import ReactiveSwift
 import SwiftyJSON
 
-public protocol ReoauthProtocol
-{
+public protocol ReoauthProtocol {
     func reauthorise()
 }
 
-open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
-{
+open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider {
     public let configuration: Configuration
 
     public init(configuration: Configuration) {
@@ -28,8 +26,8 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
             "client_id": self.configuration.access.key,
             "client_secret": self.configuration.access.secret,
             "refresh_token": token,
-            "grant_type": "refresh_token"]
-        
+            "grant_type": "refresh_token",]
+
         AF.request(self.configuration.url.token, method: HTTPMethod.post, parameters: parameters).reactive.responded
             .attemptMap({ try JSON(data: $0) })
             .mapError({ Error.request(description: $0.localizedDescription) })
@@ -44,8 +42,7 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider
     }
 }
 
-extension Reactive where Base: Reoauth
-{
+extension Reactive where Base: Reoauth {
     public var reauthorised: Signal<Credential, Error> {
         return self.base.pipe.output
     }
@@ -53,10 +50,8 @@ extension Reactive where Base: Reoauth
 
 // MARK: -
 
-extension Reoauth
-{
-    public struct Configuration
-    {
+extension Reoauth {
+    public struct Configuration {
         public let access: Access
         public let url: Url
         public let token: String
@@ -68,8 +63,7 @@ extension Reoauth
         }
     }
 
-    public struct Url
-    {
+    public struct Url {
         public let token: String
         public init(token: String) {
             self.token = token

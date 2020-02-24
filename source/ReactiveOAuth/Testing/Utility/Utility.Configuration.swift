@@ -2,8 +2,7 @@ import ReactiveOAuth
 import SwiftyJSON
 import Foundation
 
-internal class ConfigurationUtility
-{
+internal class ConfigurationUtility {
     private static let json: JSON = JSON(rawValue: try! Data(contentsOf: PathUtility.oauth))!
 
     internal typealias Configuration = (access: Access, url: String, email: String, password: String)

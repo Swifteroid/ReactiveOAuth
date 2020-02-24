@@ -1,5 +1,4 @@
-public enum Error: Swift.Error, CustomStringConvertible
-{
+public enum Error: Swift.Error, CustomStringConvertible {
     case request(description: String)
     case response(description: String)
     case unknown(description: String)
