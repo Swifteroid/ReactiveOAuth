@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -478,10 +478,11 @@
 				};
 			};
 			buildConfigurationList = E635F48F1E72B9560050F449 /* Build configuration list for PBXProject "ReactiveOAuth" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 			);
 			mainGroup = E635F48B1E72B9560050F449;
@@ -606,7 +607,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
 			buildSettings = {
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				PRODUCT_NAME = "ReactiveOAuth - Test";
 			};
 			name = Debug;
@@ -615,7 +619,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
 			buildSettings = {
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				PRODUCT_NAME = "ReactiveOAuth - Test";
 			};
 			name = Release;
@@ -625,7 +632,7 @@
 			baseConfigurationReference = 17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
 				SWIFT_VERSION = 5.0;
 			};
@@ -636,7 +643,7 @@
 			baseConfigurationReference = 17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
@@ -648,7 +655,10 @@
 			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
 			};
 			name = Debug;
@@ -658,7 +668,10 @@
 			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
 			};
 			name = Release;
