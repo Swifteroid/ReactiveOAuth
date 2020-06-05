@@ -1,4 +1,4 @@
 github "AliSoftware/OHHTTPStubs" ~> 9.0
 github "Quick/Nimble" ~> 8.0
-github "ReactiveCocoa/ReactiveCocoa" ~> 10.0
+github "ReactiveCocoa/ReactiveCocoa" ~> 11.0
 github "vadymmarkov/Fakery" ~> 4.0
