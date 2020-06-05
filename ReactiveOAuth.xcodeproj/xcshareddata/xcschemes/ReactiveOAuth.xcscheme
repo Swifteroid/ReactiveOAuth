@@ -26,18 +26,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E610030A1E73183A0065804C"
-               BuildableName = "ReactiveOAuth - Test.xctest"
-               BlueprintName = "ReactiveOAuth - Test"
-               ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -47,8 +35,18 @@
             ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E610030A1E73183A0065804C"
+               BuildableName = "ReactiveOAuth-Test.xctest"
+               BlueprintName = "ReactiveOAuth-Test"
+               ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -69,8 +67,6 @@
             ReferencedContainer = "container:ReactiveOAuth.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">

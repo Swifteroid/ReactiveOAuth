@@ -81,25 +81,21 @@
 		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
 		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
 		17FD034571C02A3E54841334 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
-		17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
 		17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Google.swift; sourceTree = "<group>"; };
 		17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReactiveOAuth.podspec; sourceTree = "<group>"; };
-		17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
 		17FD06527D2AECA04D0A7279 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		17FD0685B98931A5F745152D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Dropbox.swift; sourceTree = "<group>"; };
 		17FD06FEECC656D09B33CE61 /* Test.Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.swift; sourceTree = "<group>"; };
 		17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Error.swift; sourceTree = "<group>"; };
 		17FD073734D9BA266CCDC292 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
-		17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Configuration.swift; sourceTree = "<group>"; };
-		17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
 		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Google.swift; sourceTree = "<group>"; };
 		17FD0A879532D717634C832F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.Entrypoint.swift; sourceTree = "<group>"; };
 		17FD0ABC84AB5B618183F93F /* Auth.Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Type.swift; sourceTree = "<group>"; };
 		17FD0B67BD3FCB9ED82841BA /* Auth.OAuth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.OAuth.Detailed.swift; sourceTree = "<group>"; };
-		17FD0BBCF8608E589291BA99 /* ReactiveOAuth - Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveOAuth - Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FD0BBCF8608E589291BA99 /* ReactiveOAuth-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveOAuth-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FD0BCB244F5CFFDDD9D70D /* Auth.OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.OAuth.swift; sourceTree = "<group>"; };
 		17FD0BD06968B5ECA493021F /* Detalisator.Imgur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Imgur.swift; sourceTree = "<group>"; };
 		17FD0BD58C00C5ED557D4E0E /* Extension.OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.OAuthSwift.swift; sourceTree = "<group>"; };
@@ -121,8 +117,13 @@
 		17FD0ED98E5F4CF88A545DC7 /* Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.swift; sourceTree = "<group>"; };
 		17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Path.swift; sourceTree = "<group>"; };
 		17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Google.swift; sourceTree = "<group>"; };
-		17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
 		17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Dropbox.swift; sourceTree = "<group>"; };
+		E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Application.xcconfig"; sourceTree = "<group>"; };
+		E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Test.xcconfig"; sourceTree = "<group>"; };
+		E637E7AE24BE3FD7007ED521 /* Base-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Base-Debug.xcconfig"; sourceTree = "<group>"; };
+		E637E7AF24BE3FD7007ED521 /* Base-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Base-Release.xcconfig"; sourceTree = "<group>"; };
+		E637E7B024BE3FD7007ED521 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C0471B1EA14B170089F914 /* demo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = demo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,16 +158,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		17FD02F126710AC06AF8CF6E /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */,
-				17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */,
-			);
-			name = Configuration;
-			path = dependency/git/xenomorph/source/Configuration;
-			sourceTree = SOURCE_ROOT;
-		};
 		17FD0329543B94DE438EAFE7 /* documentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +188,7 @@
 		17FD04A551C007FDEBC06469 /* accessory */ = {
 			isa = PBXGroup;
 			children = (
-				17FD06BF8396C0163AD62C6C /* configuration */,
+				E637E7AA24BE3FD7007ED521 /* configuration */,
 				17FD03679A023E6EF18B4CD6 /* info */,
 				17FD08C18A4E0C9C78AC7821 /* storyboard */,
 			);
@@ -227,15 +218,6 @@
 			path = ReactiveOAuth;
 			sourceTree = "<group>";
 		};
-		17FD06BF8396C0163AD62C6C /* configuration */ = {
-			isa = PBXGroup;
-			children = (
-				17FD02F126710AC06AF8CF6E /* Configuration */,
-				17FD0817309CD34D6DC7F6C7 /* Target */,
-			);
-			name = configuration;
-			sourceTree = "<group>";
-		};
 		17FD07396279D397717518E5 /* ci */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,15 +235,6 @@
 			path = Ui;
 			sourceTree = "<group>";
 		};
-		17FD07E56A7337D59B60FC69 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */,
-				17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		17FD080E193AAF5AD6256768 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,16 +249,6 @@
 			);
 			path = Auth;
 			sourceTree = "<group>";
-		};
-		17FD0817309CD34D6DC7F6C7 /* Target */ = {
-			isa = PBXGroup;
-			children = (
-				17FD07E56A7337D59B60FC69 /* macOS */,
-				17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */,
-			);
-			name = Target;
-			path = dependency/git/xenomorph/source/Target;
-			sourceTree = SOURCE_ROOT;
 		};
 		17FD08C18A4E0C9C78AC7821 /* storyboard */ = {
 			isa = PBXGroup;
@@ -381,6 +344,7 @@
 				17FD0546BE45D13B08CFB1C9 /* source */,
 				17FD0B4F7D568B910273DDAD /* test */,
 				17FD0BFC7BD425CB6C0495D6 /* .gitignore */,
+				17FD0D8B0C664303A26DB723 /* .swiftlint.yml */,
 				17FD0A879532D717634C832F /* .travis.yml */,
 				17FD06527D2AECA04D0A7279 /* Cartfile */,
 				17FD073734D9BA266CCDC292 /* Cartfile.private */,
@@ -388,15 +352,27 @@
 				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
 				17FD0EB3E12191D66DEA8D5C /* README.md */,
 				17FD0E09B65E7CA87DC9A956 /* LICENSE */,
-				17FD0D8B0C664303A26DB723 /* .swiftlint.yml */,
 			);
+			sourceTree = "<group>";
+		};
+		E637E7AA24BE3FD7007ED521 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */,
+				E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */,
+				E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */,
+				E637E7AE24BE3FD7007ED521 /* Base-Debug.xcconfig */,
+				E637E7AF24BE3FD7007ED521 /* Base-Release.xcconfig */,
+				E637E7B024BE3FD7007ED521 /* Base.xcconfig */,
+			);
+			path = configuration;
 			sourceTree = "<group>";
 		};
 		E6C047101EA14B170089F914 /* product */ = {
 			isa = PBXGroup;
 			children = (
 				17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */,
-				17FD0BBCF8608E589291BA99 /* ReactiveOAuth - Test.xctest */,
+				17FD0BBCF8608E589291BA99 /* ReactiveOAuth-Test.xctest */,
 				E6C0470F1EA14B170089F914 /* Demo.app */,
 			);
 			name = product;
@@ -421,9 +397,9 @@
 			productReference = 17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E610030A1E73183A0065804C /* ReactiveOAuth - Test */ = {
+		E610030A1E73183A0065804C /* ReactiveOAuth-Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth - Test" */;
+			buildConfigurationList = E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth-Test" */;
 			buildPhases = (
 				E61003071E73183A0065804C /* Sources */,
 			);
@@ -432,9 +408,9 @@
 			dependencies = (
 				E610030E1E73183A0065804C /* PBXTargetDependency */,
 			);
-			name = "ReactiveOAuth - Test";
+			name = "ReactiveOAuth-Test";
 			productName = "ReactiveOAuth - Test";
-			productReference = 17FD0BBCF8608E589291BA99 /* ReactiveOAuth - Test.xctest */;
+			productReference = 17FD0BBCF8608E589291BA99 /* ReactiveOAuth-Test.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		E6C0470E1EA14B170089F914 /* Demo */ = {
@@ -492,9 +468,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E61003011E7318390065804C /* ReactiveOAuth */,
-				E610030A1E73183A0065804C /* ReactiveOAuth - Test */,
 				E6C0470E1EA14B170089F914 /* Demo */,
+				E61003011E7318390065804C /* ReactiveOAuth */,
+				E610030A1E73183A0065804C /* ReactiveOAuth-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -589,49 +565,47 @@
 /* Begin XCBuildConfiguration section */
 		E61003141E73183A0065804C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */;
+			baseConfigurationReference = E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				PRODUCT_NAME = ReactiveOAuth;
 			};
 			name = Debug;
 		};
 		E61003151E73183A0065804C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD0913194422C44EAA8108 /* macOS - Framework.xcconfig */;
+			baseConfigurationReference = E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				PRODUCT_NAME = ReactiveOAuth;
 			};
 			name = Release;
 		};
 		E61003161E73183A0065804C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
+			baseConfigurationReference = E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				PRODUCT_NAME = "ReactiveOAuth - Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Debug;
 		};
 		E61003171E73183A0065804C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD07C7A4A8E76F135C8AF9 /* Test.xcconfig */;
+			baseConfigurationReference = E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				PRODUCT_NAME = "ReactiveOAuth - Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Release;
 		};
 		E635F4901E72B9560050F449 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD0615F7B4C419BC10BA63 /* Base - Debug.xcconfig */;
+			baseConfigurationReference = E637E7AE24BE3FD7007ED521 /* Base-Debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -642,19 +616,18 @@
 		};
 		E635F4911E72B9560050F449 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD0FC71AEA96FE075C35FA /* Base - Release.xcconfig */;
+			baseConfigurationReference = E637E7AF24BE3FD7007ED521 /* Base-Release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		E6C0471C1EA14B170089F914 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
+			baseConfigurationReference = E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,7 +640,7 @@
 		};
 		E6C0471D1EA14B170089F914 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17FD052D0F1E5DD1526F7CA4 /* macOS - Application.xcconfig */;
+			baseConfigurationReference = E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -690,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth - Test" */ = {
+		E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth-Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E61003161E73183A0065804C /* Debug */,
