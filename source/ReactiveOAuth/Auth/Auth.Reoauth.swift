@@ -1,6 +1,7 @@
 import Alamofire
 import ReactiveSwift
 import SwiftyJSON
+import Foundation
 
 public protocol ReoauthProtocol {
     func reauthorise()

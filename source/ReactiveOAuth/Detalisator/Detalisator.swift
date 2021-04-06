@@ -1,5 +1,6 @@
 import ReactiveSwift
 import SwiftyJSON
+import Foundation
 
 public protocol DetalisatorProtocol {
     associatedtype DetailType = Any
