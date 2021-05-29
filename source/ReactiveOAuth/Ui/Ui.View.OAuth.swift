@@ -69,7 +69,7 @@ open class OAuthViewController: NSViewController {
 
 // MARK: -
 
-public protocol OAuthorisable: class {
+public protocol OAuthorisable: AnyObject {
     func authorise<Detail>(oauthViewController: OAuthViewController, oauth: DetailedOAuth<Detail>)
 }
 

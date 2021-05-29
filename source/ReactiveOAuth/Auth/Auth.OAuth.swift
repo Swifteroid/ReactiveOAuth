@@ -53,7 +53,7 @@ open class OAuth: NSObject, OAuthProtocol {
             parameters: configuration.parameters ?? [:],
             completionHandler: { [weak self] result in
                 switch result {
-                    case .success(let credential, _, _):
+                    case .success(let (credential, _, _)):
                         self?.pipe.input.send(value: Credential(credential: credential))
                         self?.oauth = nil
                     case .failure(let error):
