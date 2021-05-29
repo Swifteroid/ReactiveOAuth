@@ -109,7 +109,7 @@
 		17FD0D8B0C664303A26DB723 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		17FD0DB09C5F4F51A9E0EDE5 /* Service.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Dropbox.swift; sourceTree = "<group>"; };
 		17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.swift; sourceTree = "<group>"; };
-		17FD0E09B65E7CA87DC9A956 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		17FD0E09B65E7CA87DC9A956 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		17FD0E275F066DE11F91AB30 /* oauth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = oauth.json; sourceTree = "<group>"; };
 		17FD0E45350A6BD48AAE2A3C /* Auth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detailed.swift; sourceTree = "<group>"; };
 		17FD0E4EA7DB99A1B3AB346C /* Ui.View.OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.View.OAuth.swift; sourceTree = "<group>"; };
@@ -118,14 +118,18 @@
 		17FD0EF01A3F7AAD4E0D6605 /* Utility.Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Path.swift; sourceTree = "<group>"; };
 		17FD0F3C3EF0BE16C5A8224E /* Detalisator.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Google.swift; sourceTree = "<group>"; };
 		17FD0FFCA95D55D384A0D29B /* Detalisator.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalisator.Dropbox.swift; sourceTree = "<group>"; };
-		E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Application.xcconfig"; sourceTree = "<group>"; };
-		E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Test.xcconfig"; sourceTree = "<group>"; };
-		E637E7AE24BE3FD7007ED521 /* Base-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Base-Debug.xcconfig"; sourceTree = "<group>"; };
-		E637E7AF24BE3FD7007ED521 /* Base-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Base-Release.xcconfig"; sourceTree = "<group>"; };
-		E637E7B024BE3FD7007ED521 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		E6124BE3267E1C97005A3490 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		E6124BE4267E1C97005A3490 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		E6124BE5267E1C97005A3490 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		E6124BE6267E1C97005A3490 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		E6124BE8267E1CBB005A3490 /* macOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Application.xcconfig"; sourceTree = "<group>"; };
+		E6124BE9267E1CBB005A3490 /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		E6124BEA267E1CBB005A3490 /* macOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		E6124BEB267E1CBB005A3490 /* macOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Base.xcconfig"; sourceTree = "<group>"; };
+		E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-XCTest.xcconfig"; sourceTree = "<group>"; };
+		E6124BED267E1CBB005A3490 /* macOS-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
 		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6C0471B1EA14B170089F914 /* demo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = demo.plist; sourceTree = "<group>"; };
+		E6C0471B1EA14B170089F914 /* application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = application.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -169,7 +173,7 @@
 		17FD03679A023E6EF18B4CD6 /* info */ = {
 			isa = PBXGroup;
 			children = (
-				E6C0471B1EA14B170089F914 /* demo.plist */,
+				E6C0471B1EA14B170089F914 /* application.plist */,
 				17FD0C01D64DA1B2ADA6D8BD /* framework.plist */,
 				17FD034571C02A3E54841334 /* test.plist */,
 			);
@@ -188,7 +192,7 @@
 		17FD04A551C007FDEBC06469 /* accessory */ = {
 			isa = PBXGroup;
 			children = (
-				E637E7AA24BE3FD7007ED521 /* configuration */,
+				E6124BE1267E1C7E005A3490 /* configuration */,
 				17FD03679A023E6EF18B4CD6 /* info */,
 				17FD08C18A4E0C9C78AC7821 /* storyboard */,
 			);
@@ -334,6 +338,41 @@
 			path = Testing;
 			sourceTree = "<group>";
 		};
+		E6124BE1267E1C7E005A3490 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E6124BE2267E1C97005A3490 /* Base */,
+				E6124BE7267E1CBB005A3490 /* macOS */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		E6124BE2267E1C97005A3490 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E6124BE4267E1C97005A3490 /* Debug.xcconfig */,
+				E6124BE5267E1C97005A3490 /* Release.xcconfig */,
+				E6124BE6267E1C97005A3490 /* Test.xcconfig */,
+				E6124BE3267E1C97005A3490 /* Profile.xcconfig */,
+			);
+			name = Base;
+			path = dependency/Git/xcconfigs/Base/Configurations;
+			sourceTree = SOURCE_ROOT;
+		};
+		E6124BE7267E1CBB005A3490 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E6124BEB267E1CBB005A3490 /* macOS-Base.xcconfig */,
+				E6124BEA267E1CBB005A3490 /* macOS-StaticLibrary.xcconfig */,
+				E6124BED267E1CBB005A3490 /* macOS-DynamicLibrary.xcconfig */,
+				E6124BE9267E1CBB005A3490 /* macOS-Framework.xcconfig */,
+				E6124BE8267E1CBB005A3490 /* macOS-Application.xcconfig */,
+				E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */,
+			);
+			name = macOS;
+			path = dependency/Git/xcconfigs/macOS;
+			sourceTree = SOURCE_ROOT;
+		};
 		E635F48B1E72B9560050F449 = {
 			isa = PBXGroup;
 			children = (
@@ -350,22 +389,9 @@
 				17FD073734D9BA266CCDC292 /* Cartfile.private */,
 				17FD01F24BF048EB020FB7F6 /* Cartfile.resolved */,
 				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
+				17FD0E09B65E7CA87DC9A956 /* LICENSE.md */,
 				17FD0EB3E12191D66DEA8D5C /* README.md */,
-				17FD0E09B65E7CA87DC9A956 /* LICENSE */,
 			);
-			sourceTree = "<group>";
-		};
-		E637E7AA24BE3FD7007ED521 /* configuration */ = {
-			isa = PBXGroup;
-			children = (
-				E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */,
-				E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */,
-				E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */,
-				E637E7AE24BE3FD7007ED521 /* Base-Debug.xcconfig */,
-				E637E7AF24BE3FD7007ED521 /* Base-Release.xcconfig */,
-				E637E7B024BE3FD7007ED521 /* Base.xcconfig */,
-			);
-			path = configuration;
 			sourceTree = "<group>";
 		};
 		E6C047101EA14B170089F914 /* product */ = {
@@ -565,24 +591,27 @@
 /* Begin XCBuildConfiguration section */
 		E61003141E73183A0065804C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */;
+			baseConfigurationReference = E6124BE9267E1CBB005A3490 /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				INFOPLIST_FILE = "$(inherited)/framework.plist";
 			};
 			name = Debug;
 		};
 		E61003151E73183A0065804C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AC24BE3FD7007ED521 /* macOS-Framework.xcconfig */;
+			baseConfigurationReference = E6124BE9267E1CBB005A3490 /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				INFOPLIST_FILE = "$(inherited)/framework.plist";
 			};
 			name = Release;
 		};
 		E61003161E73183A0065804C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */;
+			baseConfigurationReference = E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = "$(inherited)/test.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
@@ -593,8 +622,9 @@
 		};
 		E61003171E73183A0065804C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AD24BE3FD7007ED521 /* macOS-Test.xcconfig */;
+			baseConfigurationReference = E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = "$(inherited)/test.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
@@ -605,31 +635,40 @@
 		};
 		E635F4901E72B9560050F449 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AE24BE3FD7007ED521 /* Base-Debug.xcconfig */;
+			baseConfigurationReference = E6124BE4267E1C97005A3490 /* Debug.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = accessory/info;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		E635F4911E72B9560050F449 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AF24BE3FD7007ED521 /* Base-Release.xcconfig */;
+			baseConfigurationReference = E6124BE5267E1C97005A3490 /* Release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = accessory/info;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.reactiveoauth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		E6C0471C1EA14B170089F914 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */;
+			baseConfigurationReference = E6124BE8267E1CBB005A3490 /* macOS-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
+				INFOPLIST_FILE = "$(inherited)/application.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
@@ -640,9 +679,9 @@
 		};
 		E6C0471D1EA14B170089F914 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E637E7AB24BE3FD7007ED521 /* macOS-Application.xcconfig */;
+			baseConfigurationReference = E6124BE8267E1CBB005A3490 /* macOS-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = "$(inherited)/../$(TARGET_NAME:lower).plist";
+				INFOPLIST_FILE = "$(inherited)/application.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
