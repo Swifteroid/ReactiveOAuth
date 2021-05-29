@@ -6,11 +6,11 @@ open class Service {
     }
 
     open class func configure(access: Access, url: String, type: String? = nil, scope: String? = nil, state: String? = nil, parameters: [String: Any]? = nil) -> OAuth.Configuration {
-        return OAuth.Configuration(access: access, url: OAuth.Url(url: self.url, callback: url), type: type, scope: scope, state: state, parameters: parameters)
+        OAuth.Configuration(access: access, url: OAuth.Url(url: self.url, callback: url), type: type, scope: scope, state: state, parameters: parameters)
     }
 
     open class func configure(access: Access, token: String) -> Reoauth.Configuration {
-        return Reoauth.Configuration(access: access, url: Reoauth.Url(url: self.url), token: token)
+        Reoauth.Configuration(access: access, url: Reoauth.Url(url: self.url), token: token)
     }
 }
 

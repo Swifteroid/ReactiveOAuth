@@ -81,6 +81,6 @@ open class OAuthWebViewDelegate: NSObject, WKNavigationDelegate {
 
 extension URL {
     fileprivate func calledback(url: URL) -> Bool {
-        return url.scheme == self.scheme && url.host == self.host && url.path == self.path
+        url.scheme == self.scheme && url.host == self.host && url.path == self.path
     }
 }

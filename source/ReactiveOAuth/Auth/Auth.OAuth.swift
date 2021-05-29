@@ -74,7 +74,7 @@ open class OAuth: NSObject, OAuthProtocol {
 
 extension Reactive where Base: OAuth {
     public var authorised: Signal<Credential, Error> {
-        return self.base.pipe.output
+        self.base.pipe.output
     }
 }
 

@@ -44,7 +44,7 @@ open class Reoauth: ReoauthProtocol, ReactiveExtensionsProvider {
 
 extension Reactive where Base: Reoauth {
     public var reauthorised: Signal<Credential, Error> {
-        return self.base.pipe.output
+        self.base.pipe.output
     }
 }
 

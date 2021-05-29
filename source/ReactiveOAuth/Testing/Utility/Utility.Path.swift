@@ -6,7 +6,7 @@ internal class PathUtility {
     // MARK: -
 
     internal static var testUrl: URL {
-        return URL(fileURLWithPath: self.path["Root"]!, isDirectory: true).appendingPathComponent("test", isDirectory: true)
+        URL(fileURLWithPath: self.path["Root"]!, isDirectory: true).appendingPathComponent("test", isDirectory: true)
     }
 
     internal static func testUrl(directory: String? = nil, file: String? = nil) -> URL {
@@ -19,10 +19,10 @@ internal class PathUtility {
     // MARK: -
 
     internal static var oauth: URL {
-        return self.testUrl(file: "oauth.json")
+        self.testUrl(file: "oauth.json")
     }
 
     internal static func oauth(file: String) -> URL {
-        return self.testUrl(directory: "oauth", file: file)
+        self.testUrl(directory: "oauth", file: file)
     }
 }

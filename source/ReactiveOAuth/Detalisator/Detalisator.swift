@@ -40,7 +40,7 @@ open class JsonDetalisator<Detail>: Detalisator<Detail> {
 
 extension DetalisatorProtocol {
     public var reactive: DetalisatorReactive<Self, DetailType> {
-        return DetalisatorReactive(self)
+        DetalisatorReactive(self)
     }
 }
 
@@ -54,6 +54,6 @@ public struct DetalisatorReactive<Base, Detail> {
 
 extension DetalisatorReactive where Base: Detalisator<Detail> {
     public var detailed: Signal<Detail, Error> {
-        return self.base.pipe.output
+        self.base.pipe.output
     }
 }

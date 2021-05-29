@@ -12,7 +12,7 @@ open class OAuthViewController: NSViewController {
 
     open var webView: WKWebView! {
         get {
-            return self.webViewBox.contentView as? WKWebView
+            self.webViewBox.contentView as? WKWebView
         }
         set {
             newValue?.navigationDelegate = self.webViewDelegate

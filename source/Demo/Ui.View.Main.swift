@@ -13,13 +13,13 @@ internal class MainViewController: NSViewController, OAuthorisable {
     /// Returns auth type enum for currently selected service.
 
     private var type: AuthType {
-        return AuthType(rawValue: self.service.selectedItem!.title)!
+        AuthType(rawValue: self.service.selectedItem!.title)!
     }
 
     /// Returns configuration from `oauth.json` for currently selected service.
 
     private var configuration: ConfigurationUtility.Configuration? {
-        return ConfigurationUtility.configuration(for: self.type)
+        ConfigurationUtility.configuration(for: self.type)
     }
 
     /// Update values from configuration.

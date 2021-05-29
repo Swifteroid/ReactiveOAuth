@@ -21,6 +21,6 @@ open class DetailedReoauth<Detail>: DetailedAuth<Detail>, ReoauthProtocol {
 
 extension DetailedAuthReactive where Base: DetailedReoauth<Detail> {
     public var reauthorised: Signal<(Credential, Detail), Error> {
-        return self.base.pipe.output
+        self.base.pipe.output
     }
 }

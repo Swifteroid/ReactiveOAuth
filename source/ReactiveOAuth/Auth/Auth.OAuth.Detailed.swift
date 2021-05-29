@@ -5,7 +5,7 @@ import WebKit
 
 open class DetailedOAuth<Detail>: DetailedAuth<Detail>, OAuthProtocol {
     open var configuration: OAuth.Configuration {
-        return self.oauth.configuration
+        self.oauth.configuration
     }
 
     // MARK: -
@@ -32,6 +32,6 @@ open class DetailedOAuth<Detail>: DetailedAuth<Detail>, OAuthProtocol {
 
 extension DetailedAuthReactive where Base: DetailedOAuth<Detail> {
     public var authorised: Signal<(Credential, Detail), Error> {
-        return self.base.pipe.output
+        self.base.pipe.output
     }
 }

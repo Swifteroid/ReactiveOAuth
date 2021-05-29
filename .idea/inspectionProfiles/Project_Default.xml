@@ -3,5 +3,6 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="BashGloballyRegisteredVariable" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JSEqualityComparisonWithCoercion" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SwiftUnnecessarySelfQualifier" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   </profile>
 </component>

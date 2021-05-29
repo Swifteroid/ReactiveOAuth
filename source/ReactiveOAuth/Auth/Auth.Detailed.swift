@@ -35,7 +35,7 @@ public struct DetailedAuthUrl {
 
 extension DetailedAuthReactiveExtensionsProvider {
     public var reactive: DetailedAuthReactive<Self, DetailType> {
-        return DetailedAuthReactive(self)
+        DetailedAuthReactive(self)
     }
 }
 

@@ -70,7 +70,7 @@ internal class AuthTestCase: TestCase {
     // MARK: -
 
     internal var expectation: XCTestExpectation {
-        return self.expectation(description: "auth")
+        self.expectation(description: "auth")
     }
 
     internal func waitForExpectations() {
@@ -121,7 +121,7 @@ internal class AbstractOAuthWebViewDelegate: ReactiveOAuth.OAuthWebViewDelegate 
     }
 
     internal func authorise(script: String) -> String {
-        return script
+        script
             .replacingOccurrences(of: "$(EMAIL)", with: self.email)
             .replacingOccurrences(of: "$(PASSWORD)", with: self.password)
     }
