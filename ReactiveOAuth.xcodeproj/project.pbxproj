@@ -50,6 +50,11 @@
 		E6124BF6267E232F005A3490 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BEF267E22EC005A3490 /* Nimble */; };
 		E6124BF9267E2343005A3490 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BF8267E2343005A3490 /* Fakery */; };
 		E6124BFF267E2549005A3490 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BFE267E2549005A3490 /* OHHTTPStubsSwift */; };
+		E6124C1A267E2931005A3490 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C05267E26D0005A3490 /* Alamofire.xcframework */; };
+		E6124C1B267E2931005A3490 /* OAuthSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C02267E26D0005A3490 /* OAuthSwift.xcframework */; };
+		E6124C1D267E2931005A3490 /* ReactiveSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C03267E26D0005A3490 /* ReactiveSwift.xcframework */; };
+		E6124C1E267E2931005A3490 /* SwiftyJSON.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */; };
+		E6AEE84A267E2B9900A0E81E /* ReactiveCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +135,11 @@
 		E6124BEB267E1CBB005A3490 /* macOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Base.xcconfig"; sourceTree = "<group>"; };
 		E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-XCTest.xcconfig"; sourceTree = "<group>"; };
 		E6124BED267E1CBB005A3490 /* macOS-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		E6124C02267E26D0005A3490 /* OAuthSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OAuthSwift.xcframework; path = Carthage/Build/OAuthSwift.xcframework; sourceTree = SOURCE_ROOT; };
+		E6124C03267E26D0005A3490 /* ReactiveSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveSwift.xcframework; path = Carthage/Build/ReactiveSwift.xcframework; sourceTree = SOURCE_ROOT; };
+		E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyJSON.xcframework; path = Carthage/Build/SwiftyJSON.xcframework; sourceTree = SOURCE_ROOT; };
+		E6124C05267E26D0005A3490 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = SOURCE_ROOT; };
+		E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveCocoa.xcframework; path = Carthage/Build/ReactiveCocoa.xcframework; sourceTree = SOURCE_ROOT; };
 		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C0471B1EA14B170089F914 /* application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = application.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +152,18 @@
 				E6124BF6267E232F005A3490 /* Nimble in Frameworks */,
 				E6124BFF267E2549005A3490 /* OHHTTPStubsSwift in Frameworks */,
 				E6124BF9267E2343005A3490 /* Fakery in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6124C06267E26D8005A3490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6124C1A267E2931005A3490 /* Alamofire.xcframework in Frameworks */,
+				E6124C1B267E2931005A3490 /* OAuthSwift.xcframework in Frameworks */,
+				E6AEE84A267E2B9900A0E81E /* ReactiveCocoa.xcframework in Frameworks */,
+				E6124C1D267E2931005A3490 /* ReactiveSwift.xcframework in Frameworks */,
+				E6124C1E267E2931005A3490 /* SwiftyJSON.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,11 +410,32 @@
 			path = dependency/Git/xcconfigs/macOS;
 			sourceTree = SOURCE_ROOT;
 		};
+		E6124C00267E2670005A3490 /* dependency */ = {
+			isa = PBXGroup;
+			children = (
+				E6124C01267E26C1005A3490 /* framework */,
+			);
+			path = dependency;
+			sourceTree = "<group>";
+		};
+		E6124C01267E26C1005A3490 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				E6124C05267E26D0005A3490 /* Alamofire.xcframework */,
+				E6124C02267E26D0005A3490 /* OAuthSwift.xcframework */,
+				E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */,
+				E6124C03267E26D0005A3490 /* ReactiveSwift.xcframework */,
+				E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
 		E635F48B1E72B9560050F449 = {
 			isa = PBXGroup;
 			children = (
 				17FD04A551C007FDEBC06469 /* accessory */,
 				17FD09EAD2C0B096F2B1D55C /* build */,
+				E6124C00267E2670005A3490 /* dependency */,
 				17FD0329543B94DE438EAFE7 /* documentation */,
 				E6C047101EA14B170089F914 /* product */,
 				17FD0546BE45D13B08CFB1C9 /* source */,
@@ -427,6 +470,7 @@
 			buildConfigurationList = E61003181E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth" */;
 			buildPhases = (
 				E61002FD1E7318390065804C /* Sources */,
+				E6124C06267E26D8005A3490 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -637,10 +681,6 @@
 			baseConfigurationReference = E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/test.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Debug;
@@ -650,10 +690,6 @@
 			baseConfigurationReference = E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/test.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Release;
@@ -663,7 +699,7 @@
 			baseConfigurationReference = E6124BE4267E1C97005A3490 /* Debug.xcconfig */;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/**";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = accessory/info;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -678,7 +714,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6124BE5267E1C97005A3490 /* Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/dependency/Carthage/Build/**";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = accessory/info;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -694,10 +730,6 @@
 			baseConfigurationReference = E6124BE8267E1CBB005A3490 /* macOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/application.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
 			};
 			name = Debug;
@@ -707,10 +739,6 @@
 			baseConfigurationReference = E6124BE8267E1CBB005A3490 /* macOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/application.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).demo";
 			};
 			name = Release;
