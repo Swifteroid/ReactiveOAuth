@@ -2,6 +2,7 @@ import Fakery
 import Foundation
 import Nimble
 import OHHTTPStubs
+import OHHTTPStubsSwift
 import ReactiveOAuth
 import ReactiveSwift
 import XCTest

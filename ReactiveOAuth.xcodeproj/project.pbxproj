@@ -47,6 +47,9 @@
 		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
 		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
 		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
+		E6124BF6267E232F005A3490 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BEF267E22EC005A3490 /* Nimble */; };
+		E6124BF9267E2343005A3490 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BF8267E2343005A3490 /* Fakery */; };
+		E6124BFF267E2549005A3490 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BFE267E2549005A3490 /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +91,6 @@
 		17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Dropbox.swift; sourceTree = "<group>"; };
 		17FD06FEECC656D09B33CE61 /* Test.Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.swift; sourceTree = "<group>"; };
 		17FD07355DDECCC4ABF8DA01 /* Test.Auth.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Error.swift; sourceTree = "<group>"; };
-		17FD073734D9BA266CCDC292 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		17FD0889E05159C12D6EF9CF /* Utility.Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.Configuration.swift; sourceTree = "<group>"; };
 		17FD0A7AF699B08D4FD6CA3D /* Test.Auth.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Google.swift; sourceTree = "<group>"; };
 		17FD0A879532D717634C832F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
@@ -131,6 +133,19 @@
 		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C0471B1EA14B170089F914 /* application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = application.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6124BF0267E22F3005A3490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6124BF6267E232F005A3490 /* Nimble in Frameworks */,
+				E6124BFF267E2549005A3490 /* OHHTTPStubsSwift in Frameworks */,
+				E6124BF9267E2343005A3490 /* Fakery in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		17FD009C67D38131A945A84E /* Service */ = {
@@ -386,7 +401,6 @@
 				17FD0D8B0C664303A26DB723 /* .swiftlint.yml */,
 				17FD0A879532D717634C832F /* .travis.yml */,
 				17FD06527D2AECA04D0A7279 /* Cartfile */,
-				17FD073734D9BA266CCDC292 /* Cartfile.private */,
 				17FD01F24BF048EB020FB7F6 /* Cartfile.resolved */,
 				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
 				17FD0E09B65E7CA87DC9A956 /* LICENSE.md */,
@@ -428,6 +442,7 @@
 			buildConfigurationList = E61003191E73183A0065804C /* Build configuration list for PBXNativeTarget "ReactiveOAuth-Test" */;
 			buildPhases = (
 				E61003071E73183A0065804C /* Sources */,
+				E6124BF0267E22F3005A3490 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,6 +450,11 @@
 				E610030E1E73183A0065804C /* PBXTargetDependency */,
 			);
 			name = "ReactiveOAuth-Test";
+			packageProductDependencies = (
+				E6124BEF267E22EC005A3490 /* Nimble */,
+				E6124BF8267E2343005A3490 /* Fakery */,
+				E6124BFE267E2549005A3490 /* OHHTTPStubsSwift */,
+			);
 			productName = "ReactiveOAuth - Test";
 			productReference = 17FD0BBCF8608E589291BA99 /* ReactiveOAuth-Test.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -490,6 +510,11 @@
 				Base,
 			);
 			mainGroup = E635F48B1E72B9560050F449;
+			packageReferences = (
+				E6124BEE267E22EC005A3490 /* XCRemoteSwiftPackageReference "Nimble" */,
+				E6124BF2267E231F005A3490 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+				E6124BF7267E2343005A3490 /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = E6C047101EA14B170089F914 /* product */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -730,6 +755,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6124BEE267E22EC005A3490 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+		E6124BF2267E231F005A3490 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+		E6124BF7267E2343005A3490 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6124BEF267E22EC005A3490 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6124BEE267E22EC005A3490 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		E6124BF8267E2343005A3490 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6124BF7267E2343005A3490 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+		E6124BFE267E2549005A3490 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6124BF2267E231F005A3490 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E635F48C1E72B9560050F449 /* Project object */;
 }
