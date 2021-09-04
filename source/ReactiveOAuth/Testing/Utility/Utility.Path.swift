@@ -1,12 +1,18 @@
 import Foundation
 
 internal class PathUtility {
-    private static let path: [String: String] = Bundle(for: PathUtility.self).object(forInfoDictionaryKey: "Path") as! [String: String]
+    private static var rootPath: String {
+        (Bundle(for: PathUtility.self).object(forInfoDictionaryKey: "Path") as? [String: String])?["Root"] ?? FileManager.default.currentDirectoryPath
+    }
+
+    private static var rootURL: URL {
+        URL(fileURLWithPath: self.rootPath, isDirectory: true)
+    }
 
     // MARK: -
 
     internal static var testURL: URL {
-        URL(fileURLWithPath: self.path["Root"]!, isDirectory: true).appendingPathComponent("test", isDirectory: true)
+        self.rootURL.appendingPathComponent("test", isDirectory: true)
     }
 
     internal static func testURL(directory: String? = nil, file: String? = nil) -> URL {

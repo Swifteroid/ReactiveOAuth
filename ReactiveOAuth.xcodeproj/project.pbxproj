@@ -101,6 +101,7 @@
 		17FD0A879532D717634C832F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		17FD0AADFDA5BC6D5E98824B /* Application.Entrypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.Entrypoint.swift; sourceTree = "<group>"; };
 		17FD0ABC84AB5B618183F93F /* Auth.Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Type.swift; sourceTree = "<group>"; };
+		17FD0B3A7C9ED7E07D8D15FE /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		17FD0B67BD3FCB9ED82841BA /* Auth.OAuth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.OAuth.Detailed.swift; sourceTree = "<group>"; };
 		17FD0BBCF8608E589291BA99 /* ReactiveOAuth-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveOAuth-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FD0BCB244F5CFFDDD9D70D /* Auth.OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.OAuth.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyJSON.xcframework; path = Carthage/Build/SwiftyJSON.xcframework; sourceTree = SOURCE_ROOT; };
 		E6124C05267E26D0005A3490 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = SOURCE_ROOT; };
 		E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveCocoa.xcframework; path = Carthage/Build/ReactiveCocoa.xcframework; sourceTree = SOURCE_ROOT; };
+		E699039F26E3A91E000662BB /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
 		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C0471B1EA14B170089F914 /* application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = application.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -445,6 +447,8 @@
 				17FD0A879532D717634C832F /* .travis.yml */,
 				17FD06527D2AECA04D0A7279 /* Cartfile */,
 				17FD01F24BF048EB020FB7F6 /* Cartfile.resolved */,
+				17FD0B3A7C9ED7E07D8D15FE /* Package.swift */,
+				E699039F26E3A91E000662BB /* Package.resolved */,
 				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
 				17FD0E09B65E7CA87DC9A956 /* LICENSE.md */,
 				17FD0EB3E12191D66DEA8D5C /* README.md */,
