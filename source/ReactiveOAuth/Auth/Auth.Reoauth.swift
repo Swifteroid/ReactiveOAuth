@@ -1,4 +1,5 @@
 import Alamofire
+import Foundation
 import ReactiveSwift
 import SwiftyJSON
 
@@ -53,17 +54,17 @@ extension Reactive where Base: Reoauth {
 extension Reoauth {
     public struct Configuration {
         public let access: Access
-        public let url: Url
+        public let url: URL
         public let token: String
 
-        public init(access: Access, url: Url, token: String) {
+        public init(access: Access, url: URL, token: String) {
             self.access = access
             self.url = url
             self.token = token
         }
     }
 
-    public struct Url {
+    public struct URL {
         public let token: String
         public init(token: String) {
             self.token = token

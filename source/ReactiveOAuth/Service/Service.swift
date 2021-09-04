@@ -1,23 +1,23 @@
 import Foundation
 
 open class Service {
-    open class var url: Url {
+    open class var url: URL {
         abort()
     }
 
     open class func configure(access: Access, url: String, type: String? = nil, scope: String? = nil, state: String? = nil, parameters: [String: Any]? = nil) -> OAuth.Configuration {
-        OAuth.Configuration(access: access, url: OAuth.Url(url: self.url, callback: url), type: type, scope: scope, state: state, parameters: parameters)
+        OAuth.Configuration(access: access, url: OAuth.URL(url: self.url, callback: url), type: type, scope: scope, state: state, parameters: parameters)
     }
 
     open class func configure(access: Access, token: String) -> Reoauth.Configuration {
-        Reoauth.Configuration(access: access, url: Reoauth.Url(url: self.url), token: token)
+        Reoauth.Configuration(access: access, url: Reoauth.URL(url: self.url), token: token)
     }
 }
 
 // MARK: -
 
 extension Service {
-    public struct Url {
+    public struct URL {
         public let authorise: String
         public let token: String
         public let detail: String
@@ -32,14 +32,14 @@ extension Service {
 
 // MARK: -
 
-extension OAuth.Url {
-    public init(url: Service.Url, callback: String) {
+extension OAuth.URL {
+    public init(url: Service.URL, callback: String) {
         self.init(authorise: url.authorise, token: url.token, callback: callback)
     }
 }
 
-extension Reoauth.Url {
-    public init(url: Service.Url) {
+extension Reoauth.URL {
+    public init(url: Service.URL) {
         self.init(token: url.token)
     }
 }

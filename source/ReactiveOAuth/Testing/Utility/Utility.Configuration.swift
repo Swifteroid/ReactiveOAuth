@@ -3,7 +3,7 @@ import SwiftyJSON
 import Foundation
 
 internal class ConfigurationUtility {
-    private static let json: JSON = JSON(rawValue: try! Data(contentsOf: PathUtility.oauth))!
+    private static let json: JSON = JSON(rawValue: try! Data(contentsOf: PathUtility.oauthURL))!
 
     internal typealias Configuration = (access: Access, url: String, email: String, password: String)
 

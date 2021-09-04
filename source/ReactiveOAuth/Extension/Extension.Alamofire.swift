@@ -1,4 +1,5 @@
 import Alamofire
+import Foundation
 import ReactiveSwift
 
 extension DataRequest: ReactiveExtensionsProvider {

@@ -24,7 +24,7 @@ open class DetailedAuth<Detail>: DetailedAuthReactiveExtensionsProvider {
 
 // MARK: -
 
-public struct DetailedAuthUrl {
+public struct DetailedAuthURL {
     public let detail: String
     public init(detail: String) {
         self.detail = detail

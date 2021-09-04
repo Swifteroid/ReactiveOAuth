@@ -37,17 +37,17 @@ open class OAuth: NSObject, OAuthProtocol {
         let oauth: OAuth2Swift = OAuth2Swift(
             consumerKey: configuration.access.key,
             consumerSecret: configuration.access.secret,
-            authorizeUrl: configuration.url.authorise,
-            accessTokenUrl: configuration.url.token,
+            authorizeURL: configuration.url.authorise,
+            accessTokenURL: configuration.url.token,
             responseType: configuration.type ?? "token",
-            urlHandler: UrlHandler(webView: webView)
+            urlHandler: URLHandler(webView: webView)
         )
 
         oauth.encodeCallbackURL = true
         oauth.encodeCallbackURLQuery = false
 
         oauth.authorize(
-            withCallbackURL: URL(string: configuration.url.callback)!,
+            withCallbackURL: Foundation.URL(string: configuration.url.callback)!,
             scope: configuration.scope ?? "",
             state: configuration.state ?? NSUUID().uuidString,
             parameters: configuration.parameters ?? [:],
@@ -83,13 +83,13 @@ extension Reactive where Base: OAuth {
 extension OAuth {
     open class Configuration {
         public let access: Access
-        public let url: Url
+        public let url: URL
         public let type: String?
         public let scope: String?
         public let state: String?
         public let parameters: [String: Any]?
 
-        public init(access: Access, url: Url, type: String? = nil, scope: String? = nil, state: String? = nil, parameters: [String: Any]? = nil) {
+        public init(access: Access, url: URL, type: String? = nil, scope: String? = nil, state: String? = nil, parameters: [String: Any]? = nil) {
             self.access = access
             self.url = url
             self.type = type
@@ -99,7 +99,7 @@ extension OAuth {
         }
     }
 
-    public struct Url {
+    public struct URL {
         public let authorise: String
         public let token: String
         public let callback: String
@@ -115,14 +115,14 @@ extension OAuth {
 // MARK: -
 
 extension OAuth {
-    open class UrlHandler: OAuthSwiftURLHandlerType {
+    open class URLHandler: OAuthSwiftURLHandlerType {
         open weak var webView: WKWebView?
 
         public init(webView: WKWebView) {
             self.webView = webView
         }
 
-        open func handle(_ url: URL) {
+        open func handle(_ url: Foundation.URL) {
             _ = self.webView?.load(URLRequest(url: url))
         }
     }

@@ -14,7 +14,7 @@ internal class AuthErrorTestCase: TestCase {
     internal func testReoauth() {
         let faker: Faker = Faker()
         let access: Access = Access(key: faker.lorem.word(), secret: faker.lorem.word())
-        let configuration: Reoauth.Configuration = Reoauth.Configuration(access: access, url: Reoauth.Url(token: faker.internet.url()), token: faker.lorem.word())
+        let configuration: Reoauth.Configuration = Reoauth.Configuration(access: access, url: Reoauth.URL(token: faker.internet.url()), token: faker.lorem.word())
         let reoauth: DetailedReoauth = DetailedReoauth(reoauth: Reoauth(configuration: configuration), detalisator: JsonDetalisator<String>())
 
         let expectation: XCTestExpectation = self.expectation(description: "Reoauth error")

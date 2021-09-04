@@ -31,7 +31,7 @@ open class OAuthViewController: NSViewController {
     override open var representedObject: Any? {
         didSet {
             if let oauth: OAuthProtocol = self.representedObject as! OAuthProtocol? {
-                self.webViewDelegate.callbackUrl = URL(string: oauth.configuration.url.callback)
+                self.webViewDelegate.callbackURL = URL(string: oauth.configuration.url.callback)
             }
         }
     }

@@ -1,6 +1,6 @@
 open class Dropbox: Service {
-    override open class var url: Url {
-        Url(
+    override open class var url: URL {
+        URL(
             authorise: "https://www.dropbox.com/oauth2/authorize",
             token: "https://api.dropbox.com/oauth2/token",
             detail: "https://api.dropbox.com/2/users/get_current_account"

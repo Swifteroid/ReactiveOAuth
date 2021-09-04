@@ -15,7 +15,7 @@ internal class AuthTestCase: TestCase {
         guard let configuration: ConfigurationUtility.Configuration = ConfigurationUtility.configuration(for: type) else { return self.skip(with: "Missing configuration for \(type) auth type.") }
 
         let oauth: DetailedOAuth = OAuthFactory(type: type, configuration: configuration).construct()!
-        let view: OAuthWebView = OAuthWebView(delegate: delegate.init(email: configuration.email, password: configuration.password, callbackUrl: URL(string: oauth.configuration.url.callback)))
+        let view: OAuthWebView = OAuthWebView(delegate: delegate.init(email: configuration.email, password: configuration.password, callbackURL: URL(string: oauth.configuration.url.callback)))
         let window: AuthWindow = AuthWindow(view: view)
         let expectation: XCTestExpectation = self.expectation
 
@@ -114,10 +114,10 @@ internal class AbstractOAuthWebViewDelegate: ReactiveOAuth.OAuthWebViewDelegate 
     private let email: String
     private let password: String
 
-    internal required init(email: String, password: String, progressIndicator: NSProgressIndicator? = nil, callbackUrl: URL? = nil) {
+    internal required init(email: String, password: String, progressIndicator: NSProgressIndicator? = nil, callbackURL: URL? = nil) {
         self.email = email
         self.password = password
-        super.init(progressIndicator: progressIndicator, callbackUrl: callbackUrl)
+        super.init(progressIndicator: progressIndicator, callbackURL: callbackURL)
     }
 
     internal func authorise(script: String) -> String {

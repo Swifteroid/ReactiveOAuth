@@ -1,6 +1,6 @@
 open class Imgur: Service {
-    override open class var url: Url {
-        Url(
+    override open class var url: URL {
+        URL(
             authorise: "https://api.imgur.com/oauth2/authorize",
             token: "https://api.imgur.com/oauth2/token",
             detail: "https://api.imgur.com/3/account/me/settings"

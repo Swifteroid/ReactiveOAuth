@@ -50,18 +50,18 @@ open class OAuthWebView: WKWebView {
 open class OAuthWebViewDelegate: NSObject, WKNavigationDelegate {
     public weak var progressIndicator: NSProgressIndicator?
 
-    public var callbackUrl: URL?
+    public var callbackURL: URL?
 
-    public init(progressIndicator: NSProgressIndicator? = nil, callbackUrl: URL? = nil) {
+    public init(progressIndicator: NSProgressIndicator? = nil, callbackURL: URL? = nil) {
         super.init()
         self.progressIndicator = progressIndicator
-        self.callbackUrl = callbackUrl
+        self.callbackURL = callbackURL
     }
 
     // MARK: -
 
     open func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let url: URL = navigationAction.request.url, self.callbackUrl?.calledback(url: url) ?? false {
+        if let url: URL = navigationAction.request.url, self.callbackURL?.calledback(url: url) ?? false {
             decisionHandler(WKNavigationActionPolicy.cancel)
             OAuthSwift.handle(url: url)
         } else {

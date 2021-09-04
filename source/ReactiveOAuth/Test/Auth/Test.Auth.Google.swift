@@ -27,7 +27,7 @@ private class OAuthWebViewDelegate: AbstractOAuthWebViewDelegate {
             return
         }
 
-        let url: URL = PathUtility.oauth(file: file)
+        let url: URL = PathUtility.oauthURL(file: file)
         let script: String = self.authorise(script: try! NSString(contentsOf: url, encoding: String.Encoding.utf8.rawValue) as String)
 
         webView.evaluateJavaScript(script, completionHandler: nil)
