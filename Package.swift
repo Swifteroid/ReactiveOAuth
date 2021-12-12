@@ -12,7 +12,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0"),
         .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", from: "2.0.0"),
-        .package(url: "https://github.com/ReactiveCocoa/ReactiveCocoa.git", from: "11.0.0"),
+        .package(url: "https://github.com/ReactiveCocoa/ReactiveCocoa.git", from: "12.0.0"),
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.0"),
         .package(url: "https://github.com/vadymmarkov/Fakery.git", from: "5.0.0"),
         .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "9.0.0"),
