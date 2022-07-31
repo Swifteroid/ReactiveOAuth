@@ -16,8 +16,8 @@ let package = Package(
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.0"),
         .package(url: "https://github.com/vadymmarkov/Fakery.git", from: "5.0.0"),
         .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "9.0.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
-        .package(url: "https://github.com/Quick/Quick.git", from: "4.0.0"),
+        .package(url: "https://github.com/Quick/Nimble.git", from: "10.0.0"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "5.0.0"),
     ],
     targets: [
         .target(

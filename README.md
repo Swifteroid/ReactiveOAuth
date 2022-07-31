@@ -44,11 +44,12 @@ internal class MainViewController: NSViewController
 
 ## Install
 
-Add ReactiveOAuth to `Cartfile`:
+Add ReactiveOAuth as a dependency of your package in `Package.swift`:
 
+```swift
+.package(url: "https://github.com/Swifteroid/ReactiveOAuth.git", from: "1.0.0")
 ```
-github "swifteroid/reactiveoauh" "master"
-```
+
 
 ## Testing
 

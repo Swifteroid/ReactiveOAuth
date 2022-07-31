@@ -47,14 +47,15 @@
 		17FD0E1BADF1AC3676DAC1A3 /* Auth.Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD00427332FD9AB4062446 /* Auth.Credential.swift */; };
 		17FD0E2EDF07CE6B1B092DAA /* Auth.Reoauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DC35BCD92D57BDE2841 /* Auth.Reoauth.swift */; };
 		17FD0E87962CC41A157281A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0685B98931A5F745152D /* Service.swift */; };
+		48220B3A289861760092D36C /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 48220B39289861760092D36C /* ReactiveCocoa */; };
+		482EDAD828985D5800BDF590 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 482EDAD728985D5800BDF590 /* Alamofire */; };
+		482EDADB28985D9900BDF590 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 482EDADA28985D9900BDF590 /* OAuthSwift */; };
+		48EAC965289863F900760EA3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 48EAC964289863F900760EA3 /* SwiftyJSON */; };
+		48EAC9672898643100760EA3 /* ReactiveOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */; };
+		48EAC96A2898644900760EA3 /* ReactiveOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */; };
 		E6124BF6267E232F005A3490 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BEF267E22EC005A3490 /* Nimble */; };
 		E6124BF9267E2343005A3490 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BF8267E2343005A3490 /* Fakery */; };
 		E6124BFF267E2549005A3490 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E6124BFE267E2549005A3490 /* OHHTTPStubsSwift */; };
-		E6124C1A267E2931005A3490 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C05267E26D0005A3490 /* Alamofire.xcframework */; };
-		E6124C1B267E2931005A3490 /* OAuthSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C02267E26D0005A3490 /* OAuthSwift.xcframework */; };
-		E6124C1D267E2931005A3490 /* ReactiveSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C03267E26D0005A3490 /* ReactiveSwift.xcframework */; };
-		E6124C1E267E2931005A3490 /* SwiftyJSON.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */; };
-		E6AEE84A267E2B9900A0E81E /* ReactiveCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,15 +84,12 @@
 		17FD01253904F228C1021C97 /* Auth.Reoauth.Detailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Reoauth.Detailed.swift; sourceTree = "<group>"; };
 		17FD014C6BA2809051C0ED61 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17FD01F24BF048EB020FB7F6 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = "<group>"; };
 		17FD02026B95DFC861B9D424 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		17FD0214E9DF466D625DB8B0 /* UI.View.Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.View.Main.swift; sourceTree = "<group>"; };
 		17FD02FD23E054ACFE13C386 /* Auth.Detalisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.Detalisator.swift; sourceTree = "<group>"; };
 		17FD03130064FADEA0CCECAD /* Extension.Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Alamofire.swift; sourceTree = "<group>"; };
 		17FD034571C02A3E54841334 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 		17FD05BE9C5ED28D52F0BF29 /* Service.Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.Google.swift; sourceTree = "<group>"; };
-		17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReactiveOAuth.podspec; sourceTree = "<group>"; };
-		17FD06527D2AECA04D0A7279 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		17FD0685B98931A5F745152D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		17FD06D9F761A77B34E9B66C /* Test.Auth.Dropbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.Dropbox.swift; sourceTree = "<group>"; };
 		17FD06FEECC656D09B33CE61 /* Test.Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Auth.swift; sourceTree = "<group>"; };
@@ -136,17 +134,20 @@
 		E6124BEB267E1CBB005A3490 /* macOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Base.xcconfig"; sourceTree = "<group>"; };
 		E6124BEC267E1CBB005A3490 /* macOS-XCTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-XCTest.xcconfig"; sourceTree = "<group>"; };
 		E6124BED267E1CBB005A3490 /* macOS-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
-		E6124C02267E26D0005A3490 /* OAuthSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OAuthSwift.xcframework; path = Carthage/Build/OAuthSwift.xcframework; sourceTree = SOURCE_ROOT; };
-		E6124C03267E26D0005A3490 /* ReactiveSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveSwift.xcframework; path = Carthage/Build/ReactiveSwift.xcframework; sourceTree = SOURCE_ROOT; };
-		E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyJSON.xcframework; path = Carthage/Build/SwiftyJSON.xcframework; sourceTree = SOURCE_ROOT; };
-		E6124C05267E26D0005A3490 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = SOURCE_ROOT; };
-		E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveCocoa.xcframework; path = Carthage/Build/ReactiveCocoa.xcframework; sourceTree = SOURCE_ROOT; };
 		E699039F26E3A91E000662BB /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
 		E6C0470F1EA14B170089F914 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C0471B1EA14B170089F914 /* application.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = application.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		48EAC9682898644600760EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48EAC96A2898644900760EA3 /* ReactiveOAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6124BF0267E22F3005A3490 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +155,7 @@
 				E6124BF6267E232F005A3490 /* Nimble in Frameworks */,
 				E6124BFF267E2549005A3490 /* OHHTTPStubsSwift in Frameworks */,
 				E6124BF9267E2343005A3490 /* Fakery in Frameworks */,
+				48EAC9672898643100760EA3 /* ReactiveOAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,11 +163,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6124C1A267E2931005A3490 /* Alamofire.xcframework in Frameworks */,
-				E6124C1B267E2931005A3490 /* OAuthSwift.xcframework in Frameworks */,
-				E6AEE84A267E2B9900A0E81E /* ReactiveCocoa.xcframework in Frameworks */,
-				E6124C1D267E2931005A3490 /* ReactiveSwift.xcframework in Frameworks */,
-				E6124C1E267E2931005A3490 /* SwiftyJSON.xcframework in Frameworks */,
+				482EDAD828985D5800BDF590 /* Alamofire in Frameworks */,
+				482EDADB28985D9900BDF590 /* OAuthSwift in Frameworks */,
+				48EAC965289863F900760EA3 /* SwiftyJSON in Frameworks */,
+				48220B3A289861760092D36C /* ReactiveCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,32 +413,11 @@
 			path = dependency/Git/xcconfigs/macOS;
 			sourceTree = SOURCE_ROOT;
 		};
-		E6124C00267E2670005A3490 /* dependency */ = {
-			isa = PBXGroup;
-			children = (
-				E6124C01267E26C1005A3490 /* framework */,
-			);
-			path = dependency;
-			sourceTree = "<group>";
-		};
-		E6124C01267E26C1005A3490 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				E6124C05267E26D0005A3490 /* Alamofire.xcframework */,
-				E6124C02267E26D0005A3490 /* OAuthSwift.xcframework */,
-				E6124C16267E283E005A3490 /* ReactiveCocoa.xcframework */,
-				E6124C03267E26D0005A3490 /* ReactiveSwift.xcframework */,
-				E6124C04267E26D0005A3490 /* SwiftyJSON.xcframework */,
-			);
-			name = framework;
-			sourceTree = "<group>";
-		};
 		E635F48B1E72B9560050F449 = {
 			isa = PBXGroup;
 			children = (
 				17FD04A551C007FDEBC06469 /* accessory */,
 				17FD09EAD2C0B096F2B1D55C /* build */,
-				E6124C00267E2670005A3490 /* dependency */,
 				17FD0329543B94DE438EAFE7 /* documentation */,
 				E6C047101EA14B170089F914 /* product */,
 				17FD0546BE45D13B08CFB1C9 /* source */,
@@ -445,11 +425,8 @@
 				17FD0BFC7BD425CB6C0495D6 /* .gitignore */,
 				17FD0D8B0C664303A26DB723 /* .swiftlint.yml */,
 				17FD0A879532D717634C832F /* .travis.yml */,
-				17FD06527D2AECA04D0A7279 /* Cartfile */,
-				17FD01F24BF048EB020FB7F6 /* Cartfile.resolved */,
 				17FD0B3A7C9ED7E07D8D15FE /* Package.swift */,
 				E699039F26E3A91E000662BB /* Package.resolved */,
-				17FD05C1F0F04A13061E2D4C /* ReactiveOAuth.podspec */,
 				17FD0E09B65E7CA87DC9A956 /* LICENSE.md */,
 				17FD0EB3E12191D66DEA8D5C /* README.md */,
 			);
@@ -481,6 +458,12 @@
 			dependencies = (
 			);
 			name = ReactiveOAuth;
+			packageProductDependencies = (
+				482EDAD728985D5800BDF590 /* Alamofire */,
+				482EDADA28985D9900BDF590 /* OAuthSwift */,
+				48220B39289861760092D36C /* ReactiveCocoa */,
+				48EAC964289863F900760EA3 /* SwiftyJSON */,
+			);
 			productName = ReactiveOAuth;
 			productReference = 17FD0195020FC68CF3799E20 /* ReactiveOAuth.framework */;
 			productType = "com.apple.product-type.framework";
@@ -513,6 +496,7 @@
 			buildPhases = (
 				E6C0470B1EA14B170089F914 /* Sources */,
 				E6C0470D1EA14B170089F914 /* Resources */,
+				48EAC9682898644600760EA3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -562,6 +546,10 @@
 				E6124BEE267E22EC005A3490 /* XCRemoteSwiftPackageReference "Nimble" */,
 				E6124BF2267E231F005A3490 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 				E6124BF7267E2343005A3490 /* XCRemoteSwiftPackageReference "Fakery" */,
+				482EDAD628985D5800BDF590 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				482EDAD928985D9900BDF590 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+				48220B38289861760092D36C /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
+				48EAC963289863F900760EA3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = E6C047101EA14B170089F914 /* product */;
 			projectDirPath = "";
@@ -668,6 +656,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				INFOPLIST_FILE = "$(inherited)/framework.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Debug;
 		};
@@ -677,6 +666,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				INFOPLIST_FILE = "$(inherited)/framework.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Release;
 		};
@@ -789,12 +779,44 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		48220B38289861760092D36C /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+		482EDAD628985D5800BDF590 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		482EDAD928985D9900BDF590 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		48EAC963289863F900760EA3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		E6124BEE267E22EC005A3490 /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.2.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 		E6124BF2267E231F005A3490 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
@@ -816,6 +838,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		48220B39289861760092D36C /* ReactiveCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48220B38289861760092D36C /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
+			productName = ReactiveCocoa;
+		};
+		482EDAD728985D5800BDF590 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 482EDAD628985D5800BDF590 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		482EDADA28985D9900BDF590 /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 482EDAD928985D9900BDF590 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+		48EAC964289863F900760EA3 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48EAC963289863F900760EA3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		E6124BEF267E22EC005A3490 /* Nimble */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E6124BEE267E22EC005A3490 /* XCRemoteSwiftPackageReference "Nimble" */;
