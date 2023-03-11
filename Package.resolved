@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "8dd85aee02e39dd280c75eef88ffdb86eed4b07b",
-          "version": "5.6.2"
+          "revision": "78424be314842833c04bc3bef5b72e85fff99204",
+          "version": "5.6.4"
         }
       },
       {
@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/nvzqz/FileKit.git",
         "state": {
           "branch": null,
-          "revision": "826d9161b184509f80d85c28cd612d630646de98",
-          "version": "6.0.0"
+          "revision": "9006d2888025fbe893c3c396327b2fe45a8c177b",
+          "version": "6.1.0"
         }
       },
       {
@@ -78,8 +78,8 @@
         "repositoryURL": "https://github.com/Quick/Nimble.git",
         "state": {
           "branch": null,
-          "revision": "1f3bde57bde12f5e7b07909848c071e9b73d6edc",
-          "version": "10.0.0"
+          "revision": "3dee47f163906d9fb2590f1053d811775eebe47b",
+          "version": "11.0.0"
         }
       },
       {
